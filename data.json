@@ -1,0 +1,599 @@
+{
+  "version": 4,
+  "profile": {
+    "name": "Nour Mohamed",
+    "monogram": "NM*",
+    "role": "Creative Director & AI Specialist",
+    "location": "New Cairo",
+    "avatar": "assets/avatar.jpg",
+    "bio": "I build brand worlds end to end — identity, AI-directed campaigns and 3D visualization — and I grow the audiences around them without paid reach.",
+    "status": {
+      "show": true,
+      "live": true,
+      "label": "Open for projects"
+    },
+    "capabilities": [
+      "Brand identity",
+      "Generative AI direction",
+      "3D visualization",
+      "Arabic content"
+    ],
+    "photo": "assets/avatar.jpg",
+    "socials": [
+      {
+        "net": "instagram",
+        "url": "https://www.instagram.com/i2mriky"
+      },
+      {
+        "net": "facebook",
+        "url": "https://www.facebook.com/profile.php?id=61576439245217"
+      },
+      {
+        "net": "threads",
+        "url": "https://www.threads.com/@i2mriky"
+      },
+      {
+        "net": "tiktok",
+        "url": "https://www.tiktok.com/@i2mriky"
+      },
+      {
+        "net": "pinterest",
+        "url": "https://pin.it/7AdtP23oT"
+      },
+      {
+        "net": "linkedin",
+        "url": "https://www.linkedin.com/in/nour-mohamed-56a7463b9"
+      },
+      {
+        "net": "mail",
+        "url": "mailto:2mrikydesign@gmail.com"
+      }
+    ]
+  },
+  "theme": {
+    "preset": "copper",
+    "accent": ""
+  },
+  "settings": {
+    "siteTitle": "Nour Mohamed — Creative Director & AI Specialist",
+    "siteDescription": "Multidisciplinary Creative Director and AI specialist in New Cairo. Portfolios, brands, and contact in one place.",
+    "siteUrl": "https://2mriky.github.io/bio-hub/",
+    "ogImage": "assets/og.jpg",
+    "showQR": true,
+    "showVCard": true,
+    "analyticsScript": ""
+  },
+  "contact": {
+    "email": "2mrikydesign@gmail.com",
+    "phone": "+201555846969",
+    "vcardCompany": "NM* Studio",
+    "whatsapp": "+201143650240"
+  },
+  "actions": [
+    {
+      "id": "a1",
+      "label": "Download CV",
+      "url": "https://nour2mriky.my.canva.site/nour-mohamed-cv",
+      "primary": true,
+      "enabled": true
+    },
+    {
+      "id": "a2",
+      "label": "WhatsApp",
+      "url": "https://wa.me/201143650240",
+      "primary": false,
+      "enabled": true
+    },
+    {
+      "id": "a3",
+      "label": "Email",
+      "url": "mailto:2mrikydesign@gmail.com",
+      "primary": false,
+      "enabled": true
+    }
+  ],
+  "portfolios": {
+    "title": "Portfolios",
+    "note": "Three decks, one per discipline. Open the one closest to your brief.",
+    "enabled": true,
+    "items": [
+      {
+        "id": "p1",
+        "title": "Creative Direction",
+        "subtitle": "Brand worlds, campaigns and art direction",
+        "tag": "Deck 01",
+        "cover": "assets/cover-creative-director.jpg",
+        "url": "https://nour2mriky.my.canva.site/nour-portfolio-creative-director",
+        "enabled": true
+      },
+      {
+        "id": "p2",
+        "title": "AI Creative Direction",
+        "subtitle": "Directing models, building pipelines, shipping campaigns",
+        "tag": "Deck 02",
+        "cover": "assets/cover-ai-creative-director.jpg",
+        "url": "https://nour2mriky.my.canva.site/nour-moh-ai-creative-director",
+        "enabled": true
+      },
+      {
+        "id": "p3",
+        "title": "Content & Copywriting",
+        "subtitle": "Scripts, brand voice and Arabic-first concepts",
+        "tag": "Deck 03",
+        "cover": "assets/cover-content-creative.jpg",
+        "url": "https://nour2mriky.my.canva.site/nour-mohamed-content-creative",
+        "enabled": true
+      }
+    ]
+  },
+  "numbers": {
+    "enabled": true,
+    "title": "Numbers",
+    "period": "Last 90 days · Jun 25 – Sep 23, 2026",
+    "note": "Organic reach on the pages I founded and run. No paid ads.",
+    "headline": "views and impressions across five channels, organic",
+    "rows": [
+      {
+        "id": "r1",
+        "brand": "m3anyi",
+        "platform": "pinterest",
+        "value": "2.2M",
+        "raw": 2200000,
+        "label": "impressions",
+        "span": "90 days",
+        "growth": "",
+        "details": [
+          [
+            "Engagements",
+            "96.6K"
+          ],
+          [
+            "Saves",
+            "11.5K"
+          ],
+          [
+            "Audience",
+            "680.4K"
+          ]
+        ],
+        "enabled": true
+      },
+      {
+        "id": "r2",
+        "brand": "m3anyi",
+        "platform": "tiktok",
+        "value": "2.1M",
+        "raw": 2100000,
+        "label": "post views",
+        "span": "60 days",
+        "growth": "+55.5%",
+        "details": [
+          [
+            "Likes",
+            "53.9K"
+          ],
+          [
+            "Shares",
+            "6.7K"
+          ],
+          [
+            "Profile views",
+            "21.7K"
+          ]
+        ],
+        "enabled": true
+      },
+      {
+        "id": "r3",
+        "brand": "gray",
+        "platform": "pinterest",
+        "value": "1.7M",
+        "raw": 1700000,
+        "label": "impressions",
+        "span": "90 days",
+        "growth": "+66%",
+        "details": [
+          [
+            "Engagements",
+            "69.4K"
+          ],
+          [
+            "Saves",
+            "11.2K (+170%)"
+          ],
+          [
+            "Audience",
+            "998.3K"
+          ]
+        ],
+        "enabled": true
+      },
+      {
+        "id": "r4",
+        "brand": "m3anyi",
+        "platform": "instagram",
+        "value": "934.6K",
+        "raw": 934557,
+        "label": "views",
+        "span": "90 days",
+        "growth": "",
+        "details": [
+          [
+            "Interactions",
+            "90.7K"
+          ],
+          [
+            "New followers",
+            "+5,680"
+          ],
+          [
+            "From non-followers",
+            "60.8%"
+          ]
+        ],
+        "enabled": true
+      },
+      {
+        "id": "r5",
+        "brand": "gray",
+        "platform": "instagram",
+        "value": "37.1K",
+        "raw": 37089,
+        "label": "views",
+        "span": "90 days",
+        "growth": "",
+        "details": [
+          [
+            "Interactions",
+            "7,058"
+          ],
+          [
+            "Viewers",
+            "6,001"
+          ]
+        ],
+        "enabled": true
+      }
+    ],
+    "proofs": [
+      {
+        "id": "p1",
+        "value": "1.68M",
+        "label": "people reached on Pinterest across both pages",
+        "enabled": true
+      },
+      {
+        "id": "p2",
+        "value": "325K",
+        "label": "likes, saves, shares and comments",
+        "enabled": true
+      },
+      {
+        "id": "p3",
+        "value": "+5.7K",
+        "label": "new Instagram followers in 90 days",
+        "enabled": true
+      },
+      {
+        "id": "p4",
+        "value": "60.8%",
+        "label": "of M3anyi's Instagram views come from non-followers",
+        "enabled": true
+      }
+    ],
+    "results": [
+      {
+        "id": "c1",
+        "value": "125+",
+        "label": "international architecture projects directed at DIA",
+        "enabled": true
+      },
+      {
+        "id": "c2",
+        "value": "100+",
+        "label": "daily orders at Chiky Pop, seven days from concept to launch",
+        "enabled": true
+      }
+    ]
+  },
+  "map": {
+    "enabled": true,
+    "title": "Worldwide",
+    "headline": "Six countries, one studio.",
+    "note": "Big brands in the Egyptian and global market, agencies, and independent founders.",
+    "home": "eg",
+    "places": [
+      {
+        "id": "eg",
+        "name": "Egypt",
+        "city": "Cairo",
+        "lon": 31.24,
+        "lat": 30.04,
+        "enabled": true
+      },
+      {
+        "id": "uk",
+        "name": "United Kingdom",
+        "city": "London",
+        "lon": -0.13,
+        "lat": 51.5,
+        "enabled": true
+      },
+      {
+        "id": "us",
+        "name": "United States",
+        "city": "New York",
+        "lon": -74.0,
+        "lat": 40.7,
+        "enabled": true
+      },
+      {
+        "id": "lb",
+        "name": "Lebanon",
+        "city": "Beirut",
+        "lon": 35.5,
+        "lat": 33.9,
+        "enabled": true
+      },
+      {
+        "id": "kw",
+        "name": "Kuwait",
+        "city": "Kuwait City",
+        "lon": 47.98,
+        "lat": 29.37,
+        "enabled": true
+      },
+      {
+        "id": "sa",
+        "name": "Saudi Arabia",
+        "city": "Riyadh",
+        "lon": 46.7,
+        "lat": 24.7,
+        "enabled": true
+      }
+    ]
+  },
+  "worlds": {
+    "enabled": true,
+    "items": [
+      {
+        "id": "m3anyi",
+        "skin": "m3anyi",
+        "name": "M3anyi",
+        "arabic": "معاني",
+        "role": "Founder · since 2017",
+        "tagline": "Arabic quotes turned into illustration. Two lines, one twist, seen millions of times a quarter.",
+        "logo": "assets/logo-m3anyi.png",
+        "url": "https://www.instagram.com/m3anyi_egy",
+        "socials": [
+          {
+            "net": "instagram",
+            "url": "https://www.instagram.com/m3anyi_egy"
+          },
+          {
+            "net": "facebook",
+            "url": "https://www.facebook.com/m3anyiegy"
+          },
+          {
+            "net": "threads",
+            "url": "https://www.threads.com/@m3anyi_egy"
+          },
+          {
+            "net": "tiktok",
+            "url": "https://www.tiktok.com/@m3anyi_egy"
+          },
+          {
+            "net": "pinterest",
+            "url": "https://pin.it/7oMjMXNxT"
+          },
+          {
+            "net": "linkedin",
+            "url": "https://www.linkedin.com/in/m3anyi-egy-a40130424"
+          },
+          {
+            "net": "mail",
+            "url": "mailto:m3anyi.egy@gmail.com"
+          }
+        ],
+        "slides": [
+          {
+            "id": "s1",
+            "kind": "image",
+            "image": "assets/w-m3anyi-1.jpg",
+            "title": "أشعر وكأن الجميع يتقدمون، بينما أنا واقف في مكاني",
+            "meta": "269.8K impressions · Pinterest",
+            "url": "https://pin.it/7oMjMXNxT",
+            "enabled": true
+          },
+          {
+            "id": "s2",
+            "kind": "stat",
+            "value": "2.2M",
+            "title": "Pinterest impressions",
+            "meta": "Last 90 days",
+            "enabled": true
+          },
+          {
+            "id": "s3",
+            "kind": "image",
+            "image": "assets/w-m3anyi-2.jpg",
+            "title": "أدركت أخيراً أنني يجب أن أمضي قدماً",
+            "meta": "124.4K impressions · Pinterest",
+            "url": "https://pin.it/7oMjMXNxT",
+            "enabled": true
+          },
+          {
+            "id": "s4",
+            "kind": "stat",
+            "value": "2.1M",
+            "title": "TikTok post views",
+            "meta": "Last 60 days",
+            "enabled": true
+          },
+          {
+            "id": "s5",
+            "kind": "stat",
+            "value": "934.6K",
+            "title": "Instagram views",
+            "meta": "Last 90 days",
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "id": "gray",
+        "skin": "gray",
+        "name": "Gray Museum",
+        "arabic": "",
+        "role": "Founder · AI exhibition",
+        "tagline": "A conceptual AI exhibition. Cursed high-end, told as short fiction.",
+        "logo": "assets/logo-gray.jpg",
+        "url": "https://www.instagram.com/gray.museum",
+        "socials": [
+          {
+            "net": "instagram",
+            "url": "https://www.instagram.com/gray.museum"
+          },
+          {
+            "net": "facebook",
+            "url": "https://www.facebook.com/Gray.museum.gm"
+          },
+          {
+            "net": "tiktok",
+            "url": "https://www.tiktok.com/@gray.museum"
+          },
+          {
+            "net": "pinterest",
+            "url": "https://pin.it/8oJEGWyJO"
+          }
+        ],
+        "slides": [
+          {
+            "id": "g1",
+            "kind": "image",
+            "image": "assets/w-gray-36.jpg",
+            "title": "Concept 36",
+            "meta": "259.4K impressions",
+            "url": "https://pin.it/8oJEGWyJO",
+            "enabled": true
+          },
+          {
+            "id": "g2",
+            "kind": "image",
+            "image": "assets/w-gray-39.jpg",
+            "title": "Concept 39",
+            "meta": "157.9K impressions",
+            "url": "https://pin.it/8oJEGWyJO",
+            "enabled": true
+          },
+          {
+            "id": "g3",
+            "kind": "image",
+            "image": "assets/w-gray-knight.jpg",
+            "title": "From the collection",
+            "meta": "145.6K impressions",
+            "url": "https://pin.it/8oJEGWyJO",
+            "enabled": true
+          },
+          {
+            "id": "g4",
+            "kind": "stat",
+            "value": "1.7M",
+            "title": "Pinterest impressions",
+            "meta": "Last 90 days · +66%",
+            "enabled": true
+          }
+        ]
+      }
+    ]
+  },
+  "xray": {
+    "enabled": true,
+    "title": "Brand X-ray",
+    "headline": "Is your brand working as hard as your team?",
+    "note": "Six taps, sixty seconds. You get a score and the three fixes I would start with."
+  },
+  "drops": {
+    "enabled": false,
+    "title": "Latest",
+    "note": "Fresh work, straight from the feed.",
+    "items": [
+      {
+        "id": "d1",
+        "type": "post",
+        "title": "Example drop",
+        "caption": "Replace with a real post or edit.",
+        "media": "",
+        "poster": "",
+        "url": "https://www.instagram.com/i2mriky",
+        "enabled": false
+      }
+    ]
+  },
+  "otherPages": {
+    "title": "Also running",
+    "note": "Side projects and stores.",
+    "enabled": true,
+    "items": [
+      {
+        "id": "o1",
+        "name": "Mobbit",
+        "net": "instagram",
+        "url": "https://www.instagram.com/mobbit.store",
+        "enabled": true
+      },
+      {
+        "id": "o2",
+        "name": "What if World — WIW",
+        "net": "instagram",
+        "url": "https://www.instagram.com/whatifworld.wiw",
+        "enabled": true
+      },
+      {
+        "id": "o3",
+        "name": "Ghost Labs",
+        "net": "instagram",
+        "url": "https://www.instagram.com/ghostlabs.ai",
+        "enabled": true
+      },
+      {
+        "id": "o4",
+        "name": "Kshaf — كشاف",
+        "net": "instagram",
+        "url": "https://www.instagram.com/kshaf.store",
+        "enabled": true
+      },
+      {
+        "id": "o5",
+        "name": "Kalam w Khalas — كلام وخلاص",
+        "net": "instagram",
+        "url": "https://www.instagram.com/kalamwkhalas",
+        "enabled": true
+      }
+    ]
+  },
+  "journal": {
+    "title": "Journal",
+    "note": "Notes on craft",
+    "enabled": false,
+    "emptyLine": "First note lands here soon.",
+    "items": []
+  },
+  "arcade": {
+    "enabled": true,
+    "title": "Play",
+    "note": "Built for fun",
+    "headline": "Games I designed. Two play right here.",
+    "sub": "Drag, or use the arrow keys.",
+    "external": {
+      "label": "El Partyta",
+      "tagline": "Interactive party game",
+      "url": "https://i2mriky.github.io/El-Partyta-Copy-Semi-Final/",
+      "enabled": true
+    }
+  },
+  "closing": {
+    "title": "Have a brief?",
+    "note": "Based in New Cairo, working with teams anywhere. Email or WhatsApp, whichever is faster for you."
+  }
+}
