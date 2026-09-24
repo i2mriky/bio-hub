@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 6,
   "profile": {
     "name": "Nour Mohamed",
     "monogram": "NM*",
@@ -48,6 +48,11 @@
         "net": "mail",
         "url": "mailto:2mrikydesign@gmail.com"
       }
+    ],
+    "facts": [
+      "12+ years",
+      "150+ projects",
+      "6 countries"
     ]
   },
   "theme": {
@@ -57,7 +62,7 @@
   "settings": {
     "siteTitle": "Nour Mohamed — Creative Director & AI Specialist",
     "siteDescription": "Multidisciplinary Creative Director and AI specialist in New Cairo. Portfolios, brands, and contact in one place.",
-    "siteUrl": "https://2mriky.github.io/bio-hub/",
+    "siteUrl": "https://i2mriky.github.io/bio-hub/",
     "ogImage": "assets/og.jpg",
     "showQR": true,
     "showVCard": true,
@@ -126,12 +131,143 @@
       }
     ]
   },
+  "results": {
+    "enabled": true,
+    "title": "Results",
+    "note": "What the work did for the businesses behind it.",
+    "items": [
+      {
+        "id": "x1",
+        "client": "Design-itude Associates",
+        "sector": "Architecture · UK market",
+        "value": "125+",
+        "label": "international projects directed",
+        "extra": "60%+ faster concept stage after bringing generative AI into the 3D render pipeline",
+        "enabled": true
+      },
+      {
+        "id": "x2",
+        "client": "Chiky Pop",
+        "sector": "F&B brand launch",
+        "value": "7 days",
+        "label": "from concept to launch",
+        "extra": "Identity, packaging and UI, then 100+ daily orders at peak",
+        "enabled": true
+      },
+      {
+        "id": "x5",
+        "client": "Kshaf",
+        "sector": "E-commerce · my own store",
+        "value": "5 days",
+        "label": "from the name to a live store",
+        "extra": "Naming, identity, icons, banners and the full catalog. Still running a year later.",
+        "enabled": true
+      },
+      {
+        "id": "x3",
+        "client": "AI Render Engine",
+        "sector": "Tool I built",
+        "value": "10 sec",
+        "label": "per 2K photoreal render",
+        "extra": "Replaced a V-Ray workflow for interior and product visuals",
+        "enabled": true
+      },
+      {
+        "id": "x4",
+        "client": "Campaign Generator",
+        "sector": "Tool I built",
+        "value": "1 → 6",
+        "label": "one product photo in, a six-image campaign out",
+        "extra": "",
+        "enabled": true
+      }
+    ]
+  },
+  "tools": {
+    "enabled": true,
+    "title": "Built in-house",
+    "note": "Tools I made when the right one didn't exist.",
+    "items": [
+      {
+        "id": "t1",
+        "name": "Cut Bulk",
+        "kind": "Web tool",
+        "icon": "cut",
+        "enabled": true
+      },
+      {
+        "id": "t2",
+        "name": "TRIM",
+        "kind": "Web tool",
+        "icon": "trim",
+        "enabled": true
+      },
+      {
+        "id": "t3",
+        "name": "World Gen",
+        "kind": "AI engine",
+        "icon": "world",
+        "enabled": true
+      },
+      {
+        "id": "t4",
+        "name": "Render Engine",
+        "kind": "AI engine",
+        "icon": "render",
+        "enabled": true
+      },
+      {
+        "id": "t5",
+        "name": "Harvest",
+        "kind": "Chrome extension",
+        "icon": "harvest",
+        "enabled": true
+      },
+      {
+        "id": "t6",
+        "name": "PiP Anything",
+        "kind": "Chrome extension",
+        "icon": "pip",
+        "enabled": true
+      }
+    ]
+  },
+  "beforeAfter": {
+    "enabled": true,
+    "nav": "Before/After",
+    "kicker": "Before / After",
+    "title": "Same product. New story.",
+    "beforeLabel": "Before NM*",
+    "afterLabel": "After NM*",
+    "hint": "Drag the circle",
+    "sendLabel": "You send",
+    "getLabel": "You get",
+    "says": {
+      "b": "This is what most brands hand me: *one product on white.* Clean, correct, and nobody stops scrolling for it.",
+      "m": "Keep dragging. *The can doesn't move.* Same angle, same label. Everything around it is the work.",
+      "a": "*A campaign people stop for.* The idea, the scene, the line, the light. Same product, new story."
+    },
+    "cta": "Send me your product photo",
+    "ctaMsg": "Hi Nour, I saw the before/after on your page. I have a product photo and I want the after.",
+    "items": [
+      {
+        "brand": "NIVEA MEN",
+        "before": "assets/ba-nivea-before.jpg",
+        "after": "assets/ba-nivea-after.jpg",
+        "send": "One product photo on a white background",
+        "get": "The idea, the scene, an Arabic headline and the final visual",
+        "credit": "NIVEA MEN Black & White · Concept work, unofficial",
+        "id": "ba1",
+        "enabled": true
+      }
+    ]
+  },
   "numbers": {
     "enabled": true,
     "title": "Numbers",
     "period": "Last 90 days · Jun 25 – Sep 23, 2026",
     "note": "Organic reach on the pages I founded and run. No paid ads.",
-    "headline": "views and impressions across five channels, organic",
+    "headline": "views and impressions across four channels, organic",
     "rows": [
       {
         "id": "r1",
@@ -232,27 +368,6 @@
           ]
         ],
         "enabled": true
-      },
-      {
-        "id": "r5",
-        "brand": "gray",
-        "platform": "instagram",
-        "value": "37.1K",
-        "raw": 37089,
-        "label": "views",
-        "span": "90 days",
-        "growth": "",
-        "details": [
-          [
-            "Interactions",
-            "7,058"
-          ],
-          [
-            "Viewers",
-            "6,001"
-          ]
-        ],
-        "enabled": true
       }
     ],
     "proofs": [
@@ -281,20 +396,176 @@
         "enabled": true
       }
     ],
-    "results": [
-      {
-        "id": "c1",
-        "value": "125+",
-        "label": "international architecture projects directed at DIA",
-        "enabled": true
-      },
-      {
-        "id": "c2",
-        "value": "100+",
-        "label": "daily orders at Chiky Pop, seven days from concept to launch",
-        "enabled": true
-      }
-    ]
+    "trend": {
+      "enabled": true,
+      "title": "Daily views",
+      "series": [
+        {
+          "id": "ig",
+          "label": "M3anyi · Instagram",
+          "start": "2026-06-25",
+          "values": [
+            9547,
+            10032,
+            8771,
+            9255,
+            8383,
+            9935,
+            12456,
+            13135,
+            7899,
+            5183,
+            4408,
+            4698,
+            4311,
+            9450,
+            11390,
+            7608,
+            9547,
+            10419,
+            6735,
+            8286,
+            8965,
+            8480,
+            7025,
+            4892,
+            4117,
+            6347,
+            7510,
+            7025,
+            5183,
+            6153,
+            7510,
+            5183,
+            5183,
+            5086,
+            5377,
+            6347,
+            6928,
+            6638,
+            5862,
+            5183,
+            7122,
+            27196,
+            36117,
+            35437,
+            28649,
+            18565,
+            12649,
+            11777,
+            11583,
+            17692,
+            20408,
+            21086,
+            17498,
+            13910,
+            13038,
+            13717,
+            14686,
+            12553,
+            12262,
+            11583,
+            11001,
+            11486,
+            10226,
+            7219,
+            7413,
+            9159,
+            10226,
+            14686,
+            17886,
+            15171,
+            14589,
+            16820,
+            14298,
+            10904,
+            9450,
+            8092,
+            7316,
+            7122,
+            8092,
+            7025,
+            7608,
+            7413,
+            6638,
+            6347,
+            6347,
+            6056,
+            5086,
+            6735,
+            5959,
+            4214
+          ]
+        },
+        {
+          "id": "tk",
+          "label": "M3anyi · TikTok",
+          "start": "2026-07-25",
+          "values": [
+            10248,
+            13451,
+            8647,
+            6244,
+            5444,
+            6645,
+            13451,
+            47486,
+            111950,
+            54693,
+            48687,
+            72712,
+            156395,
+            159197,
+            116355,
+            87526,
+            49889,
+            31470,
+            30269,
+            24663,
+            31470,
+            32671,
+            37876,
+            35473,
+            67906,
+            67105,
+            32270,
+            24262,
+            18257,
+            22261,
+            27867,
+            26265,
+            20259,
+            15053,
+            18257,
+            24262,
+            17055,
+            17856,
+            22661,
+            27066,
+            29868,
+            41079,
+            31470,
+            34273,
+            32671,
+            34673,
+            53492,
+            27066,
+            23863,
+            23863,
+            24262,
+            19458,
+            16255,
+            15053,
+            11450,
+            9447,
+            5844,
+            9048,
+            7846,
+            7446
+          ]
+        }
+      ]
+    }
   },
   "map": {
     "enabled": true,
@@ -395,50 +666,52 @@
             "url": "mailto:m3anyi.egy@gmail.com"
           }
         ],
-        "slides": [
+        "images": {
+          "prefix": "w-m3anyi-",
+          "ext": "jpg"
+        },
+        "facts": [
           {
-            "id": "s1",
-            "kind": "image",
-            "image": "assets/w-m3anyi-1.jpg",
-            "title": "أشعر وكأن الجميع يتقدمون، بينما أنا واقف في مكاني",
-            "meta": "269.8K impressions · Pinterest",
-            "url": "https://pin.it/7oMjMXNxT",
+            "id": "f1",
+            "value": "2017",
+            "title": "Founded",
+            "meta": "Nine years of two-line Arabic quotes",
             "enabled": true
           },
           {
-            "id": "s2",
-            "kind": "stat",
+            "id": "f2",
             "value": "2.2M",
             "title": "Pinterest impressions",
             "meta": "Last 90 days",
             "enabled": true
           },
           {
-            "id": "s3",
-            "kind": "image",
-            "image": "assets/w-m3anyi-2.jpg",
-            "title": "أدركت أخيراً أنني يجب أن أمضي قدماً",
-            "meta": "124.4K impressions · Pinterest",
-            "url": "https://pin.it/7oMjMXNxT",
-            "enabled": true
-          },
-          {
-            "id": "s4",
-            "kind": "stat",
+            "id": "f3",
             "value": "2.1M",
-            "title": "TikTok post views",
+            "title": "TikTok views",
             "meta": "Last 60 days",
             "enabled": true
           },
           {
-            "id": "s5",
-            "kind": "stat",
+            "id": "f4",
             "value": "934.6K",
             "title": "Instagram views",
             "meta": "Last 90 days",
             "enabled": true
+          },
+          {
+            "id": "f5",
+            "value": "85%",
+            "title": "shares to likes",
+            "meta": "On the top post. 5–15% is normal.",
+            "enabled": true
           }
-        ]
+        ],
+        "endCard": {
+          "handle": "@m3anyi_egy",
+          "cta": "Open on Instagram",
+          "url": "https://www.instagram.com/m3anyi_egy"
+        }
       },
       {
         "id": "gray",
@@ -467,51 +740,41 @@
             "url": "https://pin.it/8oJEGWyJO"
           }
         ],
-        "slides": [
+        "images": {
+          "prefix": "w-gray-",
+          "ext": "jpg"
+        },
+        "facts": [
           {
             "id": "g1",
-            "kind": "image",
-            "image": "assets/w-gray-36.jpg",
-            "title": "Concept 36",
-            "meta": "259.4K impressions",
-            "url": "https://pin.it/8oJEGWyJO",
-            "enabled": true
-          },
-          {
-            "id": "g2",
-            "kind": "image",
-            "image": "assets/w-gray-39.jpg",
-            "title": "Concept 39",
-            "meta": "157.9K impressions",
-            "url": "https://pin.it/8oJEGWyJO",
-            "enabled": true
-          },
-          {
-            "id": "g3",
-            "kind": "image",
-            "image": "assets/w-gray-knight.jpg",
-            "title": "From the collection",
-            "meta": "145.6K impressions",
-            "url": "https://pin.it/8oJEGWyJO",
-            "enabled": true
-          },
-          {
-            "id": "g4",
-            "kind": "stat",
             "value": "1.7M",
             "title": "Pinterest impressions",
             "meta": "Last 90 days · +66%",
             "enabled": true
+          },
+          {
+            "id": "g2",
+            "value": "998K",
+            "title": "people reached",
+            "meta": "On Pinterest, last 90 days",
+            "enabled": true
+          },
+          {
+            "id": "g3",
+            "value": "+170%",
+            "title": "saves",
+            "meta": "Versus the 90 days before",
+            "enabled": true
           }
-        ]
+        ],
+        "endCard": {
+          "handle": "@gray.museum",
+          "cta": "Enter the museum",
+          "url": "https://www.instagram.com/gray.museum"
+        }
       }
-    ]
-  },
-  "xray": {
-    "enabled": true,
-    "title": "Brand X-ray",
-    "headline": "Is your brand working as hard as your team?",
-    "note": "Six taps, sixty seconds. You get a score and the three fixes I would start with."
+    ],
+    "factEvery": 3
   },
   "drops": {
     "enabled": false,

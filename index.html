@@ -117,11 +117,24 @@ a.card:hover .cover img{transform:scale(1.035)}
 
 /* ---------- numbers ---------- */
 .period{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 13px}
-.total{margin-top:22px}
-.total .period{margin-bottom:18px}
-.total b{display:block;font-size:clamp(66px,19vw,150px);line-height:.86}
+.ntop{display:grid;gap:18px;margin-top:22px;align-items:end}
+@media(min-width:860px){.ntop{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}}
+.total .period{margin-bottom:16px}
+.total b{display:block;font-size:clamp(54px,14vw,108px);line-height:.86}
 .total b .u{color:var(--accent)}
 .total p{margin-top:12px;max-width:30ch;color:var(--muted);font-size:15px}
+.trend{padding:18px 18px 12px}
+.tr-h{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.tr-h small{display:block;font-size:12.5px;color:var(--muted)}
+.tr-h b{display:block;font-size:22px;line-height:1.1;margin-top:3px}
+.tabs2{display:flex;gap:4px;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:3px}
+.tabs2 button{font-size:12.5px;font-weight:500;color:var(--muted);padding:6px 11px;border-radius:999px;min-height:32px}
+.tabs2 button.on{background:var(--surf-2);color:var(--ink)}
+.tr-svg{position:relative;margin-top:10px;touch-action:pan-y}
+.tr-svg svg{display:block;width:100%;height:150px;overflow:visible}
+.tr-tip{position:absolute;top:0;pointer-events:none;background:var(--ink);color:var(--bg);font-size:12px;font-weight:500;padding:5px 9px;border-radius:8px;white-space:nowrap;transform:translate(-50%,-110%);opacity:0;transition:opacity .15s}
+.tr-tip.on{opacity:1}
+.tr-x{display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted);margin-top:4px}
 .legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:30px;font-size:13px;font-weight:500;color:var(--muted)}
 .legend span{display:inline-flex;align-items:center;gap:8px}
 .sw{width:10px;height:10px;border-radius:3px;flex:none}
@@ -156,11 +169,38 @@ a.card:hover .cover img{transform:scale(1.035)}
 .src{margin-top:18px;color:var(--muted);font-size:12.5px}
 @media(max-width:600px){.proofs{grid-template-columns:1fr 1fr}.proof{padding:16px}.proof b{font-size:clamp(20px,6vw,26px)}.proof span{font-size:12.5px}}
 
+/* ---------- results ---------- */
+.res{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}
+.rc{padding:22px 22px 24px;display:flex;flex-direction:column;gap:6px}
+.rc::before{content:"";width:28px;height:3px;border-radius:2px;background:var(--accent);margin-bottom:12px}
+.rc .who{font-size:13px;color:var(--muted)}
+.rc .who b{display:block;font-family:var(--fd);font-weight:700;font-size:18px;letter-spacing:-.02em;color:var(--ink)}
+.rc .n{font-size:clamp(34px,9vw,46px);line-height:1;color:var(--accent);margin-top:14px}
+.rc .lb{font-size:15px;font-weight:500}
+.rc .ex{font-size:13.5px;color:var(--muted);line-height:1.5;margin-top:4px}
+.tb{margin-top:14px;padding:20px;border-radius:var(--r);background:var(--surf);border:1px solid var(--line)}
+.tb-h{display:flex;flex-direction:column;gap:4px;margin-bottom:16px}
+@media(min-width:620px){.tb-h{flex-direction:row;align-items:baseline;justify-content:space-between;gap:12px}}
+.tb-h b{white-space:nowrap}
+.tb-h b{font-family:var(--fd);font-weight:700;font-size:18px;letter-spacing:-.02em}
+.tb-h small{font-size:12px;color:var(--muted)}
+.tb-g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+@media(min-width:820px){.tb-g{grid-template-columns:repeat(6,minmax(0,1fr))}}
+.tl{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:16px 6px 14px;border-radius:14px;background:var(--surf-2);border:1px solid var(--line)}
+.tl i{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent)}
+.tl svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.tl b{font-size:13px;font-weight:600;line-height:1.25}
+.tl small{font-size:11px;color:var(--muted);margin-top:-6px}
+.facts{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:10px;font-size:13px;color:var(--muted)}
+.facts b{color:var(--ink);font-weight:600}
+
 /* ---------- map ---------- */
 .map-h{font-family:var(--fd);font-weight:800;font-size:clamp(26px,6.4vw,48px);letter-spacing:-.035em;line-height:1.02;max-width:16ch}
 .map-p{margin-top:12px;color:var(--muted);font-size:15px;max-width:46ch}
-.mapbox{position:relative;margin-top:26px;border-radius:var(--r);overflow:hidden;background:radial-gradient(120% 90% at 58% 60%,color-mix(in srgb,var(--accent) 9%,var(--bg)),var(--bg) 70%);border:1px solid var(--line)}
-.mapbox canvas{display:block;width:100%}
+.mapbox{position:relative;margin-top:26px;border-radius:var(--r);overflow:hidden;background:radial-gradient(70% 70% at 50% 55%,color-mix(in srgb,var(--accent) 10%,var(--bg)),var(--bg) 72%);border:1px solid var(--line)}
+.mapbox canvas{display:block;width:100%;touch-action:pan-y;cursor:grab}
+.mapbox canvas:active{cursor:grabbing}
+.g-hint{position:absolute;right:14px;bottom:12px;font-size:12px;color:var(--muted);pointer-events:none}
 @media(max-width:600px){.mapbox{margin-inline:calc(-1 * var(--gut));border-radius:0;border-inline:0}}
 .places{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
 .place{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 14px;border-radius:999px;border:1px solid var(--line);font-size:14px;font-weight:500;color:var(--muted);transition:.2s}
@@ -194,23 +234,30 @@ a.card:hover .cover img{transform:scale(1.035)}
 .sl{flex:none;width:var(--cw);scroll-snap-align:center;border-radius:20px;overflow:hidden;background:var(--w-card);text-align:left;
   transform:scale(var(--s,1));opacity:var(--o,1);transition:transform .12s linear,opacity .12s linear,box-shadow .3s;will-change:transform}
 .sl.mid{box-shadow:0 26px 60px -24px rgba(0,0,0,.8)}
-.sl .im{display:block;aspect-ratio:1;overflow:hidden;background:color-mix(in srgb,var(--w-ink) 6%,var(--w-bg))}
+.sl .im{display:block;aspect-ratio:4/5;overflow:hidden;background:color-mix(in srgb,var(--w-ink) 6%,var(--w-bg))}
 .sl .im img{width:100%;height:100%;object-fit:cover}
 .sl .cap{display:block;padding:14px 16px 16px}
 .sl .cap b{display:block;font-weight:600;font-size:15px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .sl .cap span{display:block;margin-top:6px;font-size:12.5px;color:var(--w-soft)}
-.sl.stat{display:flex;flex-direction:column;justify-content:center;gap:14px;aspect-ratio:1/1.24;padding:24px;background:color-mix(in srgb,var(--w-ink) 7%,var(--w-bg));border:1px solid var(--w-line)}
+.sl.stat{display:flex;flex-direction:column;justify-content:center;gap:14px;aspect-ratio:4/5;padding:24px;background:color-mix(in srgb,var(--w-ink) 7%,var(--w-bg));border:1px solid var(--w-line)}
 .sl.stat .n{font-size:clamp(40px,12vw,58px);line-height:.95;color:var(--w-ink)}
 .sl.stat b{font-weight:600;font-size:16px}
 .sl.stat span{display:block;margin-top:4px;font-size:13px;color:var(--w-soft)}
 .world.gray .sl{border-radius:6px;background:#15141A;border:1px solid rgba(236,234,242,.14);padding:10px}
 .world.gray .sl .im{border-radius:2px}
-.world.gray .sl .cap{padding:14px 6px 6px}
+.world.gray .sl .cap{padding:10px 4px 2px}
+.world.gray .sl .no{display:block;padding:10px 4px 0;font-size:11px;letter-spacing:.06em;color:var(--w-soft)}
 .world.gray .sl .cap b{font-family:var(--fd);font-weight:700;letter-spacing:-.01em}
 .world.gray .sl.stat{padding:22px}
 .cf-ctl{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:4px}
 .cf-ctl button{width:40px;height:40px;border-radius:50%;border:1px solid var(--w-line);display:grid;place-items:center;color:var(--w-ink)}
 .cf-ctl button svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.count{min-width:64px;text-align:center;font-size:13px;font-weight:500;color:var(--w-soft);font-variant-numeric:tabular-nums}
+.sl.end{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;aspect-ratio:4/5;padding:24px;text-align:center;border:1px solid var(--w-line);background:color-mix(in srgb,var(--w-ink) 7%,var(--w-bg))}
+.sl.end img{width:84px;height:84px;border-radius:22px;object-fit:cover}
+.sl.end b{font-family:var(--fd);font-weight:700;font-size:20px;letter-spacing:-.02em;margin-top:6px}
+.sl.end span{font-size:14px;color:var(--w-soft)}
+.sl.end em{font-style:normal;margin-top:10px;display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;background:var(--w-ink);color:var(--w-bg);font-size:14px;font-weight:600}
 .dots{display:flex;gap:6px}
 .dots i{width:6px;height:6px;border-radius:3px;background:var(--w-line);transition:width .25s,background .25s}
 .dots i.on{width:18px;background:var(--w-ink)}
@@ -222,33 +269,36 @@ a.card:hover .cover img{transform:scale(1.035)}
 .w-go{display:block;width:max-content;margin:18px auto 0;font-size:14px;font-weight:500;color:var(--w-soft);border-bottom:1px solid var(--w-line)}
 .w-go:hover{color:var(--w-ink)}
 
-/* ---------- x-ray ---------- */
-.xr{padding:26px}
-.xr-h{font-family:var(--fd);font-weight:800;font-size:clamp(24px,5.6vw,36px);letter-spacing:-.03em;line-height:1.08;max-width:18ch}
-.xr-p{margin-top:10px;color:var(--muted);font-size:15px;max-width:44ch}
-.xr-bar{height:4px;border-radius:2px;background:var(--surf-2);margin:24px 0 20px;overflow:hidden}
-.xr-bar i{display:block;height:100%;width:0;background:var(--accent);transition:width .35s}
-.xr-step small{font-size:13px;color:var(--muted);font-weight:500}
-.xr-q{margin-top:6px;font-size:clamp(19px,4.4vw,24px);font-weight:500;line-height:1.35}
-.xr-opts{display:grid;gap:8px;margin-top:18px}
-.xr-opts button{min-height:54px;text-align:left;padding:12px 16px;border-radius:14px;border:1px solid var(--line-2);font-size:15px;transition:.18s}
-.xr-opts button:hover{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 8%,transparent)}
-.xr-opts button:active{transform:scale(.99)}
-.xr-res{display:grid;gap:22px;grid-template-columns:auto minmax(0,1fr);align-items:center}
-@media(max-width:560px){.xr-res{grid-template-columns:1fr}}
-.gauge{position:relative;width:150px;height:150px}
-.gauge svg{width:100%;height:100%;transform:rotate(-90deg)}
-.gauge .v{position:absolute;inset:0;display:grid;place-items:center;text-align:center}
-.gauge .v b{font-size:42px;line-height:1}
-.gauge .v small{display:block;font-size:12px;color:var(--muted);margin-top:2px}
-.xr-verdict{font-family:var(--fd);font-weight:700;font-size:22px;letter-spacing:-.02em;line-height:1.15}
-.fixes{display:grid;gap:10px;margin-top:22px;counter-reset:f}
-.fix{padding:16px 18px;border-radius:14px;background:var(--surf-2);border:1px solid var(--line)}
-.fix b{display:block;font-weight:600;font-size:15px}
-.fix span{display:block;margin-top:4px;color:var(--muted);font-size:14px;line-height:1.5}
-.xr-name{width:100%;min-height:48px;margin-top:20px;padding:0 16px;border-radius:12px;border:1px solid var(--line-2);background:var(--bg);color:var(--ink);font:inherit;font-size:15px}
-.xr-name:focus{outline:none;border-color:var(--accent)}
-.again{margin-top:14px;font-size:14px;color:var(--muted);text-decoration:underline;text-underline-offset:4px}
+/* ---------- before / after ---------- */
+.ba-g{display:grid;gap:20px;grid-template-areas:"top" "img" "side"}
+.ba-top{grid-area:top}.ba-im{grid-area:img}.ba-side{grid-area:side}
+@media(min-width:820px){.ba-g{grid-template-columns:minmax(0,440px) minmax(0,1fr);grid-template-areas:"img top" "img side";grid-template-rows:1fr 1fr;column-gap:64px;row-gap:0}.ba-top{align-self:end}.ba-side{align-self:start;padding-top:18px}}
+.ba{--p:92%;position:relative;aspect-ratio:3/4;border-radius:var(--r);overflow:hidden;background:#fff;border:1px solid var(--line-2);touch-action:pan-y;user-select:none;-webkit-user-select:none;cursor:ew-resize;isolation:isolate}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;-webkit-user-drag:none}
+.ba-b{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--p)) 0 0);background:#fff}
+.ba-t{position:absolute;top:12px;z-index:2;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:6px 10px;border-radius:999px;white-space:nowrap;transition:opacity .2s}
+.ba-t.l{left:12px;background:#111;color:#fff}
+.ba-t.r{right:12px;background:var(--accent);color:#fff}
+.ba-l{position:absolute;top:0;bottom:0;left:var(--p);width:2px;margin-left:-1px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.18),0 0 18px rgba(0,0,0,.25);z-index:3;pointer-events:none}
+.ba-h{position:absolute;top:50%;left:var(--p);z-index:4;width:48px;height:48px;margin:-24px 0 0 -24px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;box-shadow:0 6px 22px rgba(0,0,0,.35),0 0 0 4px rgba(255,255,255,.9);cursor:grab;outline:none}
+.ba-h svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.ba-h:focus-visible{box-shadow:0 0 0 4px var(--bg),0 0 0 7px var(--accent)}
+.ba.drag .ba-h{cursor:grabbing;transform:scale(1.08)}
+.ba-hint{position:absolute;left:var(--p);top:calc(50% + 34px);transform:translateX(-50%);z-index:2;font-size:12px;font-weight:500;color:#111;background:rgba(255,255,255,.92);padding:6px 12px;border-radius:999px;white-space:nowrap;transition:opacity .3s;pointer-events:none}
+.ba.used .ba-hint{opacity:0}
+.ba-top h3{font-family:var(--fd);font-weight:800;font-size:clamp(30px,7.4vw,48px);letter-spacing:-.03em;line-height:1.05}
+.ba-say{min-height:3em;color:var(--muted);font-size:16px;line-height:1.5;max-width:40ch;transition:opacity .2s}
+.ba-say b{color:var(--ink);font-weight:600}
+.ba-io{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
+.ba-io > div{padding:14px 16px;border-radius:14px;background:var(--surf-2);border:1px solid var(--line);transition:border-color .25s,background .25s}
+.ba-io small{display:block;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.ba-io span{display:block;margin-top:6px;font-size:14px;line-height:1.45}
+.ba-io > div.on{border-color:color-mix(in srgb,var(--accent) 55%,transparent);background:color-mix(in srgb,var(--accent) 9%,var(--surf-2))}
+.ba-side .acts{margin-top:20px}
+.ba-cr{display:block;margin-top:14px;font-size:12px;color:var(--muted)}
+.ba-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.ba-tabs button{min-height:36px;padding:0 14px;border-radius:999px;border:1px solid var(--line-2);font-size:13px;font-weight:500;color:var(--muted)}
+.ba-tabs button.on{background:var(--surf-2);color:var(--ink);border-color:var(--accent)}
 
 /* more pages */
 .list{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
@@ -328,7 +378,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .js .rv,.js .rv.in{opacity:1;transform:none;transition:none}
-  .dot.live,.pick.wide::after,.world.gray .w-bgl::before{animation:none}
+  .ba-hint,.dot.live,.pick.wide::after,.world.gray .w-bgl::before{animation:none}
   .w-bgl{clip-path:none!important;transition:none}
   .fill{transition:none}
   *{transition-duration:.01ms!important}
@@ -355,8 +405,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 <script>
 document.documentElement.classList.add("js");
 const ICONS = {"instagram": "M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077", "facebook": "M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z", "threads": "M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.75-1.757-.513-.586-1.308-.883-2.359-.89h-.029c-.844 0-1.992.232-2.721 1.32L7.734 7.847c.98-1.454 2.568-2.256 4.478-2.256h.044c3.194.02 5.097 1.975 5.287 5.388.108.046.216.094.321.142 1.49.7 2.58 1.761 3.154 3.07.797 1.82.871 4.79-1.548 7.158-1.85 1.81-4.094 2.628-7.277 2.65Zm1.003-11.69c-.242 0-.487.007-.739.021-1.836.103-2.98.946-2.916 2.143.067 1.256 1.452 1.839 2.784 1.767 1.224-.065 2.818-.543 3.086-3.71a10.5 10.5 0 0 0-2.215-.221z", "tiktok": "M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z", "pinterest": "M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z", "linkedin": "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z", "behance": "M16.969 16.927a2.561 2.561 0 0 0 1.901.677 2.501 2.501 0 0 0 1.531-.475c.362-.235.636-.584.779-.99h2.585a5.091 5.091 0 0 1-1.9 2.896 5.292 5.292 0 0 1-3.091.88 5.839 5.839 0 0 1-2.284-.433 4.871 4.871 0 0 1-1.723-1.211 5.657 5.657 0 0 1-1.08-1.874 7.057 7.057 0 0 1-.383-2.393c-.005-.8.129-1.595.396-2.349a5.313 5.313 0 0 1 5.088-3.604 4.87 4.87 0 0 1 2.376.563c.661.362 1.231.87 1.668 1.485a6.2 6.2 0 0 1 .943 2.133c.194.821.263 1.666.205 2.508h-7.699c-.063.79.184 1.574.688 2.187ZM6.947 4.084a8.065 8.065 0 0 1 1.928.198 4.29 4.29 0 0 1 1.49.638c.418.303.748.711.958 1.182.241.579.357 1.203.341 1.83a3.506 3.506 0 0 1-.506 1.961 3.726 3.726 0 0 1-1.503 1.287 3.588 3.588 0 0 1 2.027 1.437c.464.747.697 1.615.67 2.494a4.593 4.593 0 0 1-.423 2.032 3.945 3.945 0 0 1-1.163 1.413 5.114 5.114 0 0 1-1.683.807 7.135 7.135 0 0 1-1.928.259H0V4.084h6.947Zm-.235 12.9c.308.004.616-.029.916-.099a2.18 2.18 0 0 0 .766-.332c.228-.158.411-.371.534-.619.142-.317.208-.663.191-1.009a2.08 2.08 0 0 0-.642-1.715 2.618 2.618 0 0 0-1.696-.505h-3.54v4.279h3.471Zm13.635-5.967a2.13 2.13 0 0 0-1.654-.619 2.336 2.336 0 0 0-1.163.259 2.474 2.474 0 0 0-.738.62 2.359 2.359 0 0 0-.396.792c-.074.239-.12.485-.137.734h4.769a3.239 3.239 0 0 0-.679-1.785l-.002-.001Zm-13.813-.648a2.254 2.254 0 0 0 1.423-.433c.399-.355.607-.88.56-1.413a1.916 1.916 0 0 0-.178-.891 1.298 1.298 0 0 0-.495-.533 1.851 1.851 0 0 0-.711-.274 3.966 3.966 0 0 0-.835-.073H3.241v3.631h3.293v-.014ZM21.62 5.122h-5.976v1.527h5.976V5.122Z", "x": "M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z", "youtube": "M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z", "whatsapp": "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z", "link": "M9.5 14.5 14.5 9.5M11 7l1.5-1.5a3.5 3.5 0 1 1 5 5L16 12M13 17l-1.5 1.5a3.5 3.5 0 1 1-5-5L8 12", "mail": "M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.6.5L12 12.2 19.4 6H4.6ZM20 7.9l-7.4 6.2a1 1 0 0 1-1.2 0L4 7.9V19h16V7.9Z"};
-const MAP = {"meta":{"lon0":-128,"lon1":62,"lat0":6,"lat1":64,"step":1.5,"cols":128,"rows":53},"rows":["11111111111111111111111011001101000001111110000000011111111000000000000111100000000000000000111111110111111111011111111111111111","11111111111111111111111110000000000000110100000000001111110000000000000000000000000000000000111111100111111111111111111111111111","11111111111111111111111100000010000000001000000000001111100000000000000000000000000000000001111111001111111111111111111111111111","11111111111111111111111100000000101110000100000000000111110000000000000000000000000000000111111110001111111111111111111111111111","11111111111111111111111000000000001111000000000000000111100000000000000000000000000000000111111110001111111111111111111111111111","11111111111111111111111000000000001111101000000000000001100000000000000000000000000000000111111111001110011111111111111111111111","11111111111111111111111000000000001111100010000000000000000000000000000000000000000000000011111111000000011111111111111111111111","11111111111111111111111000000000001111110011000000000000000000000000000000000000000000000011111111000011111111111111111111111111","111111111111111111111111000000000011111111110000000000000000000000000000000000000uuu00000010011110000011111111111111111111111111","111111111111111111111111000000000001111111111000000000000000000000000000000000000uuuu0000000101110001011111111111111111111111111","1111111111111111111111111110000000011111111100000000000000000000000000000000000000uu00000000101110001111111111111111111111111111","11111111111111111111111111110000001111111111110000000000000000000000000000000000000uu0000001111000001111111111111111111111111111","111111111111111111111111111111100111111111111110000000000000000000000000000000001uu0u0000000100000011111111111111111111111111111","111111111111111111111111111111100111111111111111000000000000000000000000000000011100uu000000101011111111111111111111111111111111","11111111111111111111111111111111011111111111111110000000000000000000000000000000110uuu000111111111111111111111111111111111111111","11111111111111111111111111111110001111111111111110000000000000000000000000000001110uuuu00111111111111111111111111111111111111111","011111111111111111111111111111110111111111111110000000000000000000000000000000000000uuu01111111111111111111111111111111111111111","0111111111111111111111111111111111111111111111010000000000000000000000000000000000u000011111111111111111111111111111111111111111","01101111111111111111111111111111111111111001000111000000000000000000000000000000000000111111111111111111111111111111111111111111","0001ssssssssssssssssssss11111111111111111110000111000000000000000000000000000000000111111111111111111111111111111111111111111111","000sssssssssssssssssssssssss1111111111111110000001100000000000000000000000000000000011111111111111111111111111111111111111111111","000sssssssssssssssssssssssssss111111111ss111010000000000000000000000000000000000000001111111111111111111110110011111111001111111","000ssssssssssssssssssssssssssss11111111ss100100000000000000000000000000000000000000001111111110111111111110010111111100011111111","000ssssssssssssssssssssssssssss1111sssss0010000000000000000000000000000000000000000001111110110011111111100000001111100011111111","000ssssssssssssssssssssssssssss11ssssss00000000000000000000000000000000000000000111111110000011001111111000000000111110011111111","000sssssssssssssssssssssssssss1ssssssss00000000000000000000000000000000000000000111111110000001100011111000000000011110000111111","000ssssssssssssssssssssssssssssssssss0000000000000000000000000000000000000000000111111000000000110011111011111101111111000111111","000sssssssssssssssssssssssssssssssss00000000000000000000000000000000000000000000111111000000000010011001111111111111111001111111","0000ssssssssssssssssssssssssssssssss00000000000000000000000000000000000000000000111111000000000010001100111111111111110000111111","0000sssssssssssssssssssssssssssssss000000000000000000000000000000000000000000000111110000000000100001000111111111111111000111111","00000ssssssssssssssssssssssssssssss000000000000000000000000000000000000000000000000000111111100000000000110100111111111111111111","00000sssssssssssssssssssssssssssss0000000000000000000000000000000000000000000000001111111111100000000010000100111111111111111111","0000000ssssssssssssssssssssssssss0000000000000000000000000000000000000000000000001111111111110000000000000000l111111111111111111","000000001sssssssssssssssssssssss000000000000000000000000000000000000000000000000111111111111111000001000000001111111111111111111","000000001011111sssssssssssssssss0000000000000000000000000000000000000000000000011111111111111111000111ee00e0011aaa11111111111111","0000000000011111ssssssssss000sss0000000000000000000000000000000000000000000000011111111111111111111111eeeeeee11aaaa11k0111111111","0000000000011111111sss000000000s0000000000000000000000000000000000000000000010111111111111111111111111eeeeeeeaaaaaaaaa0011111111","00000000011011111111s0000000000s0000000000000000000000000000000000000000000001111111111111111111111111eeeeee00aaaaaaaaa001111111","0000000000010111111110000000000s0000000000000000000000000000000000000000000011111111111111111111111111eeeeeee0aaaaaaaaa100001111","000000000001001111111000000000000000000000000000000000000000000000000000000011111111111111111111111111eeeeeee00aaaaaaaaa00110000","000000000000100111111000000000000000000000000000000000000000000000000000000111111111111111111111111111eeeeeeee00aaaaaaaaa1111000","0000000000000001111110000000010011000000000000000000000000000000000000000001111111111111111111111111111111111100aaaaaaaaaaa11100","0000000000000000111110000011000000110000000000000000000000000000000000000001111111111111111111111111111111111110aaaaaaaaaaa11000","00000000000000001111110001100000000001100000000000000000000000000000000000011111111111111111111111111111111111100aaaaaaaa1110000","000000000000000000111111111000000000000000000000000000000000000000000000000111111111111111111111111111111111111100aaaa1111100000","00000000000000000000111111100000000000000000000000000000000000000000000000011111111111111111111111111111111111110011111110000000","00000000000000000000000011111100000000000000000000000000000000000000000000111111111111111111111111111111111111111011111000000000","00000000000000000000000000111100000000000000000000000000000000000000000000011111111111111111111111111111111111111101000000000000","00000000000000000000000000001100000000000000000000000000000000000000000000001111111111111111111111111111111111111110000000000000","00000000000000000000000000000100000111111101000000000000000000000000000000001111111111111111111111111111111111111110111100000000","00000000000000000000000000000010110111111111100000000000000000000000000000000111111111111111111111111111111111111111111100000000","00000000000000000000000000000000001111111111111000000000000000000000000000000011111111111111111111111111111111111111111000000000","00000000000000000000000000000000001111111111111100000000000000000000000000000001111111100111111111111111111111111111110000000000"]};
-const FALLBACK = {"version": 4, "profile": {"name": "Nour Mohamed", "monogram": "NM*", "role": "Creative Director & AI Specialist", "location": "New Cairo", "avatar": "assets/avatar.jpg", "bio": "I build brand worlds end to end — identity, AI-directed campaigns and 3D visualization — and I grow the audiences around them without paid reach.", "status": {"show": true, "live": true, "label": "Open for projects"}, "capabilities": ["Brand identity", "Generative AI direction", "3D visualization", "Arabic content"], "photo": "assets/avatar.jpg", "socials": [{"net": "instagram", "url": "https://www.instagram.com/i2mriky"}, {"net": "facebook", "url": "https://www.facebook.com/profile.php?id=61576439245217"}, {"net": "threads", "url": "https://www.threads.com/@i2mriky"}, {"net": "tiktok", "url": "https://www.tiktok.com/@i2mriky"}, {"net": "pinterest", "url": "https://pin.it/7AdtP23oT"}, {"net": "linkedin", "url": "https://www.linkedin.com/in/nour-mohamed-56a7463b9"}, {"net": "mail", "url": "mailto:2mrikydesign@gmail.com"}]}, "theme": {"preset": "copper", "accent": ""}, "settings": {"siteTitle": "Nour Mohamed — Creative Director & AI Specialist", "siteDescription": "Multidisciplinary Creative Director and AI specialist in New Cairo. Portfolios, brands, and contact in one place.", "siteUrl": "https://2mriky.github.io/bio-hub/", "ogImage": "assets/og.jpg", "showQR": true, "showVCard": true, "analyticsScript": ""}, "contact": {"email": "2mrikydesign@gmail.com", "phone": "+201555846969", "vcardCompany": "NM* Studio", "whatsapp": "+201143650240"}, "actions": [{"id": "a1", "label": "Download CV", "url": "https://nour2mriky.my.canva.site/nour-mohamed-cv", "primary": true, "enabled": true}, {"id": "a2", "label": "WhatsApp", "url": "https://wa.me/201143650240", "primary": false, "enabled": true}, {"id": "a3", "label": "Email", "url": "mailto:2mrikydesign@gmail.com", "primary": false, "enabled": true}], "portfolios": {"title": "Portfolios", "note": "Three decks, one per discipline. Open the one closest to your brief.", "enabled": true, "items": [{"id": "p1", "title": "Creative Direction", "subtitle": "Brand worlds, campaigns and art direction", "tag": "Deck 01", "cover": "assets/cover-creative-director.jpg", "url": "https://nour2mriky.my.canva.site/nour-portfolio-creative-director", "enabled": true}, {"id": "p2", "title": "AI Creative Direction", "subtitle": "Directing models, building pipelines, shipping campaigns", "tag": "Deck 02", "cover": "assets/cover-ai-creative-director.jpg", "url": "https://nour2mriky.my.canva.site/nour-moh-ai-creative-director", "enabled": true}, {"id": "p3", "title": "Content & Copywriting", "subtitle": "Scripts, brand voice and Arabic-first concepts", "tag": "Deck 03", "cover": "assets/cover-content-creative.jpg", "url": "https://nour2mriky.my.canva.site/nour-mohamed-content-creative", "enabled": true}]}, "numbers": {"enabled": true, "title": "Numbers", "period": "Last 90 days · Jun 25 – Sep 23, 2026", "note": "Organic reach on the pages I founded and run. No paid ads.", "headline": "views and impressions across five channels, organic", "rows": [{"id": "r1", "brand": "m3anyi", "platform": "pinterest", "value": "2.2M", "raw": 2200000, "label": "impressions", "span": "90 days", "growth": "", "details": [["Engagements", "96.6K"], ["Saves", "11.5K"], ["Audience", "680.4K"]], "enabled": true}, {"id": "r2", "brand": "m3anyi", "platform": "tiktok", "value": "2.1M", "raw": 2100000, "label": "post views", "span": "60 days", "growth": "+55.5%", "details": [["Likes", "53.9K"], ["Shares", "6.7K"], ["Profile views", "21.7K"]], "enabled": true}, {"id": "r3", "brand": "gray", "platform": "pinterest", "value": "1.7M", "raw": 1700000, "label": "impressions", "span": "90 days", "growth": "+66%", "details": [["Engagements", "69.4K"], ["Saves", "11.2K (+170%)"], ["Audience", "998.3K"]], "enabled": true}, {"id": "r4", "brand": "m3anyi", "platform": "instagram", "value": "934.6K", "raw": 934557, "label": "views", "span": "90 days", "growth": "", "details": [["Interactions", "90.7K"], ["New followers", "+5,680"], ["From non-followers", "60.8%"]], "enabled": true}, {"id": "r5", "brand": "gray", "platform": "instagram", "value": "37.1K", "raw": 37089, "label": "views", "span": "90 days", "growth": "", "details": [["Interactions", "7,058"], ["Viewers", "6,001"]], "enabled": true}], "proofs": [{"id": "p1", "value": "1.68M", "label": "people reached on Pinterest across both pages", "enabled": true}, {"id": "p2", "value": "325K", "label": "likes, saves, shares and comments", "enabled": true}, {"id": "p3", "value": "+5.7K", "label": "new Instagram followers in 90 days", "enabled": true}, {"id": "p4", "value": "60.8%", "label": "of M3anyi's Instagram views come from non-followers", "enabled": true}], "results": [{"id": "c1", "value": "125+", "label": "international architecture projects directed at DIA", "enabled": true}, {"id": "c2", "value": "100+", "label": "daily orders at Chiky Pop, seven days from concept to launch", "enabled": true}]}, "map": {"enabled": true, "title": "Worldwide", "headline": "Six countries, one studio.", "note": "Big brands in the Egyptian and global market, agencies, and independent founders.", "home": "eg", "places": [{"id": "eg", "name": "Egypt", "city": "Cairo", "lon": 31.24, "lat": 30.04, "enabled": true}, {"id": "uk", "name": "United Kingdom", "city": "London", "lon": -0.13, "lat": 51.5, "enabled": true}, {"id": "us", "name": "United States", "city": "New York", "lon": -74.0, "lat": 40.7, "enabled": true}, {"id": "lb", "name": "Lebanon", "city": "Beirut", "lon": 35.5, "lat": 33.9, "enabled": true}, {"id": "kw", "name": "Kuwait", "city": "Kuwait City", "lon": 47.98, "lat": 29.37, "enabled": true}, {"id": "sa", "name": "Saudi Arabia", "city": "Riyadh", "lon": 46.7, "lat": 24.7, "enabled": true}]}, "worlds": {"enabled": true, "items": [{"id": "m3anyi", "skin": "m3anyi", "name": "M3anyi", "arabic": "معاني", "role": "Founder · since 2017", "tagline": "Arabic quotes turned into illustration. Two lines, one twist, seen millions of times a quarter.", "logo": "assets/logo-m3anyi.png", "url": "https://www.instagram.com/m3anyi_egy", "socials": [{"net": "instagram", "url": "https://www.instagram.com/m3anyi_egy"}, {"net": "facebook", "url": "https://www.facebook.com/m3anyiegy"}, {"net": "threads", "url": "https://www.threads.com/@m3anyi_egy"}, {"net": "tiktok", "url": "https://www.tiktok.com/@m3anyi_egy"}, {"net": "pinterest", "url": "https://pin.it/7oMjMXNxT"}, {"net": "linkedin", "url": "https://www.linkedin.com/in/m3anyi-egy-a40130424"}, {"net": "mail", "url": "mailto:m3anyi.egy@gmail.com"}], "slides": [{"id": "s1", "kind": "image", "image": "assets/w-m3anyi-1.jpg", "title": "أشعر وكأن الجميع يتقدمون، بينما أنا واقف في مكاني", "meta": "269.8K impressions · Pinterest", "url": "https://pin.it/7oMjMXNxT", "enabled": true}, {"id": "s2", "kind": "stat", "value": "2.2M", "title": "Pinterest impressions", "meta": "Last 90 days", "enabled": true}, {"id": "s3", "kind": "image", "image": "assets/w-m3anyi-2.jpg", "title": "أدركت أخيراً أنني يجب أن أمضي قدماً", "meta": "124.4K impressions · Pinterest", "url": "https://pin.it/7oMjMXNxT", "enabled": true}, {"id": "s4", "kind": "stat", "value": "2.1M", "title": "TikTok post views", "meta": "Last 60 days", "enabled": true}, {"id": "s5", "kind": "stat", "value": "934.6K", "title": "Instagram views", "meta": "Last 90 days", "enabled": true}]}, {"id": "gray", "skin": "gray", "name": "Gray Museum", "arabic": "", "role": "Founder · AI exhibition", "tagline": "A conceptual AI exhibition. Cursed high-end, told as short fiction.", "logo": "assets/logo-gray.jpg", "url": "https://www.instagram.com/gray.museum", "socials": [{"net": "instagram", "url": "https://www.instagram.com/gray.museum"}, {"net": "facebook", "url": "https://www.facebook.com/Gray.museum.gm"}, {"net": "tiktok", "url": "https://www.tiktok.com/@gray.museum"}, {"net": "pinterest", "url": "https://pin.it/8oJEGWyJO"}], "slides": [{"id": "g1", "kind": "image", "image": "assets/w-gray-36.jpg", "title": "Concept 36", "meta": "259.4K impressions", "url": "https://pin.it/8oJEGWyJO", "enabled": true}, {"id": "g2", "kind": "image", "image": "assets/w-gray-39.jpg", "title": "Concept 39", "meta": "157.9K impressions", "url": "https://pin.it/8oJEGWyJO", "enabled": true}, {"id": "g3", "kind": "image", "image": "assets/w-gray-knight.jpg", "title": "From the collection", "meta": "145.6K impressions", "url": "https://pin.it/8oJEGWyJO", "enabled": true}, {"id": "g4", "kind": "stat", "value": "1.7M", "title": "Pinterest impressions", "meta": "Last 90 days · +66%", "enabled": true}]}]}, "xray": {"enabled": true, "title": "Brand X-ray", "headline": "Is your brand working as hard as your team?", "note": "Six taps, sixty seconds. You get a score and the three fixes I would start with."}, "drops": {"enabled": false, "title": "Latest", "note": "Fresh work, straight from the feed.", "items": [{"id": "d1", "type": "post", "title": "Example drop", "caption": "Replace with a real post or edit.", "media": "", "poster": "", "url": "https://www.instagram.com/i2mriky", "enabled": false}]}, "otherPages": {"title": "Also running", "note": "Side projects and stores.", "enabled": true, "items": [{"id": "o1", "name": "Mobbit", "net": "instagram", "url": "https://www.instagram.com/mobbit.store", "enabled": true}, {"id": "o2", "name": "What if World — WIW", "net": "instagram", "url": "https://www.instagram.com/whatifworld.wiw", "enabled": true}, {"id": "o3", "name": "Ghost Labs", "net": "instagram", "url": "https://www.instagram.com/ghostlabs.ai", "enabled": true}, {"id": "o4", "name": "Kshaf — كشاف", "net": "instagram", "url": "https://www.instagram.com/kshaf.store", "enabled": true}, {"id": "o5", "name": "Kalam w Khalas — كلام وخلاص", "net": "instagram", "url": "https://www.instagram.com/kalamwkhalas", "enabled": true}]}, "journal": {"title": "Journal", "note": "Notes on craft", "enabled": false, "emptyLine": "First note lands here soon.", "items": []}, "arcade": {"enabled": true, "title": "Play", "note": "Built for fun", "headline": "Games I designed. Two play right here.", "sub": "Drag, or use the arrow keys.", "external": {"label": "El Partyta", "tagline": "Interactive party game", "url": "https://i2mriky.github.io/El-Partyta-Copy-Semi-Final/", "enabled": true}}, "closing": {"title": "Have a brief?", "note": "Based in New Cairo, working with teams anywhere. Email or WhatsApp, whichever is faster for you."}};
+const GLOBE = {"lat1":80,"step":1.7,"rows":["0000000001101111000010000000100000000","0000000001111111111000010000000001000000000","0000000010011101111110000000000001000011000000000","0000000000100110000111110000000000001000011110000000000","0000000001100111110001111110000000000000001011110111000000000","0000000000101100011100001111100000000000000100111111111111001100000","000sssss00100111010001100111111100000000011000000011111111111111111110010","100ssssss1111100100110011000111100000000000111110111111101111111111111111111111","110ssssss1111111111111100101001111000000000000111101111111101111111111111111111111111","010s0sssss11111111111111011110001110000110000000110111111111111111111111111111111111111111","0000ssssss11111111111111000001100001100000000000001110111111111111111111111111111111111111111111","0000sssssss1111111111111000001100000011000000000000011110111111111111111111111111111111111111110111100","00000sss000011111111111110000011101000000000000000000001111000111111111111111111111111111111111111100100000","0000000ss00000011111111111100000111110000000000000000000000011101111111111111111111111111111111111111000001000000","000000s00000000011111111111111000011111000000000000000000u000001001111111111111111111111111111111111111100000011100000","00000000000000000111111111111111101111111100000000000000000uu00000011111111111111111111111111111111111111111000000010000000","000000000000000000111111111111111110111111110000000000000000010uu011111111111111111111111111111111111111111111111110000000000s00","00000000000000000001111111111111111111111111110000000000000000000uu111111111111111111111111111111111111111111111111111010000100000000","000000000000000000001011111111111111111111100001000000000000000000001111111111111111111111111111111111111111111111111111111100000000000000","0000000000000000000000sssssssssssssss1111111110011000000000000000000001111111111111111111111111111111111111111111111111111111110000000000000000","00000000000000000000000ssssssssssssssss111111s10100000000000000000000000011111111111110101111001111111111111111111111111111111111101000000000000000","000000000000000000000000sssssssssssssssss111sss010000000000000000000000000011111100111110000111101111111111111111111111111111111111110001000000000000000","000000000000000000000000ssssssssssssssssss11sss0000000000000000000000000001111100001001111000000111001111111111111111111111111111111111000010000000000000000","0000000000000000000000000sssssssssssssssssssssss0000000000000000000000000000111100000011011101111111110011111111111111111111111111111111110000100000000000000000","00000000000000000000000000ssssssssssssssssssssss00000000000000000000000000000011110000000101001111111111001111111111111111111111111111110101000000100000000000000000","000000000000000000000000000sssssssssssssssssssss000000000000000000000000000000001110000000100010011111111110011111111111111111111111111111111001000001000000000000000000","0000000000000000000000000000ssssssssssssssssssssss00000000000000000000000000000000000011111000000000000111111111111111111111111111111111111111100001000110000000000000000000","000000000000000000000000000000ssssssssssssssssssss00000000000000000000000000000000001111111100000000000001111111111111111111111111111111111111111100000111000000000000000000000","000000000000000000000000000000011ssssssssssssssss0000000000000000000000000000000000001111111111110001000000111111111111111111111111111111111111111111100001000000000000000000000000","00000000000000000000000000000000101111ssssssssssss000000000000000000000000000000000000111111111111110111eeee11aaa111111111111111111111111111111111111111000000000000000000000000000000","00000000000000000000000000000000000111111sss000000s000000000000000000000000000000000010111111111111111111eeee0aaaaaaa00111111111111111111111111111111111111000000000000000000000000000000","000000000000000000000000000000000010111111s00000000s0000000000000000000000000000000000011111111111111111111eeeee0aaaaaaa00111111111111111111111111111111111110000000000000000000000000000000","0000000000000000000000000000000000001011111100000000s00000000000000000000000000000000000111111111111111111111eeeee0aaaaaaa100011111111111111111111111111111111100000000000000000000000000000000","00000000000000000000000000000000000001011111000000000000000000000000000000000000000000001111111111111111111111eeeeee00aaaaaaa111000001111111111111111111111111110010000000000000000000000000000000","0000000000000000000000000000000000000000111110000000011000000000000000000000000000000000011111111111111111111111eeeeee0aaaaaaaaa11100000101111111110111111111111000000000000000000000000000000000000","0000000000000000000000000000000000000000011111000110000001000000000000000000000000000000001111111111111111111111111111100aaaaaaaa110000000011111111000111111110100000000000000000000000000000000000000","000000000000000000000000000000000000000000111110011000000001110000000000000000000000000000011111111111111111111111111111100aaaaa111100000000011111100000111111101000000000000000000000000000000000000000","0000000000000000000000000000000000000000000001111110000000000000000000000000000000000000000011111111111111111111111111111110011a11110000000000111110000000101111100000000100000000000000000000000000000000","000000000000000000000000000000000000000000000000011111000000000000000000000000000000000000001111111111111111111111111111111100111110000000000000111000000000011111110000001000000000000000000000000000000000","00000000000000000000000000000000000000000000000000011110000000000000000000000000000000000000001111111111111111111111111111111110110000000000000000111000000000011111110000000100000000000000000000000000000000","000000000000000000000000000000000000000000000000000000100000001000000000000000000000000000000011111111111111111111111111111111110000000000000000000110000000000010011100000000010000000000000000000000000000000","0000000000000000000000000000000000000000000000000000001100001111110110000000000000000000000000001111111111111111111111111111111111111000000000000000110000000000000011000000000100000000000000000000000000000000","00000000000000000000000000000000000000000000000000000000110111111111110000000000000000000000000001111111111111111111111111111111111111000000000000000101000000000010000000000000010000000000000000000000000000000","000000000000000000000000000000000000000000000000000000000000111111111110000000000000000000000000001111111111111111111111111111111111110000000000000000001000000000010000000000000100000000000000000000000000000000","0000000000000000000000000000000000000000000000000000000000001111111111111110000000000000000000000000110110000111111111111111111111111100000000000000000000000000011011000000011000000000000000000000000000000000000","0000000000000000000000000000000000000000000000000000000000001111111111111111000000000000000000000000000000000001111111111111111111111000000000000000000000000000001101000000110000000000000000000000000000000000000","00000000000000000000000000000000000000000000000000000000000011111111111111110000000000000000000000000000000000001111111111111111111100000000000000000000000000000000110000111110000000000000000000000000000000000000","00000000000000000000000000000000000000000000000000000000000111111111111111111000000000000000000000000000000000011111111111111111111000000000000000000000000000000000011000111110000000000000000000000000000000000000","00000000000000000000000000000000000000000000000000000000001111111111111111111111000000000000000000000000000000001111111111111111111000000000000000000000000000000000011100011110110000001000000000000000000000000000","0000000000000000000000000000000000000000000000000000000000011111111111111111111111100000000000000000000000000000111111111111111110000000000000000000000000000000000001110001010110011101111110000010000000000000000","0000000000000000000000000000000000000000000000000000000000111111111111111111111111110000000000000000000000000000011111111111111100000000000000000000000000000000000000110000000001000000001111100010000000000000000","000000000000000000000000000000000000000000000000000000000011111111111111111111111111100000000000000000000000000011111111111111110000000000000000000000000000000000000001000000000000000000111110000000000000000000","00000000000000000000000000000000000000000000000000000000000111111111111111111111111100000000000000000000000000001111111111111110000000000000000000000000000000000000000000111110100000000010011000000000000000000","0000000000000000000000000000000000000000000000000000000000011111111111111111111111100000000000000000000000000000111111111111111000000000000000000000000000000000000000000000010100000000000001100000000000000000","000000000000000000000000000000000000000000000000000000000001111111111111111111111100000000000000000000000000000111111111111111100000000000000000000000000000000000000000000000000010000001000000000000000000000","00000000000000000000000000000000000000000000000000000000000111111111111111111111100000000000000000000000000000111111111111111100000100000000000000000000000000000000000000000000011110001000000000000000000000","000000000000000000000000000000000000000000000000000000000001111111111111111111110000000000000000000000000000011111111111111110000110000000000000000000000000000000000000000001111110001100000000000010000000","00000000000000000000000000000000000000000000000000000000000001111111111111111110000000000000000000000000000011111111111111110011100000000000000000000000000000000000000000011111111101110000000000000000000","000000000000000000000000000000000000000000000000000000000000011111111111111111000000000000000000000000000001111111111111100001110000000000000000000000000000000000000000111111111111110000000000000000000","0000000000000000000000000000000000000000000000000000000000000111111111111111100000000000000000000000000000011111111111100000110000000000000000000000000000000000000001111111111111111100000000000000000","0000000000000000000000000000000000000000000000000000000000001111111111111111000000000000000000000000000000111111111110000011000000000000000000000000000000000000111111111111111111100000000010000000","00000000000000000000000000000000000000000000000000000000000111111111111110000000000000000000000000000000011111111111000001100000000000000000000000000000000000111111111111111111111000000000000000","00000000000000000000000000000000000000000000000000000000001111111111110000000000000000000000000000000001111111111000000100000000000000000000000000000000000011111111111111111111100000000000000","000000000000000000000000000000000000000000000000000000000111111111111000000000000000000000000000000000011111111100000000000000000000000000000000000000000011111111111111111111100000000000000","000000000000000000000000000000000000000000000000000000001111111111110000000000000000000000000000000000111111110000000000000000000000000000000000000000001111111111111111111100000000000000","00000000000000000000000000000000000000000000000000000001111111111100000000000000000000000000000000001111110000000000000000000000000000000000000000000111111111111111111100000000000000","00000000000000000000000000000000000000000000000000000011111111110000000000000000000000000000000000011111000000000000000000000000000000000000000000011111100011111111100000000000000","00000000000000000000000000000000000000000000000000000111111111000000000000000000000000000000000001111000000000000000000000000000000000000000000011100000001111111100000000000000","0000000000000000000000000000000000000000000000000001111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111100000000000000","000000000000000000000000000000000000000000000000001111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111100000000000000","000000000000000000000000000000000000000000000000011111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110","00000000000000000000000000000000000000000000000111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","000000000000000000000000000000000000000000000011110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000001000","00000000000000000000000000000000000000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000","0000000000000000000000000000000000000000000111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000","00000000000000000000000000000000000000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","000000000000000000000000000000000000000011100000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000","00000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","0000000000000000000000000000000000000110000000000100000000000000000000000000000000000000000000000000000000000000000000000000"]};
+const FALLBACK = {"version": 6, "profile": {"name": "Nour Mohamed", "monogram": "NM*", "role": "Creative Director & AI Specialist", "location": "New Cairo", "avatar": "assets/avatar.jpg", "bio": "I build brand worlds end to end — identity, AI-directed campaigns and 3D visualization — and I grow the audiences around them without paid reach.", "status": {"show": true, "live": true, "label": "Open for projects"}, "capabilities": ["Brand identity", "Generative AI direction", "3D visualization", "Arabic content"], "photo": "assets/avatar.jpg", "socials": [{"net": "instagram", "url": "https://www.instagram.com/i2mriky"}, {"net": "facebook", "url": "https://www.facebook.com/profile.php?id=61576439245217"}, {"net": "threads", "url": "https://www.threads.com/@i2mriky"}, {"net": "tiktok", "url": "https://www.tiktok.com/@i2mriky"}, {"net": "pinterest", "url": "https://pin.it/7AdtP23oT"}, {"net": "linkedin", "url": "https://www.linkedin.com/in/nour-mohamed-56a7463b9"}, {"net": "mail", "url": "mailto:2mrikydesign@gmail.com"}], "facts": ["12+ years", "150+ projects", "6 countries"]}, "theme": {"preset": "copper", "accent": ""}, "settings": {"siteTitle": "Nour Mohamed — Creative Director & AI Specialist", "siteDescription": "Multidisciplinary Creative Director and AI specialist in New Cairo. Portfolios, brands, and contact in one place.", "siteUrl": "https://i2mriky.github.io/bio-hub/", "ogImage": "assets/og.jpg", "showQR": true, "showVCard": true, "analyticsScript": ""}, "contact": {"email": "2mrikydesign@gmail.com", "phone": "+201555846969", "vcardCompany": "NM* Studio", "whatsapp": "+201143650240"}, "actions": [{"id": "a1", "label": "Download CV", "url": "https://nour2mriky.my.canva.site/nour-mohamed-cv", "primary": true, "enabled": true}, {"id": "a2", "label": "WhatsApp", "url": "https://wa.me/201143650240", "primary": false, "enabled": true}, {"id": "a3", "label": "Email", "url": "mailto:2mrikydesign@gmail.com", "primary": false, "enabled": true}], "portfolios": {"title": "Portfolios", "note": "Three decks, one per discipline. Open the one closest to your brief.", "enabled": true, "items": [{"id": "p1", "title": "Creative Direction", "subtitle": "Brand worlds, campaigns and art direction", "tag": "Deck 01", "cover": "assets/cover-creative-director.jpg", "url": "https://nour2mriky.my.canva.site/nour-portfolio-creative-director", "enabled": true}, {"id": "p2", "title": "AI Creative Direction", "subtitle": "Directing models, building pipelines, shipping campaigns", "tag": "Deck 02", "cover": "assets/cover-ai-creative-director.jpg", "url": "https://nour2mriky.my.canva.site/nour-moh-ai-creative-director", "enabled": true}, {"id": "p3", "title": "Content & Copywriting", "subtitle": "Scripts, brand voice and Arabic-first concepts", "tag": "Deck 03", "cover": "assets/cover-content-creative.jpg", "url": "https://nour2mriky.my.canva.site/nour-mohamed-content-creative", "enabled": true}]}, "results": {"enabled": true, "title": "Results", "note": "What the work did for the businesses behind it.", "items": [{"id": "x1", "client": "Design-itude Associates", "sector": "Architecture · UK market", "value": "125+", "label": "international projects directed", "extra": "60%+ faster concept stage after bringing generative AI into the 3D render pipeline", "enabled": true}, {"id": "x2", "client": "Chiky Pop", "sector": "F&B brand launch", "value": "7 days", "label": "from concept to launch", "extra": "Identity, packaging and UI, then 100+ daily orders at peak", "enabled": true}, {"id": "x5", "client": "Kshaf", "sector": "E-commerce · my own store", "value": "5 days", "label": "from the name to a live store", "extra": "Naming, identity, icons, banners and the full catalog. Still running a year later.", "enabled": true}, {"id": "x3", "client": "AI Render Engine", "sector": "Tool I built", "value": "10 sec", "label": "per 2K photoreal render", "extra": "Replaced a V-Ray workflow for interior and product visuals", "enabled": true}, {"id": "x4", "client": "Campaign Generator", "sector": "Tool I built", "value": "1 → 6", "label": "one product photo in, a six-image campaign out", "extra": "", "enabled": true}]}, "tools": {"enabled": true, "title": "Built in-house", "note": "Tools I made when the right one didn't exist.", "items": [{"id": "t1", "name": "Cut Bulk", "kind": "Web tool", "icon": "cut", "enabled": true}, {"id": "t2", "name": "TRIM", "kind": "Web tool", "icon": "trim", "enabled": true}, {"id": "t3", "name": "World Gen", "kind": "AI engine", "icon": "world", "enabled": true}, {"id": "t4", "name": "Render Engine", "kind": "AI engine", "icon": "render", "enabled": true}, {"id": "t5", "name": "Harvest", "kind": "Chrome extension", "icon": "harvest", "enabled": true}, {"id": "t6", "name": "PiP Anything", "kind": "Chrome extension", "icon": "pip", "enabled": true}]}, "beforeAfter": {"enabled": true, "nav": "Before/After", "kicker": "Before / After", "title": "Same product. New story.", "beforeLabel": "Before NM*", "afterLabel": "After NM*", "hint": "Drag the circle", "sendLabel": "You send", "getLabel": "You get", "says": {"b": "This is what most brands hand me: *one product on white.* Clean, correct, and nobody stops scrolling for it.", "m": "Keep dragging. *The can doesn't move.* Same angle, same label. Everything around it is the work.", "a": "*A campaign people stop for.* The idea, the scene, the line, the light. Same product, new story."}, "cta": "Send me your product photo", "ctaMsg": "Hi Nour, I saw the before/after on your page. I have a product photo and I want the after.", "items": [{"brand": "NIVEA MEN", "before": "assets/ba-nivea-before.jpg", "after": "assets/ba-nivea-after.jpg", "send": "One product photo on a white background", "get": "The idea, the scene, an Arabic headline and the final visual", "credit": "NIVEA MEN Black & White · Concept work, unofficial", "id": "ba1", "enabled": true}]}, "numbers": {"enabled": true, "title": "Numbers", "period": "Last 90 days · Jun 25 – Sep 23, 2026", "note": "Organic reach on the pages I founded and run. No paid ads.", "headline": "views and impressions across four channels, organic", "rows": [{"id": "r1", "brand": "m3anyi", "platform": "pinterest", "value": "2.2M", "raw": 2200000, "label": "impressions", "span": "90 days", "growth": "", "details": [["Engagements", "96.6K"], ["Saves", "11.5K"], ["Audience", "680.4K"]], "enabled": true}, {"id": "r2", "brand": "m3anyi", "platform": "tiktok", "value": "2.1M", "raw": 2100000, "label": "post views", "span": "60 days", "growth": "+55.5%", "details": [["Likes", "53.9K"], ["Shares", "6.7K"], ["Profile views", "21.7K"]], "enabled": true}, {"id": "r3", "brand": "gray", "platform": "pinterest", "value": "1.7M", "raw": 1700000, "label": "impressions", "span": "90 days", "growth": "+66%", "details": [["Engagements", "69.4K"], ["Saves", "11.2K (+170%)"], ["Audience", "998.3K"]], "enabled": true}, {"id": "r4", "brand": "m3anyi", "platform": "instagram", "value": "934.6K", "raw": 934557, "label": "views", "span": "90 days", "growth": "", "details": [["Interactions", "90.7K"], ["New followers", "+5,680"], ["From non-followers", "60.8%"]], "enabled": true}], "proofs": [{"id": "p1", "value": "1.68M", "label": "people reached on Pinterest across both pages", "enabled": true}, {"id": "p2", "value": "325K", "label": "likes, saves, shares and comments", "enabled": true}, {"id": "p3", "value": "+5.7K", "label": "new Instagram followers in 90 days", "enabled": true}, {"id": "p4", "value": "60.8%", "label": "of M3anyi's Instagram views come from non-followers", "enabled": true}], "trend": {"enabled": true, "title": "Daily views", "series": [{"id": "ig", "label": "M3anyi · Instagram", "start": "2026-06-25", "values": [9547, 10032, 8771, 9255, 8383, 9935, 12456, 13135, 7899, 5183, 4408, 4698, 4311, 9450, 11390, 7608, 9547, 10419, 6735, 8286, 8965, 8480, 7025, 4892, 4117, 6347, 7510, 7025, 5183, 6153, 7510, 5183, 5183, 5086, 5377, 6347, 6928, 6638, 5862, 5183, 7122, 27196, 36117, 35437, 28649, 18565, 12649, 11777, 11583, 17692, 20408, 21086, 17498, 13910, 13038, 13717, 14686, 12553, 12262, 11583, 11001, 11486, 10226, 7219, 7413, 9159, 10226, 14686, 17886, 15171, 14589, 16820, 14298, 10904, 9450, 8092, 7316, 7122, 8092, 7025, 7608, 7413, 6638, 6347, 6347, 6056, 5086, 6735, 5959, 4214]}, {"id": "tk", "label": "M3anyi · TikTok", "start": "2026-07-25", "values": [10248, 13451, 8647, 6244, 5444, 6645, 13451, 47486, 111950, 54693, 48687, 72712, 156395, 159197, 116355, 87526, 49889, 31470, 30269, 24663, 31470, 32671, 37876, 35473, 67906, 67105, 32270, 24262, 18257, 22261, 27867, 26265, 20259, 15053, 18257, 24262, 17055, 17856, 22661, 27066, 29868, 41079, 31470, 34273, 32671, 34673, 53492, 27066, 23863, 23863, 24262, 19458, 16255, 15053, 11450, 9447, 5844, 9048, 7846, 7446]}]}}, "map": {"enabled": true, "title": "Worldwide", "headline": "Six countries, one studio.", "note": "Big brands in the Egyptian and global market, agencies, and independent founders.", "home": "eg", "places": [{"id": "eg", "name": "Egypt", "city": "Cairo", "lon": 31.24, "lat": 30.04, "enabled": true}, {"id": "uk", "name": "United Kingdom", "city": "London", "lon": -0.13, "lat": 51.5, "enabled": true}, {"id": "us", "name": "United States", "city": "New York", "lon": -74.0, "lat": 40.7, "enabled": true}, {"id": "lb", "name": "Lebanon", "city": "Beirut", "lon": 35.5, "lat": 33.9, "enabled": true}, {"id": "kw", "name": "Kuwait", "city": "Kuwait City", "lon": 47.98, "lat": 29.37, "enabled": true}, {"id": "sa", "name": "Saudi Arabia", "city": "Riyadh", "lon": 46.7, "lat": 24.7, "enabled": true}]}, "worlds": {"enabled": true, "items": [{"id": "m3anyi", "skin": "m3anyi", "name": "M3anyi", "arabic": "معاني", "role": "Founder · since 2017", "tagline": "Arabic quotes turned into illustration. Two lines, one twist, seen millions of times a quarter.", "logo": "assets/logo-m3anyi.png", "url": "https://www.instagram.com/m3anyi_egy", "socials": [{"net": "instagram", "url": "https://www.instagram.com/m3anyi_egy"}, {"net": "facebook", "url": "https://www.facebook.com/m3anyiegy"}, {"net": "threads", "url": "https://www.threads.com/@m3anyi_egy"}, {"net": "tiktok", "url": "https://www.tiktok.com/@m3anyi_egy"}, {"net": "pinterest", "url": "https://pin.it/7oMjMXNxT"}, {"net": "linkedin", "url": "https://www.linkedin.com/in/m3anyi-egy-a40130424"}, {"net": "mail", "url": "mailto:m3anyi.egy@gmail.com"}], "images": {"prefix": "w-m3anyi-", "ext": "jpg"}, "facts": [{"id": "f1", "value": "2017", "title": "Founded", "meta": "Nine years of two-line Arabic quotes", "enabled": true}, {"id": "f2", "value": "2.2M", "title": "Pinterest impressions", "meta": "Last 90 days", "enabled": true}, {"id": "f3", "value": "2.1M", "title": "TikTok views", "meta": "Last 60 days", "enabled": true}, {"id": "f4", "value": "934.6K", "title": "Instagram views", "meta": "Last 90 days", "enabled": true}, {"id": "f5", "value": "85%", "title": "shares to likes", "meta": "On the top post. 5–15% is normal.", "enabled": true}], "endCard": {"handle": "@m3anyi_egy", "cta": "Open on Instagram", "url": "https://www.instagram.com/m3anyi_egy"}}, {"id": "gray", "skin": "gray", "name": "Gray Museum", "arabic": "", "role": "Founder · AI exhibition", "tagline": "A conceptual AI exhibition. Cursed high-end, told as short fiction.", "logo": "assets/logo-gray.jpg", "url": "https://www.instagram.com/gray.museum", "socials": [{"net": "instagram", "url": "https://www.instagram.com/gray.museum"}, {"net": "facebook", "url": "https://www.facebook.com/Gray.museum.gm"}, {"net": "tiktok", "url": "https://www.tiktok.com/@gray.museum"}, {"net": "pinterest", "url": "https://pin.it/8oJEGWyJO"}], "images": {"prefix": "w-gray-", "ext": "jpg"}, "facts": [{"id": "g1", "value": "1.7M", "title": "Pinterest impressions", "meta": "Last 90 days · +66%", "enabled": true}, {"id": "g2", "value": "998K", "title": "people reached", "meta": "On Pinterest, last 90 days", "enabled": true}, {"id": "g3", "value": "+170%", "title": "saves", "meta": "Versus the 90 days before", "enabled": true}], "endCard": {"handle": "@gray.museum", "cta": "Enter the museum", "url": "https://www.instagram.com/gray.museum"}}], "factEvery": 3}, "drops": {"enabled": false, "title": "Latest", "note": "Fresh work, straight from the feed.", "items": [{"id": "d1", "type": "post", "title": "Example drop", "caption": "Replace with a real post or edit.", "media": "", "poster": "", "url": "https://www.instagram.com/i2mriky", "enabled": false}]}, "otherPages": {"title": "Also running", "note": "Side projects and stores.", "enabled": true, "items": [{"id": "o1", "name": "Mobbit", "net": "instagram", "url": "https://www.instagram.com/mobbit.store", "enabled": true}, {"id": "o2", "name": "What if World — WIW", "net": "instagram", "url": "https://www.instagram.com/whatifworld.wiw", "enabled": true}, {"id": "o3", "name": "Ghost Labs", "net": "instagram", "url": "https://www.instagram.com/ghostlabs.ai", "enabled": true}, {"id": "o4", "name": "Kshaf — كشاف", "net": "instagram", "url": "https://www.instagram.com/kshaf.store", "enabled": true}, {"id": "o5", "name": "Kalam w Khalas — كلام وخلاص", "net": "instagram", "url": "https://www.instagram.com/kalamwkhalas", "enabled": true}]}, "journal": {"title": "Journal", "note": "Notes on craft", "enabled": false, "emptyLine": "First note lands here soon.", "items": []}, "arcade": {"enabled": true, "title": "Play", "note": "Built for fun", "headline": "Games I designed. Two play right here.", "sub": "Drag, or use the arrow keys.", "external": {"label": "El Partyta", "tagline": "Interactive party game", "url": "https://i2mriky.github.io/El-Partyta-Copy-Semi-Final/", "enabled": true}}, "closing": {"title": "Have a brief?", "note": "Based in New Cairo, working with teams anywhere. Email or WhatsApp, whichever is faster for you."}};
 
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const arc = s => { const x = String(s || ""), a = (x.match(/[؀-ۿ]/g) || []).length, l = (x.match(/[A-Za-z]/g) || []).length; return a > l ? ' dir="rtl"' : ""; };
@@ -364,6 +414,17 @@ const ext = u => /^https?:/.test(u || "") ? ' target="_blank" rel="noopener"' : 
 const on = (v, d = true) => v === undefined ? d : v !== false;
 const live = a => (a || []).filter(i => on(i.enabled));
 const icon = n => ICONS[n] ? `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${ICONS[n]}"/></svg>` : "";
+const TOOLI = (() => { const s = p => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</svg>`; return {
+  cut: s('<circle cx="6" cy="7" r="3"/><circle cx="6" cy="17" r="3"/><path d="M8.6 8.6 20 18M8.6 15.4 20 6"/>'),
+  trim: s('<rect x="2.5" y="6" width="19" height="12" rx="1.5"/><path d="M9 3v18M15 3v18" stroke-dasharray="2 2"/>'),
+  squeeze: s('<path d="M4 4l5 5M20 4l-5 5M4 20l5-5M20 20l-5-5"/><rect x="9" y="9" width="6" height="6" rx="1"/>'),
+  world: s('<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>'),
+  render: s('<path d="M12 2.5 21 7.5v9L12 21.5 3 16.5v-9z"/><path d="M3 7.5 12 12.5l9-5M12 12.5v9"/>'),
+  harvest: s('<path d="M12 3v12M7 10l5 5 5-5"/><path d="M4 17v2.5h16V17"/>'),
+  pip: s('<rect x="2.5" y="4.5" width="19" height="15" rx="2"/><rect x="12" y="11.5" width="7" height="5" rx="1"/>'),
+  dna: s('<path d="M7 3c0 6 10 6 10 12s-10 6-10 6M17 3c0 6-10 6-10 12"/><path d="M8.5 7h7M8.5 17h7"/>'),
+  spark: s('<path d="M12 3v5M12 16v5M3 12h5M16 12h5M6 6l3 3M15 15l3 3M18 6l-3 3M9 15l-3 3"/>')
+}; })();
 const ARROW = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>';
 const CHEV = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>';
 const PREV = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>';
@@ -375,21 +436,6 @@ const compact = v => v >= 1e6 ? (v / 1e6).toFixed(2).replace(/\.?0+$/, "") + "M"
 const splitUnit = s => { const m = String(s).match(/^([^A-Za-z%]*)([A-Za-z%]*)$/); return m ? `${m[1]}<span class="u">${m[2]}</span>` : esc(s); };
 
 /* ---------- Brand X-ray content ---------- */
-const XQ = [
-  { q: "Could a stranger tell what you sell from your first nine posts?", a: ["Instantly", "If they read the captions", "Probably not"],
-    fix: ["Make the grid a promise, not a catalog", "Rebuild the first nine posts around one line a customer would repeat. Products come second; the reason to care comes first."] },
-  { q: "Do your ads, posts and packaging look like one brand?", a: ["Always", "Most of the time", "Every piece looks different"],
-    fix: ["Lock a visual system", "Two colours, two typefaces, one signature device, written down. Every designer and every AI prompt starts from it."] },
-  { q: "Where do most of your leads or sales come from?", a: ["Organic and referrals", "A mix", "Almost all paid ads"],
-    fix: ["Build reach you don't rent", "Content people share by themselves. My pages reach millions a quarter with zero ad spend; the same mechanics work for a brand."] },
-  { q: "How often do you ship new creative?", a: ["Every week", "Every month", "When something goes wrong"],
-    fix: ["Turn content into a system", "A repeatable format with a fixed rhythm beats one big campaign a year. Plan it once, produce it weekly."] },
-  { q: "Is AI part of how you produce visuals today?", a: ["Yes, with a real pipeline", "Some experiments", "Not yet"],
-    fix: ["Cut shoot costs with an AI pipeline", "Product visuals, campaign variations and 3D scenes in days instead of weeks, directed to look like your brand, not like AI."] },
-  { q: "Would a customer send your content to a friend?", a: ["They already do", "Sometimes", "Never"],
-    fix: ["Design for the share, not the like", "Shares are the signal platforms reward most. Write for the person who forwards it, and the reach follows."] }
-];
-
 let D = null, AC = null;
 
 function paint(d){
@@ -417,6 +463,42 @@ function paint(d){
       </a>`).join("") + `</div>`]);
   }
 
+  /* results */
+  const rs = d.results;
+  if (rs && on(rs.enabled) && live(rs.items).length){
+    secs.push(["results", "Results", head(rs.title, rs.note) + `<div class="res">` + live(rs.items).map(r => `
+      <div class="card rc rv"><span class="who"><b>${esc(r.client)}</b>${esc(r.sector || "")}</span>
+        <span class="n">${esc(r.value)}</span><span class="lb">${esc(r.label)}</span>${r.extra ? `<span class="ex">${esc(r.extra)}</span>` : ""}</div>`).join("") + `</div>`
+      + (d.tools && on(d.tools.enabled) && live(d.tools.items).length ? `<div class="tb rv"><div class="tb-h"><b>${esc(d.tools.title || "Built in-house")}</b>${d.tools.note ? `<small>${esc(d.tools.note)}</small>` : ""}</div>
+        <div class="tb-g">${live(d.tools.items).map(x => `<div class="tl"><i>${TOOLI[x.icon] || TOOLI.spark}</i><b>${esc(x.name)}</b>${x.kind ? `<small>${esc(x.kind)}</small>` : ""}</div>`).join("")}</div></div>` : "")]);
+  }
+
+  /* before / after */
+  const ba = d.beforeAfter;
+  if (ba && on(ba.enabled) && live(ba.items).length){
+    const it = live(ba.items), f = it[0], wa = (c.whatsapp || "").replace(/\D/g, "");
+    const L = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></svg>';
+    secs.push(["reveal", ba.nav || "Before/After", `<div class="ba-g">
+      <div class="ba-top rv"><span class="kick" style="display:block;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px">${esc(ba.kicker || "Before / After")}</span>
+        <h3>${esc(ba.title || "Same product. New story.").replace(/\. /g, ".<br>")}</h3></div>
+      <div class="ba-im rv">${it.length > 1 ? `<div class="ba-tabs">${it.map((x, k) => `<button data-bat="${k}"${k ? "" : ` class="on"`}>${esc(x.brand)}</button>`).join("")}</div>` : ""}
+        <div class="ba" data-ba>
+          <img class="ba-a" src="${esc(f.after)}" alt="${esc(f.brand)}: final campaign" onerror="this.style.visibility='hidden'">
+          <div class="ba-b"><img src="${esc(f.before)}" alt="${esc(f.brand)}: raw product photo" onerror="this.style.visibility='hidden'"></div>
+          <span class="ba-t l">${esc(ba.beforeLabel || "Before")}</span><span class="ba-t r">${esc(ba.afterLabel || "After")}</span>
+          <span class="ba-l"></span>
+          <span class="ba-h" role="slider" tabindex="0" aria-label="${esc(ba.aria || "Drag to compare before and after")}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="92">${L}</span>
+          <span class="ba-hint">${esc(ba.hint || "Drag the circle")}</span>
+        </div></div>
+      <div class="ba-side rv">
+        <p class="ba-say" aria-live="polite"></p>
+        <div class="ba-io"><div data-io="b"><small>${esc(ba.sendLabel || "You send")}</small><span>${esc(f.send || "")}</span></div>
+          <div data-io="a"><small>${esc(ba.getLabel || "You get")}</small><span>${esc(f.get || "")}</span></div></div>
+        ${wa && ba.cta ? `<div class="acts"><a class="btn solid" href="https://wa.me/${wa}?text=${encodeURIComponent(ba.ctaMsg || "")}" target="_blank" rel="noopener">${esc(ba.cta)}${ARROW}</a></div>` : ""}
+        <small class="ba-cr">${esc(f.credit || "")}</small>
+      </div></div>`]);
+  }
+
   /* numbers */
   const nb = d.numbers;
   if (nb && on(nb.enabled) && live(nb.rows).length){
@@ -433,13 +515,18 @@ function paint(d){
       </button>`).join("");
     const tiles = (arr, cls) => live(arr).map(f => `<div class="card proof rv"><b class="n">${esc(f.value)}</b><span>${esc(f.label)}</span></div>`).join("");
     secs.push(["numbers", "Numbers", `<div class="sh rv" style="margin-bottom:0"><h2>${esc(nb.title)}</h2>${nb.note ? `<p>${esc(nb.note)}</p>` : ""}</div>
-      <div class="total rv">${nb.period ? `<span class="period"><span class="dot"></span>${esc(nb.period)}</span>` : ""}
+      <div class="ntop"><div class="total rv">${nb.period ? `<span class="period"><span class="dot"></span>${esc(nb.period)}</span>` : ""}
         <b class="n" id="bigN" data-to="${total}">${splitUnit(compact(total))}</b><p>${esc(nb.headline || "")}</p></div>
+        ${nb.trend && on(nb.trend.enabled) && (nb.trend.series || []).length ? `<div class="card trend rv" id="trend">
+          <div class="tr-h"><div><small id="trL"></small><b class="n" id="trV"></b></div>
+            ${nb.trend.series.length > 1 ? `<div class="tabs2" role="tablist">${nb.trend.series.map((s, k) => `<button role="tab" data-tr="${k}"${k ? "" : ' class="on"'}>${esc(s.label.split("·").pop().trim())}</button>`).join("")}</div>` : ""}</div>
+          <div class="tr-svg" id="trS"><svg id="trSvg" viewBox="0 0 300 150" preserveAspectRatio="none" role="img" aria-label="Daily views"></svg><div class="tr-tip" id="trTip"></div></div>
+          <div class="tr-x"><span id="trA"></span><span id="trB"></span></div></div>` : ""}</div>
       <div class="legend" aria-hidden="true">${used.map(b => `<span><i class="sw" style="background:var(--c-${esc(b)})"></i>${esc(BRANDS[b] || b)}</span>`).join("")}<span style="margin-left:auto">Tap a row for details</span></div>
       <div class="chart" id="chart">${chart}</div>
       ${live(nb.proofs).length ? `<div class="proofs">${tiles(nb.proofs)}</div>` : ""}
       ${live(nb.results).length ? `<h3 class="sub-h rv">Client results</h3><div class="proofs" style="margin-top:14px">${tiles(nb.results)}</div>` : ""}
-      <p class="src">Numbers from each platform's own insights. TikTok covers the last 60 days; everything else the last 90. The total is the sum of the rows.</p>`]);
+      <p class="src">Numbers from each platform's own insights. TikTok covers the last 60 days; everything else the last 90. The total is the sum of the rows. Daily lines are read from the insights charts.</p>`]);
   }
 
   /* map */
@@ -447,7 +534,7 @@ function paint(d){
   if (mp && on(mp.enabled) && live(mp.places).length){
     secs.push(["map", "Map", `<span class="period rv"><span class="dot"></span>${esc(mp.title || "Worldwide")}</span>
       <h2 class="map-h rv" style="margin-top:16px">${esc(mp.headline || "")}</h2>${mp.note ? `<p class="map-p rv">${esc(mp.note)}</p>` : ""}
-      <div class="mapbox rv"><canvas id="mapc" aria-label="Map of countries I have worked in: ${esc(live(mp.places).map(x => x.name).join(", "))}"></canvas></div>
+      <div class="mapbox rv"><span class="g-hint">Drag to spin</span><canvas id="mapc" aria-label="Map of countries I have worked in: ${esc(live(mp.places).map(x => x.name).join(", "))}"></canvas></div>
       <div class="places">${live(mp.places).map(x => `<button class="place${x.id === mp.home ? " home" : ""}" data-pl="${esc(x.id)}"><i></i>${esc(x.name)}${x.id === mp.home ? " · home base" : ""}</button>`).join("")}</div>`]);
   }
 
@@ -456,29 +543,15 @@ function paint(d){
   const worldHTML = [];
   if (wd && on(wd.enabled)){
     live(wd.items).forEach(w => {
-      const slides = live(w.slides);
-      const sl = slides.map((x, k) => x.kind === "stat"
-        ? `<div class="sl stat" data-i="${k}"><span class="n">${esc(x.value)}</span><span><b>${esc(x.title)}</b>${x.meta ? `<span>${esc(x.meta)}</span>` : ""}</span></div>`
-        : `<a class="sl" data-i="${k}" href="${esc(x.url || w.url || "#")}"${ext(x.url || w.url)}><span class="im">${x.image ? `<img src="${esc(x.image)}" alt="${esc(x.title)}" loading="lazy" onerror="this.remove()">` : ""}</span>
-            <span class="cap"><b${arc(x.title)}>${esc(x.title)}</b>${x.meta ? `<span>${esc(x.meta)}</span>` : ""}</span></a>`).join("");
-      worldHTML.push([w.id, w.name, `<section class="world ${esc(w.skin || "")}" id="${esc(w.id)}" data-nav data-tint><div class="w-bgl"></div>
+      worldHTML.push([w.id, w.name, `<section class="world ${esc(w.skin || "")}" id="${esc(w.id)}" data-nav data-tint data-world="${esc(w.id)}"><div class="w-bgl"></div>
         <div class="w-pill">${w.logo ? `<img src="${esc(w.logo)}" alt="" onerror="this.remove()">` : `<span class="wm"></span>`}
           <span><b>${esc(w.name)}${w.arabic ? `<small dir="rtl">${esc(w.arabic)}</small>` : ""}</b><span>${esc(w.role || "")}</span></span></div>
         ${w.tagline ? `<p class="w-tag"${arc(w.tagline)}>${esc(w.tagline)}</p>` : ""}
-        ${slides.length ? `<div class="cf" data-cf><div class="cf-track">${sl}</div></div>
-        <div class="cf-ctl"><button data-prev aria-label="Previous">${PREV}</button><span class="dots">${slides.map((_, k) => `<i${k ? "" : ' class="on"'}></i>`).join("")}</span><button data-next aria-label="Next">${NEXT}</button></div>` : ""}
+        <div class="cf" data-cf><div class="cf-track">${trackHTML(w, [])}</div></div>
+        <div class="cf-ctl"><button data-prev aria-label="Previous">${PREV}</button><span class="count" aria-live="polite"></span><button data-next aria-label="Next">${NEXT}</button></div>
         <div class="w-socs">${(w.socials || []).map(x => `<a href="${esc(x.url)}"${ext(x.url)} aria-label="${esc(w.name)} on ${esc(x.net)}">${icon(x.net)}</a>`).join("")}</div>
-        ${w.url ? `<a class="w-go" href="${esc(w.url)}"${ext(w.url)}>Visit ${esc(w.name)} ↗</a>` : ""}
       </section>`]);
     });
-  }
-
-  /* x-ray */
-  const xr = d.xray;
-  if (xr && on(xr.enabled)){
-    secs.push(["xray", "X-ray", head(xr.title || "Brand X-ray", "") + `<div class="card xr rv" id="xr">
-      <h3 class="xr-h">${esc(xr.headline || "")}</h3><p class="xr-p">${esc(xr.note || "")}</p>
-      <div class="xr-bar"><i id="xrBar"></i></div><div id="xrBody"></div></div>`]);
   }
 
   /* drops */
@@ -543,6 +616,7 @@ function paint(d){
         ${status ? `<span class="pill"><span class="dot${p.status?.live !== false ? " live" : ""}"></span>${status}</span>` : ""}</div>
       <h1 class="rv">${esc(p.name)}</h1>
       ${p.role ? `<p class="role rv">${esc(p.role)}</p>` : ""}
+      ${(p.facts || []).length ? `<p class="facts rv">${p.facts.map(x => { const m = String(x).match(/^(\S+)\s+(.*)$/); return m ? `<span><b class="n">${esc(m[1])}</b> ${esc(m[2])}</span>` : `<span>${esc(x)}</span>`; }).join("")}</p>` : ""}
       ${p.bio ? `<p class="bio rv"${arc(p.bio)}>${esc(p.bio)}</p>` : ""}
       ${(p.capabilities || []).length ? `<p class="focus rv">${p.capabilities.map(x => `<span>${esc(x)}</span>`).join("")}</p>` : ""}
       <div class="acts rv">${acts}</div>
@@ -606,29 +680,21 @@ function wire(url){
     chart.querySelectorAll(".rowb").forEach(b => b.addEventListener("click", () => b.setAttribute("aria-expanded", b.getAttribute("aria-expanded") === "true" ? "false" : "true")));
   }
 
-  /* worlds: reveal + coverflow */
-  document.querySelectorAll(".world").forEach(w => new IntersectionObserver((es, ob) => es.forEach(e => { if (e.isIntersecting){ w.classList.add("open"); ob.disconnect(); } }), { threshold: .12 }).observe(w));
-  document.querySelectorAll("[data-cf]").forEach(cf => {
-    const slides = [...cf.querySelectorAll(".sl")], dots = [...cf.parentNode.querySelectorAll(".dots i")];
-    let cur = 0, raf = 0;
-    const update = () => {
-      raf = 0; const mid = cf.scrollLeft + cf.clientWidth / 2; let best = 0, bd = 1e9;
-      slides.forEach((s, k) => { const c = s.offsetLeft + s.offsetWidth / 2, d = (c - mid) / s.offsetWidth, ad = Math.abs(d);
-        s.style.setProperty("--s", (1 - Math.min(ad, 1.4) * .14).toFixed(3)); s.style.setProperty("--o", (1 - Math.min(ad, 2) * .28).toFixed(3));
-        if (ad < bd){ bd = ad; best = k; } });
-      if (best !== cur){ cur = best; }
-      slides.forEach((s, k) => s.classList.toggle("mid", k === cur)); dots.forEach((x, k) => x.classList.toggle("on", k === cur));
-    };
-    const go = k => { k = Math.max(0, Math.min(slides.length - 1, k)); const s = slides[k]; cf.scrollTo({ left: s.offsetLeft + s.offsetWidth / 2 - cf.clientWidth / 2, behavior: slow ? "auto" : "smooth" }); };
-    cf.addEventListener("scroll", () => { if (!raf) raf = requestAnimationFrame(update); }, { passive: true });
-    slides.forEach((s, k) => s.addEventListener("click", e => { if (k !== cur){ e.preventDefault(); go(k); } }));
-    cf.parentNode.querySelector("[data-prev]")?.addEventListener("click", () => go(cur - 1));
-    cf.parentNode.querySelector("[data-next]")?.addEventListener("click", () => go(cur + 1));
-    new ResizeObserver(update).observe(cf); update();
+  /* worlds: reveal, coverflow, auto-loaded images */
+  document.querySelectorAll("[data-world]").forEach(sec => {
+    new IntersectionObserver((es, ob) => es.forEach(e => { if (e.isIntersecting){ sec.classList.add("open"); ob.disconnect(); } }), { threshold: .12 }).observe(sec);
+    const w = (D.worlds.items || []).find(x => x.id === sec.dataset.world);
+    initCF(sec);
+    if (w && w.images && w.images.prefix) discover(w.images.prefix, w.images.ext || "jpg").then(list => {
+      if (!list.length || !sec.isConnected) return;
+      sec.querySelector(".cf-track").innerHTML = trackHTML(w, list);
+      sec.querySelector("[data-cf]").scrollLeft = 0; initCF(sec);
+    });
   });
+  initTrend();
 
-  drawMap(SIG);
-  xray();
+  drawGlobe();
+  initBA(SIG, slow);
 
   /* drops video */
   const vids = document.querySelectorAll(".dr video");
@@ -653,107 +719,266 @@ function wire(url){
   if (an && !window.__an){ window.__an = 1; const h = document.createElement("div"); h.innerHTML = an; h.querySelectorAll("script").forEach(sc => { const el = document.createElement("script"); [...sc.attributes].forEach(a => el.setAttribute(a.name, a.value)); el.textContent = sc.textContent; document.body.appendChild(el); }); }
 }
 
-/* ---------- dotted map with arcs from home ---------- */
-function drawMap(SIG){
+/* ---------- worlds helpers ---------- */
+const pad2 = n => String(n).padStart(2, "0");
+function trackHTML(w, imgs){
+  const facts = live(w.facts), every = Math.max(1, +(D.worlds.factEvery || 3)), out = [];
+  const stat = f => `<div class="sl stat"><span class="n">${esc(f.value)}</span><span><b>${esc(f.title)}</b>${f.meta ? `<span>${esc(f.meta)}</span>` : ""}</span></div>`;
+  let f = 0;
+  imgs.forEach((src, k) => {
+    out.push(`<a class="sl" href="${esc(w.url || "#")}"${ext(w.url)} aria-label="${esc(w.name)} post ${k + 1}"><span class="im"><img src="${esc(src)}" alt="" loading="lazy" decoding="async" onerror="this.closest('.sl').remove()"></span>${w.skin === "gray" ? `<span class="no">N° ${pad2(k + 1)}</span>` : ""}</a>`);
+    if ((k + 1) % every === 0 && f < facts.length) out.push(stat(facts[f++]));
+  });
+  while (f < facts.length) out.push(stat(facts[f++]));
+  const e = w.endCard;
+  if (e) out.push(`<a class="sl end" href="${esc(e.url || w.url || "#")}"${ext(e.url || w.url)}>${w.logo ? `<img src="${esc(w.logo)}" alt="">` : ""}<b>${esc(w.name)}</b><span>${esc(e.handle || "")}</span><em>${esc(e.cta || "Open")} ↗</em></a>`);
+  return out.join("");
+}
+const IMGC = {};
+async function discover(prefix, extn){
+  if (IMGC[prefix]) return IMGC[prefix];
+  const key = "nm_imgs_" + prefix;
+  try { const c = sessionStorage.getItem(key); if (c) return IMGC[prefix] = JSON.parse(c); } catch(e){}
+  const re = new RegExp("^" + prefix.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "(\\d+)\\.(jpe?g|png|webp)$", "i");
+  let list = null;
+  const m = location.hostname.match(/^([\w-]+)\.github\.io$/i);
+  if (m){
+    const repo = location.pathname.split("/").filter(Boolean)[0] || location.hostname;
+    try { const r = await fetch(`https://api.github.com/repos/${m[1]}/${repo}/contents/assets`);
+      if (r.ok){ const j = await r.json(); list = j.map(x => x.name).filter(n => re.test(n)).sort((a, b) => a.match(re)[1] - b.match(re)[1]).map(n => "assets/" + n); } } catch(e){}
+  }
+  if (!list){
+    list = []; let miss = 0;
+    for (let n = 1; n <= 80 && miss < 4; n++){
+      const src = `assets/${prefix}${n}.${extn}`;
+      let ok = false; try { ok = (await fetch(src, { method: "HEAD", cache: "no-store" })).ok; } catch(e){}
+      if (ok){ list.push(src); miss = 0; } else miss++;
+    }
+  }
+  try { sessionStorage.setItem(key, JSON.stringify(list)); } catch(e){}
+  return IMGC[prefix] = list;
+}
+function initCF(sec){
+  if (sec._ac) sec._ac.abort(); if (sec._ro) sec._ro.disconnect();
+  const ac = sec._ac = new AbortController(), sig = { signal: ac.signal };
+  const cf = sec.querySelector("[data-cf]"), slides = [...cf.querySelectorAll(".sl")], cnt = sec.querySelector(".count");
+  const slow = matchMedia("(prefers-reduced-motion:reduce)").matches;
+  let cur = 0, raf = 0;
+  const update = () => {
+    raf = 0; const mid = cf.scrollLeft + cf.clientWidth / 2; let best = 0, bd = 1e9;
+    slides.forEach((s, k) => { const d = (s.offsetLeft + s.offsetWidth / 2 - mid) / s.offsetWidth, ad = Math.abs(d);
+      s.style.setProperty("--s", (1 - Math.min(ad, 1.4) * .14).toFixed(3)); s.style.setProperty("--o", (1 - Math.min(ad, 2) * .28).toFixed(3));
+      if (ad < bd){ bd = ad; best = k; } });
+    cur = best; slides.forEach((s, k) => s.classList.toggle("mid", k === cur));
+    if (cnt) cnt.textContent = slides.length ? `${cur + 1} / ${slides.length}` : "";
+  };
+  const go = k => { k = Math.max(0, Math.min(slides.length - 1, k)); const s = slides[k]; if (s) cf.scrollTo({ left: s.offsetLeft + s.offsetWidth / 2 - cf.clientWidth / 2, behavior: slow ? "auto" : "smooth" }); };
+  cf.addEventListener("scroll", () => { if (!raf) raf = requestAnimationFrame(update); }, { passive: true, signal: ac.signal });
+  slides.forEach((s, k) => s.addEventListener("click", e => { if (k !== cur){ e.preventDefault(); go(k); } }, sig));
+  sec.querySelector("[data-prev]")?.addEventListener("click", () => go(cur - 1), sig);
+  sec.querySelector("[data-next]")?.addEventListener("click", () => go(cur + 1), sig);
+  (sec._ro = new ResizeObserver(update)).observe(cf); update();
+}
+
+/* ---------- daily views line ---------- */
+function initTrend(){
+  const box = document.getElementById("trend"); if (!box) return;
+  const ser = (D.numbers.trend.series || []).filter(s => (s.values || []).length > 1); if (!ser.length) return;
+  const svg = document.getElementById("trSvg"), wrap = document.getElementById("trS"), tip = document.getElementById("trTip");
+  const slow = matchMedia("(prefers-reduced-motion:reduce)").matches;
+  let cur = 0, W = 300, H = 150, pts = [];
+  const day = (s, i) => { const d = new Date((s.start || "2026-01-01") + "T00:00:00Z"); d.setUTCDate(d.getUTCDate() + i); return d.toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" }); };
+  function draw(anim){
+    const s = ser[cur], v = s.values.map(Number), n = v.length, top = Math.max(...v), max = top * 1.18;
+    W = wrap.clientWidth || 300; svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+    const X = i => 4 + i / (n - 1) * (W - 8), Y = y => H - 4 - y / max * (H - 14);
+    pts = v.map((y, i) => [X(i), Y(y)]);
+    const line = pts.map((p, i) => (i ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1)).join("");
+    const pk = v.indexOf(top), [px, py] = pts[pk];
+    svg.innerHTML = `<defs><linearGradient id="trg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--accent)" stop-opacity=".32"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></linearGradient></defs>
+      <line x1="0" x2="${W}" y1="${Y(top / 2).toFixed(1)}" y2="${Y(top / 2).toFixed(1)}" stroke="var(--line)" stroke-dasharray="3 5"/>
+      <line x1="0" x2="${W}" y1="${H - 4}" y2="${H - 4}" stroke="var(--line)"/>
+      <path d="${line}L${X(n - 1)} ${H - 4}L${X(0)} ${H - 4}Z" fill="url(#trg)"/>
+      <path id="trP" d="${line}" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="${px}" cy="${py}" r="4" fill="var(--accent)" stroke="var(--bg)" stroke-width="2"/>
+      <text id="trPk" x="${Math.min(W - 4, Math.max(4, px))}" y="${Math.max(12, py - 10)}" text-anchor="${px > W * .75 ? "end" : px < W * .25 ? "start" : "middle"}" font-size="11" font-weight="600" fill="var(--ink)" font-family="Readex Pro,system-ui">Peak ${compact(top)} · ${day(s, pk)}</text>
+      <g id="trC" style="display:none"><line id="trCl" y1="0" y2="${H - 4}" stroke="var(--line-2)"/><circle id="trCd" r="4" fill="var(--ink)" stroke="var(--accent)" stroke-width="2"/></g>`;
+    document.getElementById("trL").textContent = s.label + " · daily views";
+    document.getElementById("trV").textContent = compact(v.reduce((a, b) => a + b, 0)) + " in " + n + " days";
+    document.getElementById("trA").textContent = day(s, 0); document.getElementById("trB").textContent = day(s, n - 1);
+    const p = document.getElementById("trP");
+    if (anim && !slow && p.getTotalLength){ const L = p.getTotalLength(); p.style.strokeDasharray = L; p.animate([{ strokeDashoffset: L }, { strokeDashoffset: 0 }], { duration: 1100, easing: "cubic-bezier(.2,.8,.2,1)" }); }
+  }
+  const show = e => {
+    const r = wrap.getBoundingClientRect(), x = e.clientX - r.left, s = ser[cur];
+    let i = Math.round((x - 4) / (W - 8) * (s.values.length - 1)); i = Math.max(0, Math.min(s.values.length - 1, i));
+    const [px, py] = pts[i]; const g = document.getElementById("trC"); g.style.display = "";
+    document.getElementById("trCl").setAttribute("x1", px); document.getElementById("trCl").setAttribute("x2", px);
+    const d = document.getElementById("trCd"); d.setAttribute("cx", px); d.setAttribute("cy", py);
+    tip.textContent = `${day(s, i)} · ${compact(+s.values[i])} views`; tip.style.left = Math.max(56, Math.min(W - 56, px)) + "px"; tip.style.top = py + "px"; tip.classList.add("on"); const pk = document.getElementById("trPk"); if (pk) pk.style.opacity = 0;
+  };
+  const hide = () => { tip.classList.remove("on"); const pk = document.getElementById("trPk"); if (pk) pk.style.opacity = 1; const g = document.getElementById("trC"); if (g) g.style.display = "none"; };
+  wrap.addEventListener("pointermove", show); wrap.addEventListener("pointerdown", show); wrap.addEventListener("pointerleave", hide);
+  box.querySelectorAll("[data-tr]").forEach(b => b.addEventListener("click", () => { cur = +b.dataset.tr; box.querySelectorAll("[data-tr]").forEach(x => x.classList.toggle("on", x === b)); hide(); draw(true); }));
+  new ResizeObserver(() => draw(false)).observe(wrap);
+  new IntersectionObserver((es, ob) => es.forEach(e => { if (e.isIntersecting){ ob.disconnect(); draw(true); } }), { threshold: .4 }).observe(box);
+}
+
+/* ---------- rotating dotted globe ---------- */
+function drawGlobe(){
   const cv = document.getElementById("mapc"); if (!cv) return;
-  const ctx = cv.getContext("2d"), M = MAP.meta, R = MAP.rows;
+  const ctx = cv.getContext("2d"), rad = Math.PI / 180;
   const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
-  const acc = css("--accent") || "#E07848", ink = css("--ink") || "#F2EEE8";
-  const places = (D.map.places || []).filter(x => x.enabled !== false), home = places.find(x => x.id === D.map.home) || places[0];
-  const merc = lat => Math.log(Math.tan(Math.PI / 4 + lat * Math.PI / 360));
-  const y0 = merc(M.lat1), ystep = M.step * Math.PI / 180;
-  let W = 0, H = 0, cell = 0, t0 = 0, raf = 0, hi = null, running = false;
-  const proj = (lon, lat) => [(lon - M.lon0) / M.step * cell + cell / 2, (y0 - merc(lat)) / ystep * cell + cell / 2];
+  const acc = css("--accent") || "#E07848", ink = css("--ink") || "#F2EEE8", bg = css("--bg") || "#0B0A0C";
+  const places = (D.map.places || []).filter(x => x.enabled !== false).map(p => ({ ...p, lon: +p.lon, lat: +p.lat }));
+  const home = places.find(x => x.id === D.map.home) || places[0];
+  /* land points */
+  if (!drawGlobe.P){
+    const P = []; GLOBE.rows.forEach((row, r) => { const lat = (GLOBE.lat1 - r * GLOBE.step) * rad, n = row.length;
+      for (let i = 0; i < n; i++){ const ch = row[i]; if (ch === "0") continue; const lon = (-180 + (i + .5) * 360 / n) * rad;
+        P.push([Math.sin(lat), Math.cos(lat), lon, ch !== "1"]); } });
+    drawGlobe.P = P;
+  }
+  const P = drawGlobe.P;
+  const slow = matchMedia("(prefers-reduced-motion:reduce)").matches;
+  let W = 0, H = 0, R = 0, cx = 0, cy = 0, lam = ((home ? home.lon : 20) + 25) * rad, phi = 22 * rad, sel = null, hold = 0, drag = null, running = false, raf = 0, last = 0, fly = null;
   function size(){
     const r = cv.getBoundingClientRect(), dpr = Math.min(devicePixelRatio || 1, 2);
-    W = r.width; cell = W / M.cols; H = cell * M.rows; cv.style.height = H + "px";
-    cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); frame(performance.now());
+    W = r.width; H = Math.round(Math.min(W * (W < 600 ? .92 : .5), 560)); cv.style.height = H + "px";
+    cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    if (W < 600){ R = Math.min(W * .43, H * .44); cy = H / 2 + H * .02; } else { R = Math.min(W * .34, H * .64); cy = H / 2 + R * .3; } cx = W / 2; frame(performance.now());
   }
+  const proj = (sl, cl, lon) => { const dl = lon - lam, sp = Math.sin(phi), cp = Math.cos(phi), cd = Math.cos(dl);
+    return [cl * Math.sin(dl), cp * sl - sp * cl * cd, sp * sl + cp * cl * cd]; };
+  const pv = (lon, lat) => proj(Math.sin(lat * rad), Math.cos(lat * rad), lon * rad);
   function frame(now){
-    const t = running ? (now - t0) / 1000 : 99;
+    const dt = last ? Math.min(.05, (now - last) / 1000) : 0; last = now;
+    if (fly){ const k = Math.min(1, (now - fly.t0) / 900), e = 1 - Math.pow(1 - k, 3); lam = fly.l0 + (fly.l1 - fly.l0) * e; phi = fly.p0 + (fly.p1 - fly.p0) * e; if (k >= 1) fly = null; }
+    else if (!drag && !slow && now > hold) lam -= dt * 9 * rad;
     ctx.clearRect(0, 0, W, H);
-    const rad = Math.max(.7, cell * .3);
-    for (let r = 0; r < R.length; r++){ const row = R[r];
-      for (let c = 0; c < row.length; c++){ const ch = row[c]; if (ch === "0") continue;
-        const x = c * cell + cell / 2, y = r * cell + cell / 2, lit = ch !== "1";
-        ctx.fillStyle = lit ? acc : ink; ctx.globalAlpha = lit ? .9 : .16;
-        ctx.beginPath(); ctx.arc(x, y, lit ? rad * 1.15 : rad, 0, 7); ctx.fill(); } }
+    /* sphere body + rim */
+    const g = ctx.createRadialGradient(cx - R * .3, cy - R * .35, R * .1, cx, cy, R);
+    g.addColorStop(0, "rgba(255,255,255,.05)"); g.addColorStop(1, "rgba(255,255,255,.01)");
+    ctx.fillStyle = g; ctx.beginPath(); ctx.arc(cx, cy, R, 0, 7); ctx.fill();
+    ctx.strokeStyle = acc; ctx.globalAlpha = .18; ctx.lineWidth = 1; ctx.stroke(); ctx.globalAlpha = 1;
+    /* dots, batched by depth */
+    const buckets = [[], [], [], []], lit = [[], []], ds = Math.max(.8, R * .011);
+    for (const [sl, cl, lon, hi] of P){ const [x, y, z] = proj(sl, cl, lon); if (z <= 0) continue;
+      const X = cx + x * R, Y = cy - y * R, s = ds * (.55 + .45 * z);
+      if (hi) lit[z > .5 ? 1 : 0].push(X, Y, s * 1.25); else buckets[Math.min(3, Math.floor(z * 4))].push(X, Y, s); }
+    buckets.forEach((b, k) => { ctx.fillStyle = ink; ctx.globalAlpha = .07 + k * .075; ctx.beginPath();
+      for (let i = 0; i < b.length; i += 3){ ctx.moveTo(b[i] + b[i + 2], b[i + 1]); ctx.arc(b[i], b[i + 1], b[i + 2], 0, 7); } ctx.fill(); });
+    lit.forEach((b, k) => { ctx.fillStyle = acc; ctx.globalAlpha = k ? 1 : .55; ctx.beginPath();
+      for (let i = 0; i < b.length; i += 3){ ctx.moveTo(b[i] + b[i + 2], b[i + 1]); ctx.arc(b[i], b[i + 1], b[i + 2], 0, 7); } ctx.fill(); });
     ctx.globalAlpha = 1;
-    if (!home) return;
-    const [hx, hy] = proj(home.lon, home.lat);
-    places.forEach((p, k) => {
-      if (p === home) return;
-      const [px, py] = proj(p.lon, p.lat), mx = (hx + px) / 2, dist = Math.hypot(px - hx, py - hy), my = Math.min(hy, py) - Math.max(18, dist * .32);
-      const prog = Math.max(0, Math.min(1, (t - .3 - k * .22) / .9));
-      if (prog <= 0) return;
-      ctx.strokeStyle = acc; ctx.lineWidth = hi === p.id ? 2.2 : 1.3; ctx.globalAlpha = hi && hi !== p.id ? .25 : .85;
-      ctx.beginPath(); ctx.moveTo(hx, hy);
-      const N = 40; for (let i = 1; i <= N * prog; i++){ const u = i / N, a = (1 - u) * (1 - u), b = 2 * (1 - u) * u, cc = u * u; ctx.lineTo(a * hx + b * mx + cc * px, a * hy + b * my + cc * py); }
-      ctx.stroke(); ctx.globalAlpha = 1;
-      if (prog >= 1){ const pulse = (t * .8 + k * .3) % 1;
-        ctx.fillStyle = acc; ctx.beginPath(); ctx.arc(px, py, 3, 0, 7); ctx.fill();
-        ctx.globalAlpha = 1 - pulse; ctx.strokeStyle = acc; ctx.lineWidth = 1; ctx.beginPath(); ctx.arc(px, py, 3 + pulse * 10, 0, 7); ctx.stroke(); ctx.globalAlpha = 1; }
-      if (hi === p.id || (!hi && ["uk", "us"].includes(p.id))){ ctx.fillStyle = ink; ctx.globalAlpha = hi && hi !== p.id ? .4 : .85; ctx.font = `500 ${W > 520 ? 12 : 10.5}px "Readex Pro",system-ui,sans-serif`;
-        ctx.textAlign = px < W * .15 ? "left" : "center"; ctx.fillText(p.city, px + (px < W * .15 ? 6 : 0), py + 16); ctx.globalAlpha = 1; }
+    /* arcs from home */
+    const t = now / 1000;
+    if (home){
+      const a = pv(home.lon, home.lat);
+      places.forEach((p, k) => { if (p === home) return;
+        const b = pv(p.lon, p.lat), dot = a[0] * b[0] + a[1] * b[1] + a[2] * b[2], om = Math.acos(Math.max(-1, Math.min(1, dot))); if (om < 1e-3) return;
+        const lift = .08 + om * .12, N = 48; let prev = null;
+        ctx.lineWidth = sel === p.id ? 2.2 : 1.3; ctx.strokeStyle = acc;
+        for (let i = 0; i <= N; i++){ const u = i / N, s1 = Math.sin((1 - u) * om) / Math.sin(om), s2 = Math.sin(u * om) / Math.sin(om), h = 1 + lift * Math.sin(Math.PI * u);
+          const x = (s1 * a[0] + s2 * b[0]) * h, y = (s1 * a[1] + s2 * b[1]) * h, z = (s1 * a[2] + s2 * b[2]) * h;
+          const vis = z > 0 || Math.hypot(x, y) > 1, X = cx + x * R, Y = cy - y * R;
+          if (prev && vis && prev[2]){ ctx.globalAlpha = sel && sel !== p.id ? .2 : .75; ctx.beginPath(); ctx.moveTo(prev[0], prev[1]); ctx.lineTo(X, Y); ctx.stroke(); }
+          prev = [X, Y, vis]; }
+        /* travelling spark */
+        const u = ((t * .35 + k * .21) % 1), s1 = Math.sin((1 - u) * om) / Math.sin(om), s2 = Math.sin(u * om) / Math.sin(om), h = 1 + lift * Math.sin(Math.PI * u);
+        const x = (s1 * a[0] + s2 * b[0]) * h, y = (s1 * a[1] + s2 * b[1]) * h, z = (s1 * a[2] + s2 * b[2]) * h;
+        if (z > 0 || Math.hypot(x, y) > 1){ ctx.globalAlpha = 1; ctx.fillStyle = ink; ctx.beginPath(); ctx.arc(cx + x * R, cy - y * R, 1.8, 0, 7); ctx.fill(); }
+      });
+      ctx.globalAlpha = 1;
+    }
+    /* markers + label cards */
+    const boxes = [], order = places.map(p => ({ p, v: pv(p.lon, p.lat) })).filter(o => o.v[2] > .05)
+      .sort((m, n) => (n.p.id === sel) - (m.p.id === sel) || (n.p === home) - (m.p === home) || n.v[2] - m.v[2]);
+    order.forEach(({ p, v }) => {
+      const X = cx + v[0] * R, Y = cy - v[1] * R, pulse = (t * .7 + p.lat * .01) % 1, isHome = p === home;
+      ctx.fillStyle = isHome ? ink : acc; ctx.beginPath(); ctx.arc(X, Y, isHome ? 4.5 : 3.4, 0, 7); ctx.fill();
+      ctx.strokeStyle = acc; ctx.lineWidth = 1.4; ctx.globalAlpha = (1 - pulse) * v[2]; ctx.beginPath(); ctx.arc(X, Y, 4 + pulse * 14, 0, 7); ctx.stroke(); ctx.globalAlpha = 1;
+      if (v[2] < .3 && p.id !== sel) return;
+      ctx.font = `600 ${W < 520 ? 11.5 : 12.5}px "Readex Pro",system-ui,sans-serif`;
+      const t1 = p.name.toUpperCase(), w1 = ctx.measureText(t1).width; ctx.font = `400 ${W < 520 ? 10.5 : 11.5}px "Readex Pro",system-ui,sans-serif`;
+      const t2 = isHome ? p.city + " · home base" : p.city, w2 = ctx.measureText(t2).width, bw = Math.max(w1, w2) + 20, bh = W < 520 ? 38 : 42;
+      let bx = Math.max(6, Math.min(W - bw - 6, X - bw / 2)), by = Y - bh - 14; if (by < 6) by = Y + 14;
+      if (boxes.some(q => bx < q[0] + q[2] + 4 && bx + bw + 4 > q[0] && by < q[1] + q[3] + 4 && by + bh + 4 > q[1])) return;
+      boxes.push([bx, by, bw, bh]);
+      ctx.globalAlpha = Math.min(1, .35 + v[2]); ctx.fillStyle = bg; ctx.strokeStyle = p.id === sel || isHome ? acc : "rgba(255,255,255,.14)"; ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.roundRect ? ctx.roundRect(bx, by, bw, bh, 10) : ctx.rect(bx, by, bw, bh); ctx.fill(); ctx.stroke();
+      ctx.fillStyle = acc; ctx.font = `600 ${W < 520 ? 11.5 : 12.5}px "Readex Pro",system-ui,sans-serif`; ctx.textAlign = "left"; ctx.fillText(t1, bx + 10, by + (W < 520 ? 16 : 18));
+      ctx.fillStyle = ink; ctx.font = `400 ${W < 520 ? 10.5 : 11.5}px "Readex Pro",system-ui,sans-serif`; ctx.fillText(t2, bx + 10, by + (W < 520 ? 30 : 33));
+      ctx.globalAlpha = 1;
     });
-    const hp = (t * .6) % 1;
-    ctx.fillStyle = ink; ctx.beginPath(); ctx.arc(hx, hy, 4.2, 0, 7); ctx.fill();
-    ctx.strokeStyle = acc; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(hx, hy, 4.2, 0, 7); ctx.stroke();
-    ctx.globalAlpha = 1 - hp; ctx.beginPath(); ctx.arc(hx, hy, 5 + hp * 16, 0, 7); ctx.stroke(); ctx.globalAlpha = 1;
-    ctx.fillStyle = ink; ctx.font = `600 ${W > 520 ? 13 : 11}px "Readex Pro",system-ui,sans-serif`; ctx.textAlign = "center"; ctx.fillText(home.city, hx, hy + 20);
     if (running) raf = requestAnimationFrame(frame);
   }
-  const slow = matchMedia("(prefers-reduced-motion:reduce)").matches;
   new ResizeObserver(size).observe(cv);
   new IntersectionObserver(es => es.forEach(e => {
-    if (e.isIntersecting && !slow){ if (!t0) t0 = performance.now(); running = true; if (!raf) raf = requestAnimationFrame(frame); }
+    if (e.isIntersecting){ running = true; last = 0; if (!raf) raf = requestAnimationFrame(frame); }
     else { running = false; cancelAnimationFrame(raf); raf = 0; }
-  }), { threshold: .15 }).observe(cv);
+  }), { threshold: .1 }).observe(cv);
+  cv.addEventListener("pointerdown", e => { drag = { x: e.clientX, y: e.clientY, l: lam, p: phi, id: e.pointerId, moved: false }; fly = null; });
+  cv.addEventListener("pointermove", e => { if (!drag) return; const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+    if (!drag.moved && Math.abs(dx) > 6 && Math.abs(dx) > Math.abs(dy)){ drag.moved = true; cv.setPointerCapture(drag.id); }
+    if (drag.moved){ lam = drag.l - dx / R; phi = Math.max(-5 * rad, Math.min(55 * rad, drag.p + dy / R * .6)); if (!running) frame(performance.now()); } });
+  const end = () => { if (drag) hold = performance.now() + 2500; drag = null; };
+  cv.addEventListener("pointerup", end); cv.addEventListener("pointercancel", end);
   document.querySelectorAll("[data-pl]").forEach(b => b.addEventListener("click", () => {
-    hi = hi === b.dataset.pl ? null : b.dataset.pl;
-    document.querySelectorAll("[data-pl]").forEach(x => x.classList.toggle("on", x.dataset.pl === hi));
+    const p = places.find(x => x.id === b.dataset.pl); if (!p) return;
+    sel = sel === p.id ? null : p.id;
+    document.querySelectorAll("[data-pl]").forEach(x => x.classList.toggle("on", x.dataset.pl === sel));
+    if (sel){ let l1 = p.lon * rad; while (l1 - lam > Math.PI) l1 -= 2 * Math.PI; while (l1 - lam < -Math.PI) l1 += 2 * Math.PI;
+      fly = { t0: performance.now(), l0: lam, l1, p0: phi, p1: Math.max(0, Math.min(45, p.lat * .7)) * rad }; hold = performance.now() + 4500; }
     if (!running) frame(performance.now());
   }));
 }
 
-/* ---------- Brand X-ray ---------- */
-function xray(){
-  const body = document.getElementById("xrBody"); if (!body) return;
-  const bar = document.getElementById("xrBar"); let step = 0; const ans = [];
-  const c = D.contact || {}, wa = (c.whatsapp || "").replace(/\D/g, "");
-  const ask = () => {
-    bar.style.width = (step / XQ.length * 100) + "%";
-    const q = XQ[step];
-    body.innerHTML = `<div class="xr-step"><small>Question ${step + 1} of ${XQ.length}</small><p class="xr-q">${esc(q.q)}</p>
-      <div class="xr-opts">${q.a.map((a, k) => `<button data-a="${2 - k}">${esc(a)}</button>`).join("")}</div></div>`;
-    body.querySelectorAll("[data-a]").forEach(b => b.onclick = () => { ans[step] = +b.dataset.a; step++; step < XQ.length ? ask() : result(); });
+/* ---------- Before / After ---------- */
+function initBA(SIG, slow){
+  const box = document.querySelector("[data-ba]"); if (!box) return;
+  const ba = D.beforeAfter || {}, items = live(ba.items), sec = box.closest("section");
+  const h = box.querySelector(".ba-h"), say = sec.querySelector(".ba-say"), io = sec.querySelectorAll("[data-io]");
+  const S = ba.says || {};
+  let p = 92, anim = 0, zone = "";
+  const set = v => {
+    p = Math.max(0, Math.min(100, v));
+    box.style.setProperty("--p", p + "%"); h.setAttribute("aria-valuenow", Math.round(p));
+    box.querySelector(".ba-t.l").style.opacity = p < 18 ? 0 : 1;
+    box.querySelector(".ba-t.r").style.opacity = p > 82 ? 0 : 1;
+    const z = p > 66 ? "b" : p < 34 ? "a" : "m";
+    if (z !== zone){ zone = z; say.innerHTML = esc(S[z] || "").replace(/\*(.+?)\*/g, "<b>$1</b>");
+      io.forEach(x => x.classList.toggle("on", x.dataset.io === z)); }
   };
-  const result = () => {
-    bar.style.width = "100%";
-    const score = Math.round(ans.reduce((a, b) => a + b, 0) / (XQ.length * 2) * 100);
-    const verdict = score >= 75 ? "Strong. Time to scale it." : score >= 45 ? "Noticed, not remembered." : "Working hard, barely seen.";
-    const weak = ans.map((v, i) => [v, i]).sort((a, b) => a[0] - b[0] || a[1] - b[1]).slice(0, 3).map(x => x[1]);
-    const C = 2 * Math.PI * 64;
-    body.innerHTML = `<div class="xr-res"><div class="gauge"><svg viewBox="0 0 150 150"><circle cx="75" cy="75" r="64" fill="none" stroke="var(--surf-2)" stroke-width="10"/>
-        <circle id="gArc" cx="75" cy="75" r="64" fill="none" stroke="var(--accent)" stroke-width="10" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C}" style="transition:stroke-dashoffset 1.2s cubic-bezier(.2,.8,.2,1)"/></svg>
-        <div class="v"><div><b class="n" id="gNum">0</b><small>out of 100</small></div></div></div>
-        <div><p class="xr-verdict">${verdict}</p><p class="xr-p" style="margin-top:6px">Start with these three. They are where your answers leaked the most.</p></div></div>
-      <div class="fixes">${weak.map(i => `<div class="fix"><b>${esc(XQ[i].fix[0])}</b><span>${esc(XQ[i].fix[1])}</span></div>`).join("")}</div>
-      <input class="xr-name" id="xrName" placeholder="Your brand name (optional)" autocomplete="organization">
-      <div class="acts">${wa ? `<a class="btn solid" id="xrWa" target="_blank" rel="noopener">Send my X-ray on WhatsApp${ARROW}</a>` : ""}
-        ${c.email ? `<a class="btn" id="xrMail">Email it</a>` : ""}</div>
-      <button class="again" id="xrAgain">Take it again</button>`;
-    requestAnimationFrame(() => { document.getElementById("gArc").style.strokeDashoffset = C * (1 - score / 100); });
-    const g = document.getElementById("gNum"), t0 = performance.now();
-    (function tick(t){ const k = Math.min(1, (t - t0) / 1100); g.textContent = Math.round(score * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(tick); })(t0);
-    const msg = () => { const n = (document.getElementById("xrName").value || "").trim();
-      return `Hi Nour, I took the Brand X-ray on your page${n ? ` for ${n}` : ""}.\nScore: ${score}/100 (${verdict})\nWeak spots:\n${weak.map(i => "- " + XQ[i].fix[0]).join("\n")}\nCan we talk?`; };
-    const w = document.getElementById("xrWa"), m = document.getElementById("xrMail");
-    const upd = () => { if (w) w.href = `https://wa.me/${wa}?text=${encodeURIComponent(msg())}`; if (m) m.href = `mailto:${c.email}?subject=${encodeURIComponent("Brand X-ray: " + score + "/100")}&body=${encodeURIComponent(msg())}`; };
-    upd(); document.getElementById("xrName").addEventListener("input", upd);
-    document.getElementById("xrAgain").onclick = () => { step = 0; ans.length = 0; ask(); };
-  };
-  ask();
+  const stop = () => { cancelAnimationFrame(anim); anim = 0; box.classList.add("used"); };
+  const tween = (to, ms, done) => { const from = p, t0 = performance.now();
+    const k = t => { const e = Math.min(1, (t - t0) / ms), q = e < .5 ? 4 * e * e * e : 1 - Math.pow(-2 * e + 2, 3) / 2;
+      set(from + (to - from) * q); if (e < 1) anim = requestAnimationFrame(k); else { anim = 0; done && done(); } };
+    anim = requestAnimationFrame(k); };
+  set(92);
+  /* first time in view: the scene builds itself, then settles in the middle */
+  const vo = new IntersectionObserver(es => { if (es[0].isIntersecting){ vo.disconnect();
+    if (slow) return set(50);
+    setTimeout(() => { if (!box.classList.contains("used")) tween(8, 1500, () => setTimeout(() => !box.classList.contains("used") && tween(50, 900), 500)); }, 350); } }, { threshold: .55 });
+  vo.observe(box); AC.signal.addEventListener("abort", () => vo.disconnect());
+  const at = x => { const r = box.getBoundingClientRect(); set((x - r.left) / r.width * 100); };
+  let id = null;
+  box.addEventListener("pointerdown", e => { if (e.button > 0) return; stop(); id = e.pointerId; box.classList.add("drag"); at(e.clientX);
+    try { box.setPointerCapture(id); } catch (_) {} }, SIG);
+  box.addEventListener("pointermove", e => { if (e.pointerId === id) at(e.clientX); }, SIG);
+  const end = e => { if (e.pointerId === id){ id = null; box.classList.remove("drag"); } };
+  box.addEventListener("pointerup", end, SIG); box.addEventListener("pointercancel", end, SIG);
+  h.addEventListener("keydown", e => { const m = { ArrowLeft: -5, ArrowRight: 5, PageDown: -20, PageUp: 20 }[e.key];
+    if (m !== undefined){ stop(); set(p + m); e.preventDefault(); }
+    else if (e.key === "Home" || e.key === "End"){ stop(); set(e.key === "Home" ? 0 : 100); e.preventDefault(); } }, SIG);
+  sec.querySelectorAll("[data-bat]").forEach(b => b.addEventListener("click", () => {
+    const x = items[+b.dataset.bat]; if (!x) return;
+    sec.querySelectorAll("[data-bat]").forEach(y => y.classList.toggle("on", y === b));
+    box.querySelector(".ba-a").src = x.after; box.querySelector(".ba-b img").src = x.before;
+    io[0].querySelector("span").textContent = x.send || ""; io[1].querySelector("span").textContent = x.get || "";
+    sec.querySelector(".ba-cr").textContent = x.credit || "";
+    stop(); set(92); if (!slow) tween(50, 1100);
+  }, SIG));
 }
 
 /* ================= ARCADE: Brief Catcher + Rally ================= */
