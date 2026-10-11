@@ -1,862 +1,1207 @@
 {
-  "version": 6,
-  "profile": {
-    "name": "Nour Mohamed",
-    "monogram": "NM*",
-    "role": "Creative Director & AI Specialist",
-    "location": "New Cairo",
-    "avatar": "assets/avatar.jpg",
-    "bio": "I build brand worlds end to end — identity, AI-directed campaigns and 3D visualization — and I grow the audiences around them without paid reach.",
-    "status": {
-      "show": true,
-      "live": true,
-      "label": "Open for projects"
-    },
-    "capabilities": [
-      "Brand identity",
-      "Generative AI direction",
-      "3D visualization",
-      "Arabic content"
-    ],
-    "photo": "assets/avatar.jpg",
-    "socials": [
-      {
-        "net": "instagram",
-        "url": "https://www.instagram.com/i2mriky"
-      },
-      {
-        "net": "facebook",
-        "url": "https://www.facebook.com/profile.php?id=61576439245217"
-      },
-      {
-        "net": "threads",
-        "url": "https://www.threads.com/@i2mriky"
-      },
-      {
-        "net": "tiktok",
-        "url": "https://www.tiktok.com/@i2mriky"
-      },
-      {
-        "net": "pinterest",
-        "url": "https://pin.it/7AdtP23oT"
-      },
-      {
-        "net": "linkedin",
-        "url": "https://www.linkedin.com/in/nour-mohamed-56a7463b9"
-      },
-      {
-        "net": "mail",
-        "url": "mailto:2mrikydesign@gmail.com"
-      }
-    ],
-    "facts": [
-      "12+ years",
-      "150+ projects",
-      "6 countries"
-    ]
+ "version": 7,
+ "profile": {
+  "name": "Nour Mohamed",
+  "monogram": "NM*",
+  "role": "Creative Director & AI Specialist",
+  "location": "New Cairo",
+  "avatar": "assets/avatar.jpg",
+  "bio": "I build brand worlds end to end — identity, AI-directed campaigns and 3D visualization — and I grow the audiences around them without paid reach.",
+  "status": {
+   "show": true,
+   "live": true,
+   "label": "Open for projects"
   },
-  "theme": {
-    "preset": "copper",
-    "accent": ""
-  },
-  "settings": {
-    "siteTitle": "Nour Mohamed — Creative Director & AI Specialist",
-    "siteDescription": "Multidisciplinary Creative Director and AI specialist in New Cairo. Portfolios, brands, and contact in one place.",
-    "siteUrl": "https://i2mriky.github.io/bio-hub/",
-    "ogImage": "assets/og.jpg",
-    "showQR": true,
-    "showVCard": true,
-    "analyticsScript": ""
-  },
-  "contact": {
-    "email": "2mrikydesign@gmail.com",
-    "phone": "+201555846969",
-    "vcardCompany": "NM* Studio",
-    "whatsapp": "+201143650240"
-  },
-  "actions": [
-    {
-      "id": "a1",
-      "label": "Download CV",
-      "url": "https://nour2mriky.my.canva.site/nour-mohamed-cv",
-      "primary": true,
-      "enabled": true
-    },
-    {
-      "id": "a2",
-      "label": "WhatsApp",
-      "url": "https://wa.me/201143650240",
-      "primary": false,
-      "enabled": true
-    },
-    {
-      "id": "a3",
-      "label": "Email",
-      "url": "mailto:2mrikydesign@gmail.com",
-      "primary": false,
-      "enabled": true
-    }
+  "capabilities": [
+   "Brand identity",
+   "Generative AI direction",
+   "3D visualization",
+   "Arabic content"
   ],
-  "portfolios": {
-    "title": "Portfolios",
-    "note": "Three decks, one per discipline. Open the one closest to your brief.",
-    "enabled": true,
-    "items": [
-      {
-        "id": "p1",
-        "title": "Creative Direction",
-        "subtitle": "Brand worlds, campaigns and art direction",
-        "tag": "Deck 01",
-        "cover": "assets/cover-creative-director.jpg",
-        "url": "https://nour2mriky.my.canva.site/nour-portfolio-creative-director",
-        "enabled": true
-      },
-      {
-        "id": "p2",
-        "title": "AI Creative Direction",
-        "subtitle": "Directing models, building pipelines, shipping campaigns",
-        "tag": "Deck 02",
-        "cover": "assets/cover-ai-creative-director.jpg",
-        "url": "https://nour2mriky.my.canva.site/nour-moh-ai-creative-director",
-        "enabled": true
-      },
-      {
-        "id": "p3",
-        "title": "Content & Copywriting",
-        "subtitle": "Scripts, brand voice and Arabic-first concepts",
-        "tag": "Deck 03",
-        "cover": "assets/cover-content-creative.jpg",
-        "url": "https://nour2mriky.my.canva.site/nour-mohamed-content-creative",
-        "enabled": true
-      }
-    ]
+  "photo": "assets/avatar.jpg",
+  "socials": [
+   {
+    "net": "instagram",
+    "url": "https://www.instagram.com/i2mriky"
+   },
+   {
+    "net": "facebook",
+    "url": "https://www.facebook.com/profile.php?id=61576439245217"
+   },
+   {
+    "net": "threads",
+    "url": "https://www.threads.com/@i2mriky"
+   },
+   {
+    "net": "tiktok",
+    "url": "https://www.tiktok.com/@i2mriky"
+   },
+   {
+    "net": "pinterest",
+    "url": "https://pin.it/7AdtP23oT"
+   },
+   {
+    "net": "linkedin",
+    "url": "https://www.linkedin.com/in/nour-mohamed-56a7463b9"
+   },
+   {
+    "net": "mail",
+    "url": "mailto:2mrikydesign@gmail.com"
+   }
+  ],
+  "facts": [
+   "12+ years",
+   "150+ projects",
+   "6 countries"
+  ]
+ },
+ "theme": {
+  "preset": "copper",
+  "accent": ""
+ },
+ "settings": {
+  "siteTitle": "Nour Mohamed — Creative Director & AI Specialist",
+  "siteDescription": "Multidisciplinary Creative Director and AI specialist in New Cairo. Portfolios, brands, and contact in one place.",
+  "siteUrl": "https://i2mriky.github.io/bio-hub/",
+  "ogImage": "assets/og.jpg",
+  "showQR": true,
+  "showVCard": true,
+  "analyticsScript": ""
+ },
+ "contact": {
+  "email": "2mrikydesign@gmail.com",
+  "phone": "+201555846969",
+  "vcardCompany": "NM* Studio",
+  "whatsapp": "+201143650240"
+ },
+ "actions": [
+  {
+   "id": "a1",
+   "label": "Download CV",
+   "url": "https://nour2mriky.my.canva.site/nour-mohamed-cv",
+   "primary": true,
+   "enabled": true
   },
-  "results": {
-    "enabled": true,
-    "title": "Results",
-    "note": "What the work did for the businesses behind it.",
-    "items": [
-      {
-        "id": "x1",
-        "client": "Design-itude Associates",
-        "sector": "Architecture · UK market",
-        "value": "125+",
-        "label": "international projects directed",
-        "extra": "60%+ faster concept stage after bringing generative AI into the 3D render pipeline",
-        "enabled": true
-      },
-      {
-        "id": "x2",
-        "client": "Chiky Pop",
-        "sector": "F&B brand launch",
-        "value": "7 days",
-        "label": "from concept to launch",
-        "extra": "Identity, packaging and UI, then 100+ daily orders at peak",
-        "enabled": true
-      },
-      {
-        "id": "x5",
-        "client": "Kshaf",
-        "sector": "E-commerce · my own store",
-        "value": "5 days",
-        "label": "from the name to a live store",
-        "extra": "Naming, identity, icons, banners and the full catalog. Still running a year later.",
-        "enabled": true
-      },
-      {
-        "id": "x3",
-        "client": "AI Render Engine",
-        "sector": "Tool I built",
-        "value": "10 sec",
-        "label": "per 2K photoreal render",
-        "extra": "Replaced a V-Ray workflow for interior and product visuals",
-        "enabled": true
-      },
-      {
-        "id": "x4",
-        "client": "Campaign Generator",
-        "sector": "Tool I built",
-        "value": "1 → 6",
-        "label": "one product photo in, a six-image campaign out",
-        "extra": "",
-        "enabled": true
-      }
-    ]
+  {
+   "id": "a2",
+   "label": "WhatsApp",
+   "url": "https://wa.me/201143650240",
+   "primary": false,
+   "enabled": true
   },
-  "tools": {
-    "enabled": true,
-    "title": "Built in-house",
-    "note": "Tools I made when the right one didn't exist.",
-    "items": [
-      {
-        "id": "t1",
-        "name": "Cut Bulk",
-        "kind": "Web tool",
-        "icon": "cut",
-        "enabled": true
-      },
-      {
-        "id": "t2",
-        "name": "TRIM",
-        "kind": "Web tool",
-        "icon": "trim",
-        "enabled": true
-      },
-      {
-        "id": "t3",
-        "name": "World Gen",
-        "kind": "AI engine",
-        "icon": "world",
-        "enabled": true
-      },
-      {
-        "id": "t4",
-        "name": "Render Engine",
-        "kind": "AI engine",
-        "icon": "render",
-        "enabled": true
-      },
-      {
-        "id": "t5",
-        "name": "Harvest",
-        "kind": "Chrome extension",
-        "icon": "harvest",
-        "enabled": true
-      },
-      {
-        "id": "t6",
-        "name": "PiP Anything",
-        "kind": "Chrome extension",
-        "icon": "pip",
-        "enabled": true
-      }
-    ]
-  },
-  "beforeAfter": {
-    "enabled": true,
-    "nav": "Before/After",
-    "kicker": "Before / After",
-    "title": "Same product. New story.",
-    "beforeLabel": "Before NM*",
-    "afterLabel": "After NM*",
-    "hint": "Drag the circle",
-    "sendLabel": "You send",
-    "getLabel": "You get",
-    "says": {
-      "b": "This is what most brands hand me: *one product on white.* Clean, correct, and nobody stops scrolling for it.",
-      "m": "Keep dragging. *The can doesn't move.* Same angle, same label. Everything around it is the work.",
-      "a": "*A campaign people stop for.* The idea, the scene, the line, the light. Same product, new story."
-    },
-    "cta": "Send me your product photo",
-    "ctaMsg": "Hi Nour, I saw the before/after on your page. I have a product photo and I want the after.",
-    "items": [
-      {
-        "brand": "NIVEA MEN",
-        "before": "assets/ba-nivea-before.jpg",
-        "after": "assets/ba-nivea-after.jpg",
-        "send": "One product photo on a white background",
-        "get": "The idea, the scene, an Arabic headline and the final visual",
-        "credit": "NIVEA MEN Black & White · Concept work, unofficial",
-        "id": "ba1",
-        "enabled": true
-      }
-    ]
-  },
-  "numbers": {
-    "enabled": true,
-    "title": "Numbers",
-    "period": "Last 90 days · Jun 25 – Sep 23, 2026",
-    "note": "Organic reach on the pages I founded and run. No paid ads.",
-    "headline": "views and impressions across four channels, organic",
-    "rows": [
-      {
-        "id": "r1",
-        "brand": "m3anyi",
-        "platform": "pinterest",
-        "value": "2.2M",
-        "raw": 2200000,
-        "label": "impressions",
-        "span": "90 days",
-        "growth": "",
-        "details": [
-          [
-            "Engagements",
-            "96.6K"
-          ],
-          [
-            "Saves",
-            "11.5K"
-          ],
-          [
-            "Audience",
-            "680.4K"
-          ]
-        ],
-        "enabled": true
-      },
-      {
-        "id": "r2",
-        "brand": "m3anyi",
-        "platform": "tiktok",
-        "value": "2.1M",
-        "raw": 2100000,
-        "label": "post views",
-        "span": "60 days",
-        "growth": "+55.5%",
-        "details": [
-          [
-            "Likes",
-            "53.9K"
-          ],
-          [
-            "Shares",
-            "6.7K"
-          ],
-          [
-            "Profile views",
-            "21.7K"
-          ]
-        ],
-        "enabled": true
-      },
-      {
-        "id": "r3",
-        "brand": "gray",
-        "platform": "pinterest",
-        "value": "1.7M",
-        "raw": 1700000,
-        "label": "impressions",
-        "span": "90 days",
-        "growth": "+66%",
-        "details": [
-          [
-            "Engagements",
-            "69.4K"
-          ],
-          [
-            "Saves",
-            "11.2K (+170%)"
-          ],
-          [
-            "Audience",
-            "998.3K"
-          ]
-        ],
-        "enabled": true
-      },
-      {
-        "id": "r4",
-        "brand": "m3anyi",
-        "platform": "instagram",
-        "value": "934.6K",
-        "raw": 934557,
-        "label": "views",
-        "span": "90 days",
-        "growth": "",
-        "details": [
-          [
-            "Interactions",
-            "90.7K"
-          ],
-          [
-            "New followers",
-            "+5,680"
-          ],
-          [
-            "From non-followers",
-            "60.8%"
-          ]
-        ],
-        "enabled": true
-      }
-    ],
-    "proofs": [
-      {
-        "id": "p1",
-        "value": "1.68M",
-        "label": "people reached on Pinterest across both pages",
-        "enabled": true
-      },
-      {
-        "id": "p2",
-        "value": "325K",
-        "label": "likes, saves, shares and comments",
-        "enabled": true
-      },
-      {
-        "id": "p3",
-        "value": "+5.7K",
-        "label": "new Instagram followers in 90 days",
-        "enabled": true
-      },
-      {
-        "id": "p4",
-        "value": "60.8%",
-        "label": "of M3anyi's Instagram views come from non-followers",
-        "enabled": true
-      }
-    ],
-    "trend": {
-      "enabled": true,
-      "title": "Daily views",
-      "series": [
-        {
-          "id": "ig",
-          "label": "M3anyi · Instagram",
-          "start": "2026-06-25",
-          "values": [
-            9547,
-            10032,
-            8771,
-            9255,
-            8383,
-            9935,
-            12456,
-            13135,
-            7899,
-            5183,
-            4408,
-            4698,
-            4311,
-            9450,
-            11390,
-            7608,
-            9547,
-            10419,
-            6735,
-            8286,
-            8965,
-            8480,
-            7025,
-            4892,
-            4117,
-            6347,
-            7510,
-            7025,
-            5183,
-            6153,
-            7510,
-            5183,
-            5183,
-            5086,
-            5377,
-            6347,
-            6928,
-            6638,
-            5862,
-            5183,
-            7122,
-            27196,
-            36117,
-            35437,
-            28649,
-            18565,
-            12649,
-            11777,
-            11583,
-            17692,
-            20408,
-            21086,
-            17498,
-            13910,
-            13038,
-            13717,
-            14686,
-            12553,
-            12262,
-            11583,
-            11001,
-            11486,
-            10226,
-            7219,
-            7413,
-            9159,
-            10226,
-            14686,
-            17886,
-            15171,
-            14589,
-            16820,
-            14298,
-            10904,
-            9450,
-            8092,
-            7316,
-            7122,
-            8092,
-            7025,
-            7608,
-            7413,
-            6638,
-            6347,
-            6347,
-            6056,
-            5086,
-            6735,
-            5959,
-            4214
-          ]
-        },
-        {
-          "id": "tk",
-          "label": "M3anyi · TikTok",
-          "start": "2026-07-25",
-          "values": [
-            10248,
-            13451,
-            8647,
-            6244,
-            5444,
-            6645,
-            13451,
-            47486,
-            111950,
-            54693,
-            48687,
-            72712,
-            156395,
-            159197,
-            116355,
-            87526,
-            49889,
-            31470,
-            30269,
-            24663,
-            31470,
-            32671,
-            37876,
-            35473,
-            67906,
-            67105,
-            32270,
-            24262,
-            18257,
-            22261,
-            27867,
-            26265,
-            20259,
-            15053,
-            18257,
-            24262,
-            17055,
-            17856,
-            22661,
-            27066,
-            29868,
-            41079,
-            31470,
-            34273,
-            32671,
-            34673,
-            53492,
-            27066,
-            23863,
-            23863,
-            24262,
-            19458,
-            16255,
-            15053,
-            11450,
-            9447,
-            5844,
-            9048,
-            7846,
-            7446
-          ]
-        }
-      ]
-    }
-  },
-  "map": {
-    "enabled": true,
-    "title": "Worldwide",
-    "headline": "Six countries, one studio.",
-    "note": "Big brands in the Egyptian and global market, agencies, and independent founders.",
-    "home": "eg",
-    "places": [
-      {
-        "id": "eg",
-        "name": "Egypt",
-        "city": "Cairo",
-        "lon": 31.24,
-        "lat": 30.04,
-        "enabled": true
-      },
-      {
-        "id": "uk",
-        "name": "United Kingdom",
-        "city": "London",
-        "lon": -0.13,
-        "lat": 51.5,
-        "enabled": true
-      },
-      {
-        "id": "us",
-        "name": "United States",
-        "city": "New York",
-        "lon": -74.0,
-        "lat": 40.7,
-        "enabled": true
-      },
-      {
-        "id": "lb",
-        "name": "Lebanon",
-        "city": "Beirut",
-        "lon": 35.5,
-        "lat": 33.9,
-        "enabled": true
-      },
-      {
-        "id": "kw",
-        "name": "Kuwait",
-        "city": "Kuwait City",
-        "lon": 47.98,
-        "lat": 29.37,
-        "enabled": true
-      },
-      {
-        "id": "sa",
-        "name": "Saudi Arabia",
-        "city": "Riyadh",
-        "lon": 46.7,
-        "lat": 24.7,
-        "enabled": true
-      }
-    ]
-  },
-  "worlds": {
-    "enabled": true,
-    "items": [
-      {
-        "id": "m3anyi",
-        "skin": "m3anyi",
-        "name": "M3anyi",
-        "arabic": "معاني",
-        "role": "Founder · since 2017",
-        "tagline": "Arabic quotes turned into illustration. Two lines, one twist, seen millions of times a quarter.",
-        "logo": "assets/logo-m3anyi.png",
-        "url": "https://www.instagram.com/m3anyi_egy",
-        "socials": [
-          {
-            "net": "instagram",
-            "url": "https://www.instagram.com/m3anyi_egy"
-          },
-          {
-            "net": "facebook",
-            "url": "https://www.facebook.com/m3anyiegy"
-          },
-          {
-            "net": "threads",
-            "url": "https://www.threads.com/@m3anyi_egy"
-          },
-          {
-            "net": "tiktok",
-            "url": "https://www.tiktok.com/@m3anyi_egy"
-          },
-          {
-            "net": "pinterest",
-            "url": "https://pin.it/7oMjMXNxT"
-          },
-          {
-            "net": "linkedin",
-            "url": "https://www.linkedin.com/in/m3anyi-egy-a40130424"
-          },
-          {
-            "net": "mail",
-            "url": "mailto:m3anyi.egy@gmail.com"
-          }
-        ],
-        "images": {
-          "prefix": "w-m3anyi-",
-          "ext": "jpg"
-        },
-        "facts": [
-          {
-            "id": "f1",
-            "value": "2017",
-            "title": "Founded",
-            "meta": "Nine years of two-line Arabic quotes",
-            "enabled": true
-          },
-          {
-            "id": "f2",
-            "value": "2.2M",
-            "title": "Pinterest impressions",
-            "meta": "Last 90 days",
-            "enabled": true
-          },
-          {
-            "id": "f3",
-            "value": "2.1M",
-            "title": "TikTok views",
-            "meta": "Last 60 days",
-            "enabled": true
-          },
-          {
-            "id": "f4",
-            "value": "934.6K",
-            "title": "Instagram views",
-            "meta": "Last 90 days",
-            "enabled": true
-          },
-          {
-            "id": "f5",
-            "value": "85%",
-            "title": "shares to likes",
-            "meta": "On the top post. 5–15% is normal.",
-            "enabled": true
-          }
-        ],
-        "endCard": {
-          "handle": "@m3anyi_egy",
-          "cta": "Open on Instagram",
-          "url": "https://www.instagram.com/m3anyi_egy"
-        }
-      },
-      {
-        "id": "gray",
-        "skin": "gray",
-        "name": "Gray Museum",
-        "arabic": "",
-        "role": "Founder · AI exhibition",
-        "tagline": "A conceptual AI exhibition. Cursed high-end, told as short fiction.",
-        "logo": "assets/logo-gray.jpg",
-        "url": "https://www.instagram.com/gray.museum",
-        "socials": [
-          {
-            "net": "instagram",
-            "url": "https://www.instagram.com/gray.museum"
-          },
-          {
-            "net": "facebook",
-            "url": "https://www.facebook.com/Gray.museum.gm"
-          },
-          {
-            "net": "tiktok",
-            "url": "https://www.tiktok.com/@gray.museum"
-          },
-          {
-            "net": "pinterest",
-            "url": "https://pin.it/8oJEGWyJO"
-          }
-        ],
-        "images": {
-          "prefix": "w-gray-",
-          "ext": "jpg"
-        },
-        "facts": [
-          {
-            "id": "g1",
-            "value": "1.7M",
-            "title": "Pinterest impressions",
-            "meta": "Last 90 days · +66%",
-            "enabled": true
-          },
-          {
-            "id": "g2",
-            "value": "998K",
-            "title": "people reached",
-            "meta": "On Pinterest, last 90 days",
-            "enabled": true
-          },
-          {
-            "id": "g3",
-            "value": "+170%",
-            "title": "saves",
-            "meta": "Versus the 90 days before",
-            "enabled": true
-          }
-        ],
-        "endCard": {
-          "handle": "@gray.museum",
-          "cta": "Enter the museum",
-          "url": "https://www.instagram.com/gray.museum"
-        }
-      }
-    ],
-    "factEvery": 3
-  },
-  "drops": {
-    "enabled": false,
-    "title": "Latest",
-    "note": "Fresh work, straight from the feed.",
-    "items": [
-      {
-        "id": "d1",
-        "type": "post",
-        "title": "Example drop",
-        "caption": "Replace with a real post or edit.",
-        "media": "",
-        "poster": "",
-        "url": "https://www.instagram.com/i2mriky",
-        "enabled": false
-      }
-    ]
-  },
-  "otherPages": {
-    "title": "Also running",
-    "note": "Side projects and stores.",
-    "enabled": true,
-    "items": [
-      {
-        "id": "o1",
-        "name": "Mobbit",
-        "net": "instagram",
-        "url": "https://www.instagram.com/mobbit.store",
-        "enabled": true
-      },
-      {
-        "id": "o2",
-        "name": "What if World — WIW",
-        "net": "instagram",
-        "url": "https://www.instagram.com/whatifworld.wiw",
-        "enabled": true
-      },
-      {
-        "id": "o3",
-        "name": "Ghost Labs",
-        "net": "instagram",
-        "url": "https://www.instagram.com/ghostlabs.ai",
-        "enabled": true
-      },
-      {
-        "id": "o4",
-        "name": "Kshaf — كشاف",
-        "net": "instagram",
-        "url": "https://www.instagram.com/kshaf.store",
-        "enabled": true
-      },
-      {
-        "id": "o5",
-        "name": "Kalam w Khalas — كلام وخلاص",
-        "net": "instagram",
-        "url": "https://www.instagram.com/kalamwkhalas",
-        "enabled": true
-      }
-    ]
-  },
-  "journal": {
-    "title": "Journal",
-    "note": "Notes on craft",
-    "enabled": false,
-    "emptyLine": "First note lands here soon.",
-    "items": []
-  },
-  "arcade": {
-    "enabled": true,
-    "title": "Play",
-    "note": "Built for fun",
-    "headline": "Games I designed. Two play right here.",
-    "sub": "Drag, or use the arrow keys.",
-    "external": {
-      "label": "El Partyta",
-      "tagline": "Interactive party game",
-      "url": "https://i2mriky.github.io/El-Partyta-Copy-Semi-Final/",
-      "enabled": true
-    }
-  },
-  "closing": {
-    "title": "Have a brief?",
-    "note": "Based in New Cairo, working with teams anywhere. Email or WhatsApp, whichever is faster for you."
+  {
+   "id": "a3",
+   "label": "Email",
+   "url": "mailto:2mrikydesign@gmail.com",
+   "primary": false,
+   "enabled": true
   }
+ ],
+ "portfolios": {
+  "title": "Portfolios",
+  "note": "Three decks, one per discipline. Open the one closest to your brief.",
+  "enabled": true,
+  "items": [
+   {
+    "id": "p1",
+    "title": "Creative Direction",
+    "subtitle": "Brand worlds, campaigns and art direction",
+    "tag": "Deck 01",
+    "cover": "assets/cover-creative-director.jpg",
+    "url": "https://nour2mriky.my.canva.site/nour-portfolio-creative-director",
+    "enabled": true
+   },
+   {
+    "id": "p2",
+    "title": "AI Creative Direction",
+    "subtitle": "Directing models, building pipelines, shipping campaigns",
+    "tag": "Deck 02",
+    "cover": "assets/cover-ai-creative-director.jpg",
+    "url": "https://nour2mriky.my.canva.site/nour-moh-ai-creative-director",
+    "enabled": true
+   },
+   {
+    "id": "p3",
+    "title": "Content & Copywriting",
+    "subtitle": "Scripts, brand voice and Arabic-first concepts",
+    "tag": "Deck 03",
+    "cover": "assets/cover-content-creative.jpg",
+    "url": "https://nour2mriky.my.canva.site/nour-mohamed-content-creative",
+    "enabled": true
+   }
+  ]
+ },
+ "services": {
+  "enabled": true,
+  "nav": "Services",
+  "title": "What I do",
+  "note": "Where the work actually happens.",
+  "items": [
+   {
+    "id": "s1",
+    "title": "Exterior, landscape & 3D visualization",
+    "line": "Gardens, facades, kiosks and interiors, from site measurements to the final render.",
+    "count": "125+",
+    "where": "UK · Egypt",
+    "size": "hero",
+    "images": [],
+    "prefix": "svc-3d-",
+    "deco": "",
+    "enabled": true
+   },
+   {
+    "id": "s2",
+    "title": "AI campaigns",
+    "line": "One idea, one world, one line.",
+    "count": "",
+    "where": "",
+    "size": "",
+    "images": [
+     "assets/ba-nivea-after.jpg"
+    ],
+    "prefix": "svc-ai-",
+    "deco": "",
+    "enabled": true
+   },
+   {
+    "id": "s3",
+    "title": "Product photography",
+    "line": "Real shoot, then AI post-production.",
+    "count": "",
+    "where": "",
+    "size": "",
+    "images": [],
+    "prefix": "",
+    "deco": "viewfinder",
+    "enabled": true,
+    "shot": "assets/ba-nivea-before.jpg",
+    "chips": [
+     "Studio shoot",
+     "Retouch",
+     "AI scene"
+    ]
+   },
+   {
+    "id": "s4",
+    "title": "Brand identity",
+    "line": "Names, logos and full identity systems. A few of my own:",
+    "count": "",
+    "where": "",
+    "size": "full",
+    "images": [],
+    "prefix": "",
+    "deco": "",
+    "enabled": true,
+    "logos": [
+     {
+      "name": "M3anyi",
+      "img": "assets/logo-m3anyi.png"
+     },
+     {
+      "name": "Gray Museum",
+      "img": "assets/logo-gray.jpg"
+     },
+     {
+      "name": "Kshaf",
+      "img": ""
+     },
+     {
+      "name": "El Partyta",
+      "img": ""
+     },
+     {
+      "name": "Ghost Labs",
+      "img": ""
+     }
+    ]
+   },
+   {
+    "id": "s5",
+    "title": "Apparel & uniforms",
+    "line": "Designed and produced, not just mocked up.",
+    "count": "",
+    "where": "",
+    "size": "strip",
+    "images": [],
+    "prefix": "",
+    "deco": "",
+    "enabled": true,
+    "art": "tee",
+    "chips": [
+     "Team kits",
+     "Staff uniforms",
+     "Merch"
+    ]
+   }
+  ]
+ },
+ "results": {
+  "enabled": true,
+  "title": "High scores",
+  "note": "What the work did. Swipe.",
+  "items": [
+   {
+    "id": "x1",
+    "tag": "UK market",
+    "client": "Design-itude Associates",
+    "sector": "Architecture · UK market",
+    "value": "125+",
+    "label": "projects in under 3 years",
+    "extra": "concept stage 60%+ faster with AI in the render pipeline",
+    "enabled": true
+   },
+   {
+    "id": "x6",
+    "tag": "One post",
+    "client": "M3anyi",
+    "sector": "Organic",
+    "value": "286K",
+    "label": "views on one carousel in 6 days",
+    "extra": "12K likes, 2K reposts and 1.1K new followers from that one post",
+    "enabled": true
+   },
+   {
+    "id": "x2",
+    "tag": "F&B launch",
+    "client": "Chiky Pop",
+    "sector": "F&B brand launch",
+    "value": "7 days",
+    "label": "from concept to launch",
+    "extra": "identity, packaging and UI, then 100+ daily orders at peak",
+    "enabled": true
+   },
+   {
+    "id": "x5",
+    "tag": "My own store",
+    "client": "Kshaf",
+    "sector": "E-commerce",
+    "value": "5 days",
+    "label": "from the name to a live store",
+    "extra": "still running a year later",
+    "enabled": true
+   },
+   {
+    "id": "x7",
+    "tag": "Organic reach",
+    "client": "",
+    "sector": "",
+    "value": "7.2M",
+    "label": "views in 90 days, no ads",
+    "extra": "Four channels across M3anyi and Gray Museum",
+    "enabled": true
+   },
+   {
+    "id": "x8",
+    "tag": "New audience",
+    "client": "M3anyi · Instagram",
+    "sector": "",
+    "value": "81%",
+    "label": "of views come from non-followers",
+    "extra": "last 30 days, 530K views",
+    "enabled": true
+   },
+   {
+    "id": "x9",
+    "tag": "TikTok, one week",
+    "client": "M3anyi",
+    "sector": "",
+    "value": "+112%",
+    "label": "post views week over week",
+    "extra": "167K views, Oct 3 to 9",
+    "enabled": true
+   },
+   {
+    "id": "x10",
+    "tag": "Gray Museum",
+    "client": "Pinterest",
+    "sector": "",
+    "value": "+170%",
+    "label": "saves in 90 days",
+    "extra": "versus the 90 days before",
+    "enabled": true
+   },
+   {
+    "id": "x3",
+    "tag": "Tool I built",
+    "client": "AI Render Engine",
+    "sector": "Tool I built",
+    "value": "10 sec",
+    "label": "per 2K photoreal render",
+    "extra": "replaced a V-Ray workflow for interior and product visuals",
+    "enabled": true
+   }
+  ]
+ },
+ "tools": {
+  "enabled": true,
+  "title": "Built in-house",
+  "note": "Tools I made when the right one didn't exist.",
+  "items": [
+   {
+    "id": "t1",
+    "name": "Cut Bulk",
+    "kind": "Web tool",
+    "icon": "cut",
+    "line": "Removes the background from a whole folder of images at once.",
+    "enabled": true
+   },
+   {
+    "id": "t2",
+    "name": "Squeeze Bulk",
+    "kind": "Web tool",
+    "icon": "squeeze",
+    "line": "Compresses a batch of images for the web, right in the browser.",
+    "enabled": true
+   },
+   {
+    "id": "t3",
+    "name": "TRIM",
+    "kind": "Web tool",
+    "icon": "trim",
+    "line": "Slices one wide carousel export into ready Instagram slides.",
+    "enabled": true
+   },
+   {
+    "id": "t4",
+    "name": "md Bulk",
+    "kind": "Web tool",
+    "icon": "md",
+    "line": "Paste long text, get clean .md or .txt files in one tap.",
+    "enabled": true
+   },
+   {
+    "id": "t5",
+    "name": "RefBoard",
+    "kind": "Web tool",
+    "icon": "board",
+    "line": "Arranges loose reference images into one tidy board.",
+    "enabled": true
+   },
+   {
+    "id": "t6",
+    "name": "GLB 360",
+    "kind": "Web tool",
+    "icon": "glb",
+    "line": "Spins a 3D model in the browser so a client can review it.",
+    "enabled": true
+   },
+   {
+    "id": "t7",
+    "name": "Reel Engine",
+    "kind": "Motion engine",
+    "icon": "engine",
+    "line": "Builds a full motion-graphic reel from one script file.",
+    "enabled": true
+   },
+   {
+    "id": "t8",
+    "name": "KADR",
+    "kind": "Reel editor",
+    "icon": "kadr",
+    "line": "A timeline editor for the engine: retime, rewrite, export.",
+    "enabled": true
+   },
+   {
+    "id": "t9",
+    "name": "World Gen",
+    "kind": "AI engine",
+    "icon": "world",
+    "line": "Turns one product photo into a full campaign grid.",
+    "enabled": true
+   },
+   {
+    "id": "t10",
+    "name": "Render Engine",
+    "kind": "AI engine",
+    "icon": "render",
+    "line": "A 2K photoreal render in about 10 seconds.",
+    "enabled": true
+   },
+   {
+    "id": "t11",
+    "name": "Post Designer",
+    "kind": "Brand tool",
+    "icon": "post",
+    "line": "The team types the text; the layout stays on brand.",
+    "enabled": true
+   },
+   {
+    "id": "t12",
+    "name": "Data Manager",
+    "kind": "Game tool",
+    "icon": "cards",
+    "line": "Keeps 3,000+ game cards checked against the content rules.",
+    "enabled": true
+   },
+   {
+    "id": "t13",
+    "name": "Harvest",
+    "kind": "Chrome extension",
+    "icon": "harvest",
+    "line": "Reads a whole Instagram profile into one audit file.",
+    "enabled": true
+   },
+   {
+    "id": "t14",
+    "name": "PromptLens",
+    "kind": "Chrome extension",
+    "icon": "lens",
+    "line": "Reads a thumbnail and writes the prompt behind it.",
+    "enabled": true
+   },
+   {
+    "id": "t15",
+    "name": "PiP Anything",
+    "kind": "Chrome extension",
+    "icon": "pip",
+    "line": "Floats any video on top of whatever you're working on.",
+    "enabled": true
+   }
+  ]
+ },
+ "beforeAfter": {
+  "enabled": true,
+  "nav": "Before/After",
+  "kicker": "Before / After",
+  "title": "Same product. New story.",
+  "beforeLabel": "Before NM*",
+  "afterLabel": "After NM*",
+  "hint": "Drag the circle",
+  "sendLabel": "You send",
+  "getLabel": "You get",
+  "says": {
+   "b": "This is what most brands hand me: *one product on white.* Clean, correct, and nobody stops scrolling for it.",
+   "m": "Keep dragging. *The can doesn't move.* Same angle, same label. Everything around it is the work.",
+   "a": "*A campaign people stop for.* The idea, the scene, the line, the light. Same product, new story."
+  },
+  "cta": "Send me your product photo",
+  "ctaMsg": "Hi Nour, I saw the before/after on your page. I have a product photo and I want the after.",
+  "items": [
+   {
+    "brand": "NIVEA MEN",
+    "before": "assets/ba-nivea-before.jpg",
+    "after": "assets/ba-nivea-after.jpg",
+    "send": "One product photo on a white background",
+    "get": "The idea, the scene, an Arabic headline and the final visual",
+    "credit": "NIVEA MEN Black & White · Concept work, unofficial",
+    "id": "ba1",
+    "enabled": true
+   }
+  ]
+ },
+ "numbers": {
+  "enabled": true,
+  "title": "Numbers",
+  "period": "Last 90 days · Jun 25 – Sep 23, 2026",
+  "note": "Organic reach on the pages I founded and run. No paid ads.",
+  "headline": "views and impressions across four channels, organic",
+  "rows": [
+   {
+    "id": "r1",
+    "brand": "m3anyi",
+    "platform": "pinterest",
+    "value": "2.2M",
+    "raw": 2200000,
+    "label": "impressions",
+    "span": "90 days",
+    "growth": "",
+    "details": [
+     [
+      "Engagements",
+      "96.6K"
+     ],
+     [
+      "Saves",
+      "11.5K"
+     ],
+     [
+      "Audience",
+      "680.4K"
+     ]
+    ],
+    "enabled": true
+   },
+   {
+    "id": "r2",
+    "brand": "m3anyi",
+    "platform": "tiktok",
+    "value": "2.1M",
+    "raw": 2100000,
+    "label": "post views",
+    "span": "60 days",
+    "growth": "+111.7% this week",
+    "details": [
+     [
+      "Views, Oct 3 to 9",
+      "167K"
+     ],
+     [
+      "Likes, same week",
+      "5K"
+     ],
+     [
+      "Shares, same week",
+      "552"
+     ]
+    ],
+    "enabled": true
+   },
+   {
+    "id": "r3",
+    "brand": "gray",
+    "platform": "pinterest",
+    "value": "1.7M",
+    "raw": 1700000,
+    "label": "impressions",
+    "span": "90 days",
+    "growth": "+66%",
+    "details": [
+     [
+      "Engagements",
+      "69.4K"
+     ],
+     [
+      "Saves",
+      "11.2K (+170%)"
+     ],
+     [
+      "Audience",
+      "998.3K"
+     ]
+    ],
+    "enabled": true
+   },
+   {
+    "id": "r4",
+    "brand": "m3anyi",
+    "platform": "instagram",
+    "value": "1.23M",
+    "raw": 1231464,
+    "label": "views",
+    "span": "90 days",
+    "growth": "",
+    "details": [
+     [
+      "Last 30 days",
+      "530.9K views"
+     ],
+     [
+      "New followers, 30 days",
+      "+1,441"
+     ],
+     [
+      "From non-followers",
+      "81.1%"
+     ]
+    ],
+    "enabled": true,
+    "since": "2026-10-11"
+   }
+  ],
+  "proofs": [
+   {
+    "id": "p1",
+    "value": "1.68M",
+    "label": "people reached on Pinterest across both pages",
+    "enabled": true
+   },
+   {
+    "id": "p2",
+    "value": "325K",
+    "label": "likes, saves, shares and comments",
+    "enabled": true
+   },
+   {
+    "id": "p3",
+    "value": "+1.4K",
+    "label": "new Instagram followers in the last 30 days",
+    "enabled": true
+   },
+   {
+    "id": "p4",
+    "value": "81.1%",
+    "label": "of M3anyi's Instagram views in the last 30 days come from non-followers",
+    "enabled": true
+   }
+  ],
+  "trend": {
+   "enabled": true,
+   "title": "Daily views",
+   "series": [
+    {
+     "id": "ig",
+     "label": "M3anyi · Instagram",
+     "start": "2026-06-25",
+     "values": [
+      9547,
+      10032,
+      8771,
+      9255,
+      8383,
+      9935,
+      12456,
+      13135,
+      7899,
+      5183,
+      4408,
+      4698,
+      4311,
+      9450,
+      11390,
+      7608,
+      9547,
+      10419,
+      6735,
+      8286,
+      8965,
+      8480,
+      7025,
+      4892,
+      4117,
+      6347,
+      7510,
+      7025,
+      5183,
+      6153,
+      7510,
+      5183,
+      5183,
+      5086,
+      5377,
+      6347,
+      6928,
+      6638,
+      5862,
+      5183,
+      7122,
+      27196,
+      36117,
+      35437,
+      28649,
+      18565,
+      12649,
+      11777,
+      11583,
+      17692,
+      20408,
+      21086,
+      17498,
+      13910,
+      13038,
+      13717,
+      14686,
+      12553,
+      12262,
+      11583,
+      11001,
+      11486,
+      10226,
+      7219,
+      7413,
+      9159,
+      10226,
+      14686,
+      17886,
+      15171,
+      14589,
+      16820,
+      14298,
+      10904,
+      9450,
+      8092,
+      7316,
+      7122,
+      8925,
+      5454,
+      8132,
+      7735,
+      6347,
+      6843,
+      6942,
+      6248,
+      4264,
+      7834,
+      5950,
+      4958,
+      3173,
+      3570,
+      3471,
+      1587,
+      3372,
+      1488,
+      4958,
+      7140,
+      2975,
+      2975,
+      1983,
+      6942,
+      51568,
+      56527,
+      63469,
+      77353,
+      71402,
+      87272
+     ],
+     "window": 90,
+     "base": 3
+    },
+    {
+     "id": "tk",
+     "label": "M3anyi · TikTok",
+     "start": "2026-07-25",
+     "values": [
+      10248,
+      13451,
+      8647,
+      6244,
+      5444,
+      6645,
+      13451,
+      47486,
+      111950,
+      54693,
+      48687,
+      72712,
+      156395,
+      159197,
+      116355,
+      87526,
+      49889,
+      31470,
+      30269,
+      24663,
+      31470,
+      32671,
+      37876,
+      35473,
+      67906,
+      67105,
+      32270,
+      24262,
+      18257,
+      22261,
+      27867,
+      26265,
+      20259,
+      15053,
+      18257,
+      24262,
+      17055,
+      17856,
+      22661,
+      27066,
+      29868,
+      41079,
+      31470,
+      34273,
+      32671,
+      34673,
+      53492,
+      27066,
+      23863,
+      23863,
+      24262,
+      19458,
+      16255,
+      15053,
+      11450,
+      9447,
+      5844,
+      9048,
+      7846,
+      7446,
+      8200,
+      7600,
+      8900,
+      11300,
+      10400,
+      12100,
+      9800,
+      11900,
+      12600,
+      10800,
+      9684,
+      15020,
+      58796,
+      30139,
+      20257,
+      21246,
+      11858
+     ],
+     "base": 7
+    }
+   ]
+  },
+  "live": {
+   "enabled": true,
+   "since": "2026-10-11",
+   "growth": 6,
+   "autoPeriod": true,
+   "note": "Between monthly updates, the total and the line after the last real day run on a projection of recent growth. Instagram is real daily data through Oct 10, 2026; TikTok is real for Oct 3 to 9."
+  }
+ },
+ "map": {
+  "enabled": true,
+  "title": "Worldwide",
+  "headline": "Six countries, one studio.",
+  "note": "Big brands in the Egyptian and global market, agencies, and independent founders.",
+  "home": "eg",
+  "places": [
+   {
+    "id": "eg",
+    "name": "Egypt",
+    "city": "Cairo",
+    "lon": 31.24,
+    "lat": 30.04,
+    "enabled": true
+   },
+   {
+    "id": "uk",
+    "name": "United Kingdom",
+    "city": "London",
+    "lon": -0.13,
+    "lat": 51.5,
+    "enabled": true
+   },
+   {
+    "id": "us",
+    "name": "United States",
+    "city": "New York",
+    "lon": -74.0,
+    "lat": 40.7,
+    "enabled": true
+   },
+   {
+    "id": "lb",
+    "name": "Lebanon",
+    "city": "Beirut",
+    "lon": 35.5,
+    "lat": 33.9,
+    "enabled": true
+   },
+   {
+    "id": "kw",
+    "name": "Kuwait",
+    "city": "Kuwait City",
+    "lon": 47.98,
+    "lat": 29.37,
+    "enabled": true
+   },
+   {
+    "id": "sa",
+    "name": "Saudi Arabia",
+    "city": "Riyadh",
+    "lon": 46.7,
+    "lat": 24.7,
+    "enabled": true
+   }
+  ]
+ },
+ "worlds": {
+  "enabled": true,
+  "items": [
+   {
+    "id": "m3anyi",
+    "skin": "m3anyi",
+    "name": "M3anyi",
+    "arabic": "معاني",
+    "role": "Founder · since 2017",
+    "tagline": "Arabic quotes turned into illustration. Two lines, one twist, seen millions of times a quarter.",
+    "logo": "assets/logo-m3anyi.png",
+    "url": "https://www.instagram.com/m3anyi_egy",
+    "socials": [
+     {
+      "net": "instagram",
+      "url": "https://www.instagram.com/m3anyi_egy"
+     },
+     {
+      "net": "facebook",
+      "url": "https://www.facebook.com/m3anyiegy"
+     },
+     {
+      "net": "threads",
+      "url": "https://www.threads.com/@m3anyi_egy"
+     },
+     {
+      "net": "tiktok",
+      "url": "https://www.tiktok.com/@m3anyi_egy"
+     },
+     {
+      "net": "pinterest",
+      "url": "https://pin.it/7oMjMXNxT"
+     },
+     {
+      "net": "linkedin",
+      "url": "https://www.linkedin.com/in/m3anyi-egy-a40130424"
+     },
+     {
+      "net": "mail",
+      "url": "mailto:m3anyi.egy@gmail.com"
+     }
+    ],
+    "images": {
+     "prefix": "w-m3anyi-",
+     "ext": "jpg"
+    },
+    "facts": [
+     {
+      "id": "f1",
+      "value": "2017",
+      "title": "Founded",
+      "meta": "Nine years of two-line Arabic quotes",
+      "enabled": true
+     },
+     {
+      "id": "f2",
+      "value": "2.2M",
+      "title": "Pinterest impressions",
+      "meta": "Last 90 days",
+      "enabled": true
+     },
+     {
+      "id": "f3",
+      "value": "2.1M",
+      "title": "TikTok views",
+      "meta": "Last 60 days",
+      "enabled": true
+     },
+     {
+      "id": "f4",
+      "value": "934.6K",
+      "title": "Instagram views",
+      "meta": "Last 90 days",
+      "enabled": true
+     },
+     {
+      "id": "f5",
+      "value": "85%",
+      "title": "shares to likes",
+      "meta": "On the top post. 5–15% is normal.",
+      "enabled": true
+     }
+    ],
+    "endCard": {
+     "handle": "@m3anyi_egy",
+     "cta": "Open on Instagram",
+     "url": "https://www.instagram.com/m3anyi_egy"
+    },
+    "deep": {
+     "enabled": true,
+     "door": "Keep swiping",
+     "doorNote": "See how one post is made",
+     "title": "Inside M3anyi",
+     "headline": "How one post is made.",
+     "intro": "Nine years, one rule: say something true that nobody named before. Scroll and watch this post come together.",
+     "steps": [
+      {
+       "id": "d1",
+       "title": "The line comes first",
+       "text": "Written for how it sounds before anything is drawn: two lines, one turn, one word that carries the weight. “We forgave a lot so we could rest… not because they deserved it.”",
+       "img": "assets/m3-flow-1.jpg",
+       "enabled": true
+      },
+      {
+       "id": "d2",
+       "title": "Then it gets a shape of its own",
+       "text": "No template. The drawing is built for this line only. The purple of the bag is the purple of the last word, so the eye connects them without being told.",
+       "img": "assets/m3-flow-2.jpg",
+       "enabled": true
+      },
+      {
+       "id": "d3",
+       "title": "Then it goes out, and every comment gets a reply",
+       "text": "Published on Instagram, TikTok, Pinterest and Facebook. The conversation under the post is part of the work, which is why the top post reached 85% shares to likes.",
+       "img": "assets/m3-flow-3.jpg",
+       "enabled": true
+      }
+     ]
+    }
+   },
+   {
+    "id": "gray",
+    "skin": "gray",
+    "name": "Gray Museum",
+    "arabic": "",
+    "role": "Founder · AI exhibition",
+    "tagline": "A conceptual AI exhibition. Cursed high-end, told as short fiction.",
+    "logo": "assets/logo-gray.jpg",
+    "url": "https://www.instagram.com/gray.museum",
+    "socials": [
+     {
+      "net": "instagram",
+      "url": "https://www.instagram.com/gray.museum"
+     },
+     {
+      "net": "facebook",
+      "url": "https://www.facebook.com/Gray.museum.gm"
+     },
+     {
+      "net": "tiktok",
+      "url": "https://www.tiktok.com/@gray.museum"
+     },
+     {
+      "net": "pinterest",
+      "url": "https://pin.it/8oJEGWyJO"
+     }
+    ],
+    "images": {
+     "prefix": "w-gray-",
+     "ext": "jpg"
+    },
+    "facts": [
+     {
+      "id": "g1",
+      "value": "1.7M",
+      "title": "Pinterest impressions",
+      "meta": "Last 90 days · +66%",
+      "enabled": true
+     },
+     {
+      "id": "g2",
+      "value": "998K",
+      "title": "people reached",
+      "meta": "On Pinterest, last 90 days",
+      "enabled": true
+     },
+     {
+      "id": "g3",
+      "value": "+170%",
+      "title": "saves",
+      "meta": "Versus the 90 days before",
+      "enabled": true
+     }
+    ],
+    "endCard": {
+     "handle": "@gray.museum",
+     "cta": "Enter the museum",
+     "url": "https://www.instagram.com/gray.museum"
+    }
+   }
+  ],
+  "factEvery": 3
+ },
+ "wall": {
+  "enabled": true,
+  "nav": "Reviews",
+  "title": "Real reviews & comments",
+  "note": "Screenshots, unedited. Tap any square to read it.",
+  "show": 12,
+  "sources": [
+   {
+    "id": "r1",
+    "key": "client",
+    "label": "Clients",
+    "prefix": "rv-client-",
+    "color": "#E07848",
+    "enabled": true
+   },
+   {
+    "id": "r2",
+    "key": "gray",
+    "label": "Gray Museum",
+    "prefix": "rv-gray-",
+    "color": "#8C7FD6",
+    "enabled": true
+   },
+   {
+    "id": "r3",
+    "key": "m3anyi",
+    "label": "M3anyi",
+    "prefix": "rv-m3anyi-",
+    "color": "#B8452A",
+    "enabled": true
+   },
+   {
+    "id": "r4",
+    "key": "i2mriky",
+    "label": "i2mriky",
+    "prefix": "rv-i2mriky-",
+    "color": "#4E8F7A",
+    "enabled": true
+   }
+  ]
+ },
+ "drops": {
+  "enabled": false,
+  "title": "Latest",
+  "note": "Fresh work, straight from the feed.",
+  "items": [
+   {
+    "id": "d1",
+    "type": "post",
+    "title": "Example drop",
+    "caption": "Replace with a real post or edit.",
+    "media": "",
+    "poster": "",
+    "url": "https://www.instagram.com/i2mriky",
+    "enabled": false
+   }
+  ]
+ },
+ "otherPages": {
+  "title": "Also running",
+  "note": "Side projects and stores.",
+  "enabled": true,
+  "items": [
+   {
+    "id": "o1",
+    "name": "Mobbit",
+    "net": "instagram",
+    "url": "https://www.instagram.com/mobbit.store",
+    "enabled": true
+   },
+   {
+    "id": "o2",
+    "name": "What if World — WIW",
+    "net": "instagram",
+    "url": "https://www.instagram.com/whatifworld.wiw",
+    "enabled": true
+   },
+   {
+    "id": "o3",
+    "name": "Ghost Labs",
+    "net": "instagram",
+    "url": "https://www.instagram.com/ghostlabs.ai",
+    "enabled": true
+   },
+   {
+    "id": "o4",
+    "name": "Kshaf — كشاف",
+    "net": "instagram",
+    "url": "https://www.instagram.com/kshaf.store",
+    "enabled": true
+   },
+   {
+    "id": "o5",
+    "name": "Kalam w Khalas — كلام وخلاص",
+    "net": "instagram",
+    "url": "https://www.instagram.com/kalamwkhalas",
+    "enabled": true
+   }
+  ]
+ },
+ "journal": {
+  "title": "Journal",
+  "note": "Notes on craft",
+  "enabled": false,
+  "emptyLine": "First note lands here soon.",
+  "items": []
+ },
+ "arcade": {
+  "enabled": true,
+  "title": "Play",
+  "note": "Built for fun",
+  "headline": "Brief Catcher and Rally",
+  "sub": "Drag, or use the arrow keys.",
+  "external": {
+   "label": "El Partyta",
+   "tagline": "Interactive party game",
+   "url": "https://i2mriky.github.io/El-Partyta-Copy-Semi-Final/",
+   "enabled": false
+  }
+ },
+ "closing": {
+  "title": "Have a brief?",
+  "note": "Based in New Cairo, working with teams anywhere. Email or WhatsApp, whichever is faster for you."
+ }
 }
