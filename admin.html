@@ -98,6 +98,7 @@ font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:11px 18px;b
     <button class="tab" role="tab" data-p="drops">Latest</button>
     <button class="tab" role="tab" data-p="journal">Journal</button>
     <button class="tab" role="tab" data-p="arcade">Arcade</button>
+    <button class="tab" role="tab" data-p="assistant">Ask NM*</button>
     <button class="tab" role="tab" data-p="theme">Theme</button>
     <button class="tab" role="tab" data-p="settings">Settings</button>
     <button class="tab" role="tab" data-p="publish">Publish</button>
@@ -277,6 +278,13 @@ font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:11px 18px;b
       <div class="bar"><button class="btn" data-add="journal.items">+ Add entry</button></div>
     </section>
 
+    <section class="panel" id="p-assistant">
+      <h2>Ask NM*</h2>
+      <p class="hint">The assistant on the site. It may only use the facts below plus your results, tools and numbers. One fact per line. The key lives in the Cloudflare Worker, never here.</p>
+      <label class="sw" style="margin-bottom:18px"><input type="checkbox" data-b="assistant.enabled"> Show the assistant</label>
+      <div class="grid"><div class="field"><label>Worker URL</label><input data-b="assistant.worker" placeholder="https://ask-nm.YOUR-SUBDOMAIN.workers.dev"></div><div class="field"><label>First line in the chat</label><input data-b="assistant.greeting"></div></div>
+      <div class="field"><label>Facts the assistant may use (one per line)</label><textarea data-b="assistant.profile" data-lines="1" rows="20" style="width:100%;min-height:340px;font:inherit;line-height:1.5;padding:12px;border-radius:12px;background:transparent;color:inherit;border:1px solid currentColor;opacity:.92"></textarea></div>
+    </section>
     <section class="panel" id="p-arcade">
       <h2>Arcade</h2>
       <p class="hint">Sits at the very bottom as a reward for scrolling. Two games run in the page; the third tile links out to a full demo. Scores stay on the visitor's own device.</p>
@@ -359,7 +367,7 @@ font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:11px 18px;b
 <script>
 const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
 const uid = () => Math.random().toString(36).slice(2,8);
-const LS = "nm_bio_draft_v10", LSGH = "nm_bio_gh";
+const LS = "nm_bio_draft_v11", LSGH = "nm_bio_gh";
 const NETS = ["instagram","facebook","threads","tiktok","pinterest","linkedin","behance","x","youtube","whatsapp","mail","link"];
 let D = null, dirty = false;
 
@@ -428,9 +436,9 @@ function renderAll(){
 function bindFields(){
   $$("[data-b]").forEach(el => { const p = el.dataset.b, v = get(D,p);
     if (el.type === "checkbox") el.checked = v !== false && v !== undefined;
-    else el.value = el.dataset.list ? (v||[]).join(", ") : (v ?? "");
+    else el.value = el.dataset.lines ? (v||[]).join("\n") : el.dataset.list ? (v||[]).join(", ") : (v ?? "");
     el.oninput = el.onchange = () => { let nv = el.type === "checkbox" ? el.checked : el.value;
-      if (el.dataset.list) nv = nv.split(",").map(x=>x.trim()).filter(Boolean);
+      if (el.dataset.lines) nv = nv.split("\n").map(x=>x.trim()).filter(Boolean); else if (el.dataset.list) nv = nv.split(",").map(x=>x.trim()).filter(Boolean);
       set(D,p,nv); sync();
       const c = document.querySelector('[data-sync="'+p+'"]'); if (c && /^#/.test(nv)) c.value = nv; };
   });

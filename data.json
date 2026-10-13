@@ -1,5 +1,5 @@
 {
- "version": 7,
+ "version": 8,
  "profile": {
   "name": "Nour Mohamed",
   "monogram": "NM*",
@@ -1203,5 +1203,37 @@
  "closing": {
   "title": "Have a brief?",
   "note": "Based in New Cairo, working with teams anywhere. Email or WhatsApp, whichever is faster for you."
+ },
+ "assistant": {
+  "enabled": true,
+  "worker": "",
+  "greeting": "Tell me what you're building. Any language works.",
+  "profile": [
+   "Nour Mohamed is a Creative Director and AI specialist in New Cairo, Egypt, working with teams anywhere. He works in Arabic (Egyptian) and English.",
+   "12+ years in brand and graphic design, 3+ years in architectural visualization, 150+ projects, clients in Egypt, the UK, the USA, Lebanon, Kuwait and Saudi Arabia.",
+   "The studio (rooms on the site): 3D room = exterior, landscape, interior visualization and 3D films. Photo studio = product photography in every colourway, then ad images built around the real product. AI lab = AI campaigns and AI product images and videos with the product kept accurate. Identity & print = naming, logo, colour, type, brand books, print-ready packaging and cartons, uniforms and merch (designed and produced). Content room = social content planning, post design, carousels, reels with motion, captions, and Arabic voice-over recorded in-house. Garden = landscape and outdoor spaces.",
+   "Full house = one brand built end to end in seven stages: idea, identity, art direction, studio shoot, ads and posts, reels, packaging. The case on the site is Lamsa Plast.",
+   "Lamsa Plast (housewares manufacturer): bath set and water bottle orders: studio photos in five colourways, ad images, social posts, two product reels, and a print-ready carton.",
+   "Golden Home (real estate brokerage, New Cairo): motion reels on Nour's own reel engine, with his script and his voice-over.",
+   "Design-itude Associates (UK market): 125+ exterior, landscape and interior projects in under 3 years; AI in the render pipeline made the concept stage 60%+ faster.",
+   "Chiky Pop (F&B): naming, identity, packaging and UI, launched in 7 days, 100+ daily orders at peak; its staff uniform is still produced.",
+   "Kshaf: Nour's own e-commerce store, from the name to a live store in 5 days, still running a year later.",
+   "M3anyi: Nour's own Arabic quotes and illustration page since 2017, grown with no ads; one carousel reached 286K views in 6 days; 81% of its Instagram views in the last 30 days came from non-followers.",
+   "Gray Museum: Nour's own surreal AI art brand; +170% Pinterest saves in 90 days.",
+   "El Partyta: a party game Nour designed, wrote and built, published by NMRA: 20+ games, 3,000+ cards written in-house, one phone or online rooms; in closed testing on Google Play, with a web version.",
+   "@i2mriky: Nour's own page of design and AI explainers; its reels are built on his own reel engine (for example 'Why prices end in 99').",
+   "NIVEA MEN on the Before/After slider is a self-initiated concept campaign, not a commission.",
+   "Oakmere school uniform programme: concept work for a pitch.",
+   "He built 15 tools for his own work (Reel Engine, the KADR editor, World Gen, Render Engine, Cut Bulk, Squeeze Bulk, Harvest and more). Names only, never links.",
+   "How work starts: the visitor sends the brief on WhatsApp, Nour replies himself and sends a proposal with the scope, and work starts once it is approved.",
+   "Prices and timelines depend on the scope and are quoted by Nour on WhatsApp, never here.",
+   "For hiring and roles: the CV button is at the top of the site; Nour takes the conversation on WhatsApp or email.",
+   "Writing: brand copy, ad scripts, captions and content strategy in Egyptian Arabic and English. He has written colloquial Egyptian poetry for 10+ years and has written and illustrated children's stories.",
+   "Content work has covered 16+ brands across tech accessories, F&B, interior design and fashion.",
+   "Real-estate video: editing, motion reels, shoot days and presenter videos, with script and Nour's own Arabic voice-over as an add-on.",
+   "Decks and proposals: pitch decks, brand proposals and presentation design for clients.",
+   "Reels can be delivered as an editable project, so the client can change text and timing later.",
+   "Monthly content packages are available; what goes in them and the price are agreed with Nour on WhatsApp."
+  ]
  }
 }
