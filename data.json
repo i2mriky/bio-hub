@@ -1206,7 +1206,7 @@
  },
  "assistant": {
   "enabled": true,
-  "worker": "",
+  "worker": "https://ask-nm.2mrikydesign.workers.dev",
   "greeting": "Tell me what you're building. Any language works.",
   "profile": [
    "Nour Mohamed is a Creative Director and AI specialist in New Cairo, Egypt, working with teams anywhere. He works in Arabic (Egyptian) and English.",
@@ -1234,6 +1234,21 @@
    "Decks and proposals: pitch decks, brand proposals and presentation design for clients.",
    "Reels can be delivered as an editable project, so the client can change text and timing later.",
    "Monthly content packages are available; what goes in them and the price are agreed with Nour on WhatsApp."
+  ],
+  "site": [
+   "Hero (top): who Nour is, the CV button and the line 'Tell me what you're building'.",
+   "Before/After: a drag slider. NIVEA MEN, a raw can on white turned into a campaign image (self-initiated concept).",
+   "High scores: his best numbers as cards, plus 'Built in-house', a rail of the 15 tools he built.",
+   "The studio, 3D room: exterior concept for the UK, drafting-table plans, material library, a whole-street site model.",
+   "The studio, Photo studio: the Lamsa Art Bath Set on the table, two cameras on two colourways, the retouched ad image, clear plastic under a softbox.",
+   "The studio, AI lab: a campaign on four screens, the robot where every AI model is tested, a frame from an @i2mriky reel.",
+   "The studio, Identity & print: M3anyi and Gray Museum on the board, the El Partyta brand book, the Lamsa carton, the Oakmere uniform concept.",
+   "The studio, Content room: the M3anyi feed, an @i2mriky reel on the timeline, a client post on the calendar wall, the voice booth (his voice on the Golden Home reel), insights.",
+   "The studio, Garden: landscape and outdoor designs.",
+   "In motion: 8 clips. Tall: Art Bath Set and Aqua Polo (Lamsa), Brands wanted (Golden Home), Why prices end in 99 and Everything on a line (@i2mriky). Wide: El Partyta store trailer, Plaza at dusk and Restaurant walkthrough (3D films for Design-itude Associates).",
+   "Full house: a 3D house built in 7 stages, each with the real Lamsa work: idea, identity, art direction, studio shoot, ads and posts, reels, packaging. Ends with 'Book a brand consult'.",
+   "Work: his portfolio decks. Numbers: live organic reach. Map: six countries. Worlds: M3anyi and Gray Museum.",
+   "Games (end of the page): El Partyta with three playable mini-games and a web version, plus small arcade games."
   ]
  }
 }

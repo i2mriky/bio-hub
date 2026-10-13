@@ -767,6 +767,9 @@ const save = () => { try { sessionStorage.setItem(SS, JSON.stringify(msgs.slice(
 const cfg = () => D.assistant || {};
 const waNum = () => String((D.contact || {}).whatsapp || "").replace(/\D/g, "");
 const waLink = text => `https://wa.me/${waNum()}?text=${encodeURIComponent(text)}`;
+/* last 22 messages, but the visitor's first message always stays in (it usually holds the project) */
+const sendable = () => { const all = msgs.filter(m => !(m.meta && m.meta.fallback)).map(m => ({ role: m.role, content: m.content }));
+  if (all.length <= 24) return all; const first = all.find(m => m.role === "user"), tail = all.slice(-22); return tail.includes(first) ? tail : [first, ...tail]; };
 const lastUserAr = () => isAr((msgs.filter(m => m.role === "user").slice(-1)[0] || {}).content || "");
 function fallbackText() {
   const said = msgs.filter(m => m.role === "user").map(m => m.content.trim()).filter(Boolean).slice(-3);
@@ -864,17 +867,18 @@ async function send(text) {
   busy = true; el.send.disabled = true; el.ta.value = ""; el.ta.style.height = "";
   msgs.push({ role: "user", content: text.slice(0, 600) }); save(); draw(true);
   const url = cfg().worker, ar = isAr(text);
-  let out = null;
+  let out = null, why = "";
   if (url && cfg().enabled !== false) {
     try {
       const ac = new AbortController(), t = setTimeout(() => ac.abort(), 20000);
       const r = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, signal: ac.signal,
-        body: JSON.stringify({ context: ctx, messages: msgs.slice(-24).map(m => ({ role: m.role, content: m.content })) }) });
+        body: JSON.stringify({ context: ctx, messages: sendable() }) });
       clearTimeout(t); const j = await r.json().catch(() => null);
-      if (r.ok && j && j.reply) out = j;
+      if (r.ok && j && j.reply) out = j; else if (j && j.reason) why = j.reason;
     } catch {}
   }
   if (out) msgs.push({ role: "assistant", content: out.reply, meta: { kind: out.kind, sources: out.sources, plan: out.plan, brief: out.brief } });
+  else if (why === "long" || why === "rate") msgs.push({ role: "assistant", content: ar ? "كده الصورة واضحة. كمّل مع نور على واتساب، الرسالة جاهزة:" : "That's a clear picture. Carry on with Nour on WhatsApp, the message is ready:", meta: { fallback: true } });
   else msgs.push({ role: "assistant", content: ar ? "المساعد مش متاح دلوقتي، بس نور بيرد بنفسه على واتساب. الرسالة دي جاهزة:" : "The assistant can't answer right now, but Nour replies himself on WhatsApp. Here's a ready message:", meta: { fallback: true } });
   ctx = ""; save(); busy = false; el.send.disabled = false; draw(); el.ta.focus();
 }
