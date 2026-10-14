@@ -1,5 +1,5 @@
 {
- "version": 10,
+ "version": 11,
  "profile": {
   "name": "Nour Mohamed",
   "monogram": "NM*",
@@ -1235,7 +1235,7 @@
    "Nour Mohamed is a Creative Director and AI specialist in New Cairo, Egypt, working with teams anywhere. He works in Arabic (Egyptian) and English.",
    "12+ years in brand and graphic design, 3+ years in architectural visualization, 150+ projects, clients in Egypt, the UK, the USA, Lebanon, Kuwait and Saudi Arabia.",
    "The studio (rooms on the site): 3D room = exterior, landscape, interior visualization and 3D films. Photo studio = product photography in every colourway, then ad images built around the real product. AI lab = AI campaigns and AI product images and videos with the product kept accurate. Identity & print = naming, logo, colour, type, brand books, print-ready packaging and cartons, uniforms and merch (designed and produced). Content room = social content planning, post design, carousels, reels with motion, captions, and Arabic voice-over recorded in-house. Garden = landscape and outdoor spaces.",
-   "Full house = one brand built end to end in seven stages: idea, identity, art direction, studio shoot, ads and posts, reels, packaging. The case on the site is Lamsa Plast.",
+   "Full house = one product launch built in seven stages: idea, brand kit, art direction, studio shoot, ads and posts, reels, packaging. The case on the site is Lamsa Plast, a long-established housewares factory that already had its logo; Nour did the shoot, art direction, ad images, posts, reels and carton, not their logo.",
    "Lamsa Plast (housewares manufacturer): bath set and water bottle orders: studio photos in five colourways, ad images, social posts, two product reels, and a print-ready carton.",
    "Golden Home (real estate brokerage, New Cairo): motion reels on Nour's own reel engine, with his script and his voice-over.",
    "Design-itude Associates (UK market): 125+ exterior, landscape and interior projects in under 3 years; AI in the render pipeline made the concept stage 60%+ faster.",
@@ -1268,7 +1268,9 @@
    "Zahret Elbon Elbrazily (coffee roaster): he designed the company presentation deck in about 4 hours; the feed on the site is a concept built from that deck.",
    "Burger Tower: a feed concept he pitched (the tall burger column runs across the grid); it is a pitch, not a live page.",
    "DIA (Design-itude Associates): besides 3D renders and films, he designed their Instagram hiring campaign.",
-   "Lamsa Plast on Instagram: studio shoot, posts, ad images and reels he delivered for the Art Bath Set and Aqua Polo."
+   "Lamsa Plast on Instagram: studio shoot, posts, ad images and reels he delivered for the Art Bath Set and Aqua Polo.",
+   "Lamsa Plast is an established housewares factory with its own logo. Never say Nour designed the Lamsa logo or identity.",
+   "George Street (Stage 03): Nour designed the presentation only; the interior design and renders are by the design team."
   ],
   "site": [
    "Hero (top): who Nour is, the CV button and the line 'Tell me what you're building'.",
@@ -1280,9 +1282,9 @@
    "The studio, Identity & print: M3anyi and Gray Museum on the board, the El Partyta brand book, the Lamsa carton, the Oakmere uniform concept.",
    "The studio, Content room: the M3anyi feed, an @i2mriky reel on the timeline, a client post on the calendar wall, the voice booth (his voice on the Golden Home reel), insights.",
    "The studio, Garden: landscape and outdoor designs.",
-   "In motion: 8 clips. Tall: Art Bath Set and Aqua Polo (Lamsa), Brands wanted (Golden Home), Why prices end in 99 and Everything on a line (@i2mriky). Wide: El Partyta store trailer, Plaza at dusk and Restaurant walkthrough (3D films for Design-itude Associates).",
-   "Archive (after Full house): every project as a tile; tap one to open its images and what Nour did. Filters: Identity, Social, AI, 3D & architecture, Video, Print & packaging, Apparel, Decks, Web & UI. Includes live 3D models (Tomouh).",
-   "Full house: a 3D house built in 7 stages, each with the real Lamsa work: idea, identity, art direction, studio shoot, ads and posts, reels, packaging. Ends with 'Book a brand consult'.",
+   "In motion: 18 clips. Tall: Art Bath Set and Aqua Polo (Lamsa), Brands wanted and Chalet teaser (Golden Home), Why prices end in 99, Everything on a line and Lens and face (@i2mriky), AI films (espresso machine, Shero black-swan necklace, skincare serum, calligraphy tee), living-room lighting reel. Wide: El Partyta store trailer, Plaza at dusk, Restaurant walkthrough and Garden clay-to-render (Design-itude Associates), food trailers promo, 3D type tracked on a canal.",
+   "Archive (after Full house): one tile per brand or project (about 65), images only; tap one to open its best images and what Nour did. Filters: Identity, Social, AI, 3D & architecture, Print & packaging, Apparel, Decks, Web & UI. Includes live 3D models (Tomouh).",
+   "Full house: a 3D house built in 7 stages, each with the real Lamsa work: idea, brand kit (their existing logo), art direction, studio shoot, ads and posts, reels, packaging. Ends with 'Book a brand consult'.",
    "Work: his portfolio decks. Numbers: live organic reach. Map: six countries. Worlds: M3anyi and Gray Museum.",
    "Games (end of the page): El Partyta with three playable mini-games and a web version, plus small arcade games.",
    "Reviews: real screenshots of messages and comments (clients, Gray Museum readers).",
@@ -1292,7 +1294,7 @@
    {
     "id": "lamsa-house",
     "title": "Full house · Lamsa Plast",
-    "line": "One brand, idea to carton, 7 stages",
+    "line": "One product launch, idea to carton, 7 stages",
     "img": "assets/fh-7-carton.jpg",
     "go": "house"
    },
@@ -1326,8 +1328,8 @@
    },
    {
     "id": "identity-kit",
-    "title": "Identity kit · Lamsa Plast",
-    "line": "Logo, colours, pattern, line drawings",
+    "title": "Brand kit · Lamsa Plast",
+    "line": "Their logo and colours, organised for the work",
     "img": "assets/fh-2-identity.jpg",
     "go": "house"
    },
