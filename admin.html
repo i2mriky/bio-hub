@@ -284,6 +284,7 @@ font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:11px 18px;b
       <label class="sw" style="margin-bottom:18px"><input type="checkbox" data-b="assistant.enabled"> Show the assistant</label>
       <div class="grid"><div class="field"><label>Worker URL</label><input data-b="assistant.worker" placeholder="https://ask-nm.YOUR-SUBDOMAIN.workers.dev"></div><div class="field"><label>First line in the chat</label><input data-b="assistant.greeting"></div></div>
       <div class="field"><label>What's on the site, for the assistant (one line per section or room)</label><p class="hint" style="margin:4px 0 8px">The assistant can't see images or videos. When you add a section, a room, a clip or a case, add one line here saying what it shows, or the assistant won't know it exists.</p><textarea data-b="assistant.site" data-lines="1" rows="10" style="width:100%;min-height:220px;font:inherit;line-height:1.5;padding:12px;border-radius:12px;background:transparent;color:inherit;border:1px solid currentColor;opacity:.92"></textarea></div>
+      <p class="hint" style="margin:0 0 18px">Work cards the assistant can show as pictures are in <code>data.json</code> → <code>assistant.works</code> (id, title, line, img, go = section id). Ask Claude to add new ones when new work goes up.</p>
       <div class="field"><label>Facts the assistant may use (one per line)</label><textarea data-b="assistant.profile" data-lines="1" rows="20" style="width:100%;min-height:340px;font:inherit;line-height:1.5;padding:12px;border-radius:12px;background:transparent;color:inherit;border:1px solid currentColor;opacity:.92"></textarea></div>
     </section>
     <section class="panel" id="p-arcade">
@@ -405,8 +406,13 @@ const NEW = {
   const draft = localStorage.getItem(LS);
   if (draft){ try { D = JSON.parse(draft); toast("Restored unsaved draft"); } catch(e){} }
   /* v11.1: an older draft has no assistant.site / worker URL — take them from the published data.json */
-  if (D && D.assistant && (!D.assistant.site || !D.assistant.worker)){ try { const P = await (await fetch("data.json?v="+Date.now())).json(); const pa = P.assistant || {};
-    if (!D.assistant.site && pa.site) D.assistant.site = pa.site; if (!D.assistant.worker && pa.worker) D.assistant.worker = pa.worker; } catch(e){} }
+  /* v13: an older draft misses newer blocks (pages, archive, analytics) — copy only the missing ones from the published data.json */
+  if (D){ try { const P = await (await fetch("data.json?v="+Date.now())).json();
+    Object.keys(P).forEach(k => { if (D[k] === undefined) D[k] = P[k]; });
+    if (P.settings && P.settings.analytics && D.settings && !D.settings.analytics) D.settings.analytics = P.settings.analytics;
+    if ((+P.version || 0) > (+D.version || 0)) D.version = P.version; } catch(e){} }
+  if (D && D.assistant && (!D.assistant.site || !D.assistant.worker || !D.assistant.works)){ try { const P = await (await fetch("data.json?v="+Date.now())).json(); const pa = P.assistant || {};
+    if (!D.assistant.site && pa.site) D.assistant.site = pa.site; if (!D.assistant.worker && pa.worker) D.assistant.worker = pa.worker; if (!D.assistant.works && pa.works) D.assistant.works = pa.works; } catch(e){} }
   if (!D){ try { D = await (await fetch("data.json?v="+Date.now())).json(); } catch(e){ toast("data.json not found"); return; } }
   loadGh(); renderAll(); mark(!!draft);
 })();

@@ -1,5 +1,5 @@
 {
- "version": 8,
+ "version": 10,
  "profile": {
   "name": "Nour Mohamed",
   "monogram": "NM*",
@@ -66,7 +66,10 @@
   "ogImage": "assets/og.jpg",
   "showQR": true,
   "showVCard": true,
-  "analyticsScript": ""
+  "analyticsScript": "",
+  "analytics": {
+   "goatcounter": "i2mriky"
+  }
  },
  "contact": {
   "email": "2mrikydesign@gmail.com",
@@ -248,6 +251,26 @@
     "value": "125+",
     "label": "projects in under 3 years",
     "extra": "concept stage 60%+ faster with AI in the render pipeline",
+    "enabled": true
+   },
+   {
+    "id": "x11",
+    "tag": "Every day",
+    "client": "",
+    "sector": "",
+    "value": "4+",
+    "label": "pages run daily, plus the client brands",
+    "extra": "several projects at once, from the idea to the post",
+    "enabled": true
+   },
+   {
+    "id": "x12",
+    "tag": "The archive",
+    "client": "",
+    "sector": "",
+    "value": "95+",
+    "label": "projects you can open on this site",
+    "extra": "identity, social, AI, 3D, video, print",
     "enabled": true
    },
    {
@@ -1231,9 +1254,21 @@
    "Writing: brand copy, ad scripts, captions and content strategy in Egyptian Arabic and English. He has written colloquial Egyptian poetry for 10+ years and has written and illustrated children's stories.",
    "Content work has covered 16+ brands across tech accessories, F&B, interior design and fashion.",
    "Real-estate video: editing, motion reels, shoot days and presenter videos, with script and Nour's own Arabic voice-over as an add-on.",
-   "Decks and proposals: pitch decks, brand proposals and presentation design for clients.",
+   "Decks and proposals: in almost every deck he sends, Nour designs the presentation itself AND the work inside it: the house or space design and the 3D visuals (SketchUp + Lumion), down to the small details.",
+   "Video: Nour either shoots and edits it himself, or generates the scenes with AI and edits them, or renders them in 3D (Lumion).",
    "Reels can be delivered as an editable project, so the client can change text and timing later.",
-   "Monthly content packages are available; what goes in them and the price are agreed with Nour on WhatsApp."
+   "Monthly content packages are available; what goes in them and the price are agreed with Nour on WhatsApp.",
+   "Availability: freelance and part-time, remote only (he does not work from an office).",
+   "Nour usually answers WhatsApp within minutes.",
+   "How he works: from the first idea to launch: naming, identity, design, content, 3D, video and marketing. He deals directly with owners, companies and agencies.",
+   "Capacity: he runs the content of 4+ pages every day, plus the pages of the client brands he works with, across several projects at once.",
+   "ASAS is a branding project on the site (identity and posts). Present it as a project, not as Nour's company.",
+   "Archive section: 95+ real projects anyone can open on the site, filtered by Identity, Social, AI, 3D & architecture, Video, Print & packaging, Apparel, Decks, Web & UI.",
+   "Tomouh (factory): true-scale 3D models of a magnet and a bath sponge built in Blender for the product pages, with 360° view and AR.",
+   "Zahret Elbon Elbrazily (coffee roaster): he designed the company presentation deck in about 4 hours; the feed on the site is a concept built from that deck.",
+   "Burger Tower: a feed concept he pitched (the tall burger column runs across the grid); it is a pitch, not a live page.",
+   "DIA (Design-itude Associates): besides 3D renders and films, he designed their Instagram hiring campaign.",
+   "Lamsa Plast on Instagram: studio shoot, posts, ad images and reels he delivered for the Art Bath Set and Aqua Polo."
   ],
   "site": [
    "Hero (top): who Nour is, the CV button and the line 'Tell me what you're building'.",
@@ -1246,9 +1281,1277 @@
    "The studio, Content room: the M3anyi feed, an @i2mriky reel on the timeline, a client post on the calendar wall, the voice booth (his voice on the Golden Home reel), insights.",
    "The studio, Garden: landscape and outdoor designs.",
    "In motion: 8 clips. Tall: Art Bath Set and Aqua Polo (Lamsa), Brands wanted (Golden Home), Why prices end in 99 and Everything on a line (@i2mriky). Wide: El Partyta store trailer, Plaza at dusk and Restaurant walkthrough (3D films for Design-itude Associates).",
+   "Archive (after Full house): every project as a tile; tap one to open its images and what Nour did. Filters: Identity, Social, AI, 3D & architecture, Video, Print & packaging, Apparel, Decks, Web & UI. Includes live 3D models (Tomouh).",
    "Full house: a 3D house built in 7 stages, each with the real Lamsa work: idea, identity, art direction, studio shoot, ads and posts, reels, packaging. Ends with 'Book a brand consult'.",
    "Work: his portfolio decks. Numbers: live organic reach. Map: six countries. Worlds: M3anyi and Gray Museum.",
-   "Games (end of the page): El Partyta with three playable mini-games and a web version, plus small arcade games."
+   "Games (end of the page): El Partyta with three playable mini-games and a web version, plus small arcade games.",
+   "Reviews: real screenshots of messages and comments (clients, Gray Museum readers).",
+   "Pages & feeds (right after Numbers): 15 3D phones, each one an Instagram page he runs or designed: i2mriky, Golden Home, M3anyi, Burger Tower (feed concept), Gray Museum, Lamsa Plast, ASAS, El Partyta, Zahret Elbon Elbrazily (feed concept), Haifaa Fashion, Kshaf, Shero Handmade, DIA hiring campaign, Khan El Moez, Chiky Pop. Tap any post to open it inside the phone; reels play inside too."
+  ],
+  "works": [
+   {
+    "id": "lamsa-house",
+    "title": "Full house · Lamsa Plast",
+    "line": "One brand, idea to carton, 7 stages",
+    "img": "assets/fh-7-carton.jpg",
+    "go": "house"
+   },
+   {
+    "id": "lamsa-studio",
+    "title": "Studio shoot · Lamsa Plast",
+    "line": "Five colourways, shot as one family",
+    "img": "assets/fh-4-studio.jpg",
+    "go": "do"
+   },
+   {
+    "id": "lamsa-reel",
+    "title": "Art Bath Set · product reel",
+    "line": "Shoot, AI scenes and motion",
+    "img": "assets/mv-bath.jpg",
+    "go": "motion"
+   },
+   {
+    "id": "lamsa-ad",
+    "title": "Ad image + posts · Lamsa Plast",
+    "line": "The product in use, then the message",
+    "img": "assets/fh-5-ads.jpg",
+    "go": "house"
+   },
+   {
+    "id": "lamsa-carton",
+    "title": "Carton · Lamsa Plast",
+    "line": "Print-ready packaging",
+    "img": "assets/fh-carton.jpg",
+    "go": "do"
+   },
+   {
+    "id": "identity-kit",
+    "title": "Identity kit · Lamsa Plast",
+    "line": "Logo, colours, pattern, line drawings",
+    "img": "assets/fh-2-identity.jpg",
+    "go": "house"
+   },
+   {
+    "id": "gh-reel",
+    "title": "Golden Home · motion reel",
+    "line": "Real estate, his script and voice",
+    "img": "assets/mv-gh.jpg",
+    "go": "motion"
+   },
+   {
+    "id": "p99",
+    "title": "Why prices end in 99",
+    "line": "@i2mriky reel: script, voice, motion",
+    "img": "assets/mv-p99.jpg",
+    "go": "motion"
+   },
+   {
+    "id": "nivea",
+    "title": "NIVEA MEN · Before/After",
+    "line": "Same product, new story (concept)",
+    "img": "assets/ba-nivea-after.jpg",
+    "go": "reveal"
+   },
+   {
+    "id": "dia-ext",
+    "title": "Exterior concept · UK",
+    "line": "Architecture and landscape render",
+    "img": "assets/st-d64.jpg",
+    "go": "do"
+   },
+   {
+    "id": "dia-film",
+    "title": "Plaza at dusk · 3D film",
+    "line": "Exterior film, Design-itude Associates",
+    "img": "assets/mv-cine.jpg",
+    "go": "motion"
+   },
+   {
+    "id": "dia-interior",
+    "title": "Restaurant walkthrough",
+    "line": "Interior 3D film, Design-itude Associates",
+    "img": "assets/mv-mall.jpg",
+    "go": "motion"
+   },
+   {
+    "id": "m3anyi",
+    "title": "M3anyi · content",
+    "line": "286K views on one carousel, no ads",
+    "img": "assets/st-feed.jpg",
+    "go": "m3anyi"
+   },
+   {
+    "id": "gray",
+    "title": "Gray Museum · AI art",
+    "line": "Surreal AI art brand",
+    "img": "assets/st-gray.jpg",
+    "go": "gray"
+   },
+   {
+    "id": "ep-book",
+    "title": "El Partyta · brand book",
+    "line": "Identity for his own game",
+    "img": "assets/st-book-05.jpg",
+    "go": "play"
+   },
+   {
+    "id": "ep-game",
+    "title": "El Partyta · the game",
+    "line": "20+ games, playable on the site",
+    "img": "assets/mv-ep.jpg",
+    "go": "play"
+   },
+   {
+    "id": "oakmere",
+    "title": "Oakmere · school uniform",
+    "line": "Uniform programme (concept)",
+    "img": "assets/st-oak1.jpg",
+    "go": "do"
+   },
+   {
+    "id": "pages",
+    "title": "Pages & feeds",
+    "line": "15 Instagram pages, open any post",
+    "img": "assets/pages/burger-tower/p01-t.webp",
+    "go": "pages"
+   }
   ]
+ },
+ "archive": {
+  "enabled": true
+ },
+ "pages": {
+  "title": "Pages & feeds",
+  "note": "Pages I run, client feeds, and feed concepts I pitched. Swipe, then tap a post to open it.",
+  "items": [
+   {
+    "handle": "i2mriky",
+    "name": "NOUR MOHAMED",
+    "bio": "AI artist · visualizer · art director\nDesign, explained in 10 seconds.",
+    "stats": [],
+    "avatar": "assets/pages/i2mriky/avatar.webp",
+    "url": "https://www.instagram.com/i2mriky/",
+    "go": "",
+    "posts": [
+     {
+      "t": "assets/pages/i2mriky/p01-t.webp",
+      "f": "assets/pages/i2mriky/p01-t.webp",
+      "c": "Reel on matching one brand colour exactly across backgrounds, with Arabic motion text.",
+      "v": "assets/archive/_v/brand-i2mriky-reel-same-color.mp4"
+     },
+     {
+      "t": "assets/pages/i2mriky/p02-t.webp",
+      "f": "assets/pages/i2mriky/p02.webp",
+      "c": "Carousel cover: the ruler says right, your eye says no"
+     },
+     {
+      "t": "assets/pages/i2mriky/p03-t.webp",
+      "f": "assets/pages/i2mriky/p03-t.webp",
+      "c": "Reel: everything on a line. Script, voice and motion by NM*.",
+      "v": "assets/mv-align.mp4"
+     },
+     {
+      "t": "assets/pages/i2mriky/p04-t.webp",
+      "f": "assets/pages/i2mriky/p04.webp",
+      "c": "Carousel cover: colours are fine, the proportions are wrong"
+     },
+     {
+      "t": "assets/pages/i2mriky/p05-t.webp",
+      "f": "assets/pages/i2mriky/p05-t.webp",
+      "c": "Reel on how a face on an ad pulls the eye away from the product, with the 3D mascot.",
+      "v": "assets/archive/_v/brand-i2mriky-reel-face-steals-the-ad.mp4"
+     },
+     {
+      "t": "assets/pages/i2mriky/p06-t.webp",
+      "f": "assets/pages/i2mriky/p06.webp",
+      "c": "Carousel cover: the screen colour won't survive print"
+     },
+     {
+      "t": "assets/pages/i2mriky/p07-t.webp",
+      "f": "assets/pages/i2mriky/p07.webp",
+      "c": "Carousel cover: the logo is fine, the file format is the problem"
+     },
+     {
+      "t": "assets/pages/i2mriky/p08-t.webp",
+      "f": "assets/pages/i2mriky/p08-t.webp",
+      "c": "3D mascot reel explaining how lens distance changes a face, with Arabic on-screen text.",
+      "v": "assets/archive/_v/brand-i2mriky-reel-lens-and-face.mp4"
+     },
+     {
+      "t": "assets/pages/i2mriky/p09-t.webp",
+      "f": "assets/pages/i2mriky/p09.webp",
+      "c": "Carousel cover: change the box, people won't find it"
+     },
+     {
+      "t": "assets/pages/i2mriky/p10-t.webp",
+      "f": "assets/pages/i2mriky/p10-t.webp",
+      "c": "Reel: why prices end in 99. Script, voice and motion by NM*.",
+      "v": "assets/mv-p99.mp4"
+     },
+     {
+      "t": "assets/pages/i2mriky/p11-t.webp",
+      "f": "assets/pages/i2mriky/p11.webp",
+      "c": "Carousel cover: if everything is important, nothing is"
+     },
+     {
+      "t": "assets/pages/i2mriky/p12-t.webp",
+      "f": "assets/pages/i2mriky/p12-t.webp",
+      "c": "Reel on keeping one AI character consistent across prompts, with the mascot in many poses.",
+      "v": "assets/archive/_v/brand-i2mriky-reel-same-character.mp4"
+     }
+    ],
+    "slug": "i2mriky"
+   },
+   {
+    "handle": "goldenhome.egy",
+    "name": "Golden Home",
+    "bio": "For Real Estate · North Coast and New Cairo\nFeeds, reels and voice by NM*",
+    "stats": [],
+    "avatar": "assets/pages/golden-home/avatar.webp",
+    "url": "",
+    "go": "a:golden-home-identity",
+    "slug": "golden-home",
+    "posts": [
+     {
+      "t": "assets/pages/golden-home/p01-t.webp",
+      "f": "assets/pages/golden-home/p01.webp",
+      "c": "Curated. Coastal. Closed by us. A finished chalet bathroom, North Coast."
+     },
+     {
+      "t": "assets/pages/golden-home/p02-t.webp",
+      "f": "assets/pages/golden-home/p02.webp",
+      "c": "Your July, already booked. Terrace dinner by the lagoon."
+     },
+     {
+      "t": "assets/pages/golden-home/p03-t.webp",
+      "f": "assets/pages/golden-home/p03.webp",
+      "c": "Summer 2026 inventory, now open."
+     },
+     {
+      "t": "assets/pages/golden-home/p04-t.webp",
+      "f": "assets/pages/golden-home/p04.webp",
+      "c": "One summer: 2 bedrooms, 2 bathrooms, on the coast."
+     },
+     {
+      "t": "assets/pages/golden-home/p05-t.webp",
+      "f": "assets/pages/golden-home/p05.webp",
+      "c": "The Golden Home mark on black."
+     },
+     {
+      "t": "assets/pages/golden-home/p06-t.webp",
+      "f": "assets/pages/golden-home/p06.webp",
+      "c": "Lagoon-direct, sleeps four."
+     },
+     {
+      "t": "assets/pages/golden-home/p07-t.webp",
+      "f": "assets/pages/golden-home/p07.webp",
+      "c": "The key, the linen, the view. Ready when you are."
+     },
+     {
+      "t": "assets/pages/golden-home/p08-t.webp",
+      "f": "assets/pages/golden-home/p08.webp",
+      "c": "Sea & lagoon front cabin."
+     },
+     {
+      "t": "assets/pages/golden-home/p09-t.webp",
+      "f": "assets/pages/golden-home/p09.webp",
+      "c": "North Coast, Summer 2026."
+     },
+     {
+      "t": "assets/pages/golden-home/p10-t.webp",
+      "f": "assets/pages/golden-home/p10.webp",
+      "c": "Luxury living in Sodic Estawon."
+     },
+     {
+      "t": "assets/pages/golden-home/p11-t.webp",
+      "f": "assets/pages/golden-home/p11.webp",
+      "c": "Light-filled reception with a compound view."
+     },
+     {
+      "t": "assets/pages/golden-home/p12-t.webp",
+      "f": "assets/pages/golden-home/p12.webp",
+      "c": "Specifications card: 2 master bedrooms, 4 bathrooms, nanny room, fully furnished."
+     },
+     {
+      "t": "assets/pages/golden-home/p13-t.webp",
+      "f": "assets/pages/golden-home/p13.webp",
+      "c": "Your private sanctuary."
+     },
+     {
+      "t": "assets/pages/golden-home/p14-t.webp",
+      "f": "assets/pages/golden-home/p14.webp",
+      "c": "Where every detail is home."
+     },
+     {
+      "t": "assets/pages/golden-home/p15-t.webp",
+      "f": "assets/pages/golden-home/p15.webp",
+      "c": "4 full bathrooms."
+     },
+     {
+      "t": "assets/pages/golden-home/p16-t.webp",
+      "f": "assets/pages/golden-home/p16.webp",
+      "c": "Sodic Estawon, New Cairo."
+     },
+     {
+      "t": "assets/pages/golden-home/p17-t.webp",
+      "f": "assets/pages/golden-home/p17.webp",
+      "c": "Your morning, your rules."
+     },
+     {
+      "t": "assets/pages/golden-home/p18-t.webp",
+      "f": "assets/pages/golden-home/p18.webp",
+      "c": "Pricing card, fully furnished and ready to move."
+     }
+    ],
+    "reels": [
+     {
+      "t": "assets/pages/golden-home-r/p01-t.webp",
+      "f": "assets/pages/golden-home-r/p01-t.webp",
+      "c": "Animated chalet teaser reel: bold text cards, interiors, sea view, call-to-action.",
+      "v": "assets/archive/_v/gh-chalet-teaser-reel.mp4"
+     },
+     {
+      "t": "assets/pages/golden-home-r/p02-t.webp",
+      "f": "assets/pages/golden-home-r/p02-t.webp",
+      "c": "Vertical apartment tour with room labels, a compound map and contact end card.",
+      "v": "assets/archive/_v/gh-apartment-tour-reel.mp4"
+     },
+     {
+      "t": "assets/pages/golden-home-r/p03-t.webp",
+      "f": "assets/pages/golden-home-r/p03-t.webp",
+      "c": "Vertical property reel: presenter on a rooftop, floor plan and city view.",
+      "v": "assets/archive/_v/gh-rooftop-property-reel.mp4"
+     }
+    ]
+   },
+   {
+    "handle": "m3anyi_egy",
+    "name": "معاني | M3anyi",
+    "bio": "حين يلتقي التصميم بالإقتباس\nالكلمات بقلم @i2mriky",
+    "stats": [
+     [
+      "2,384",
+      "posts"
+     ],
+     [
+      "40.1K",
+      "followers"
+     ]
+    ],
+    "avatar": "assets/logo-m3anyi.png",
+    "url": "https://www.instagram.com/m3anyi_egy/",
+    "go": "a:m3anyi",
+    "rtl": true,
+    "posts": [
+     {
+      "t": "assets/pages/m3anyi/p01-t.webp",
+      "f": "assets/pages/m3anyi/p01.webp",
+      "c": "Hands open, quote post"
+     },
+     {
+      "t": "assets/pages/m3anyi/p02-t.webp",
+      "f": "assets/pages/m3anyi/p02.webp",
+      "c": "Figure in dark water, quote post"
+     },
+     {
+      "t": "assets/pages/m3anyi/p03-t.webp",
+      "f": "assets/pages/m3anyi/p03.webp",
+      "c": "Insects attack only the lit lamps"
+     },
+     {
+      "t": "assets/pages/m3anyi/p04-t.webp",
+      "f": "assets/pages/m3anyi/p04.webp",
+      "c": "Figure in blue field, quote post"
+     },
+     {
+      "t": "assets/pages/m3anyi/p05-t.webp",
+      "f": "assets/pages/m3anyi/p05.webp",
+      "c": "Plant and watering can, quote post"
+     },
+     {
+      "t": "assets/pages/m3anyi/p06-t.webp",
+      "f": "assets/pages/m3anyi/p06.webp",
+      "c": "Purple type-led quote post"
+     },
+     {
+      "t": "assets/pages/m3anyi/p07-t.webp",
+      "f": "assets/pages/m3anyi/p07.webp",
+      "c": "Umbrella in the rain, carousel slide"
+     },
+     {
+      "t": "assets/pages/m3anyi/p08-t.webp",
+      "f": "assets/pages/m3anyi/p08.webp",
+      "c": "Quote over a dark winged figure"
+     },
+     {
+      "t": "assets/pages/m3anyi/p09-t.webp",
+      "f": "assets/pages/m3anyi/p09.webp",
+      "c": "Cabinet and table, carousel slide"
+     },
+     {
+      "t": "assets/pages/m3anyi/p10-t.webp",
+      "f": "assets/pages/m3anyi/p10.webp",
+      "c": "Roof leak and bucket, quote post"
+     },
+     {
+      "t": "assets/pages/m3anyi/p11-t.webp",
+      "f": "assets/pages/m3anyi/p11.webp",
+      "c": "Silhouette with a lit offering, carousel slide"
+     },
+     {
+      "t": "assets/pages/m3anyi/p12-t.webp",
+      "f": "assets/pages/m3anyi/p12.webp",
+      "c": "Green type-led quote post"
+     }
+    ],
+    "slug": "m3anyi"
+   },
+   {
+    "handle": "burgertower",
+    "name": "Burger Tower",
+    "bio": "Burgers, built floor by floor.\nLogo and feed concept by NM*",
+    "stats": [],
+    "avatar": "assets/pages/burger-tower/avatar.webp",
+    "url": "",
+    "go": "",
+    "slug": "burger-tower",
+    "tag": "Feed concept",
+    "posts": [
+     {
+      "t": "assets/pages/burger-tower/p01-t.webp",
+      "f": "assets/pages/burger-tower/p01.webp",
+      "c": "The last floor is on its way up. فاضل الدور الأخير.. وهنفتح.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/burger-tower/p02-t.webp",
+      "f": "assets/pages/burger-tower/p02.webp",
+      "c": "How high can you go? عَلّيه على مزاجك.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/burger-tower/p03-t.webp",
+      "f": "assets/pages/burger-tower/p03.webp",
+      "c": "No such thing as too tall. مفيش حاجة اسمها عالي زيادة.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/burger-tower/p04-t.webp",
+      "f": "assets/pages/burger-tower/p04.webp",
+      "c": "Seven floors, your call on every one. ابني برجك دور دور.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/burger-tower/p05-t.webp",
+      "f": "assets/pages/burger-tower/p05.webp",
+      "c": "Keep stacking. كمّل بناء.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/burger-tower/p06-t.webp",
+      "f": "assets/pages/burger-tower/p06.webp",
+      "c": "Ground Floor, The Duplex or the Penthouse? اختار دورك.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/burger-tower/p07-t.webp",
+      "f": "assets/pages/burger-tower/p07.webp",
+      "c": "Burger Tower, on repeat.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/burger-tower/p08-t.webp",
+      "f": "assets/pages/burger-tower/p08.webp",
+      "c": "Every tower starts from the ground up. من الأرض لفوق.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/burger-tower/p09-t.webp",
+      "f": "assets/pages/burger-tower/p09.webp",
+      "c": "Burgers, built floor by floor. برجر بيتبني دور فوق دور.",
+      "k": "concept"
+     }
+    ]
+   },
+   {
+    "handle": "gray.museum",
+    "name": "GRAY MUSEUM",
+    "bio": "Between solitude and shadows, I frame stories.\nFounder @i2mriky",
+    "stats": [
+     [
+      "504",
+      "posts"
+     ]
+    ],
+    "avatar": "assets/logo-gray.jpg",
+    "url": "https://www.instagram.com/gray.museum/",
+    "go": "a:gray-museum",
+    "posts": [
+     {
+      "t": "assets/pages/gray-museum/p01-t.webp",
+      "f": "assets/pages/gray-museum/p01.webp",
+      "c": ""
+     },
+     {
+      "t": "assets/pages/gray-museum/p02-t.webp",
+      "f": "assets/pages/gray-museum/p02.webp",
+      "c": ""
+     },
+     {
+      "t": "assets/pages/gray-museum/p03-t.webp",
+      "f": "assets/pages/gray-museum/p03.webp",
+      "c": ""
+     },
+     {
+      "t": "assets/pages/gray-museum/p04-t.webp",
+      "f": "assets/pages/gray-museum/p04.webp",
+      "c": ""
+     },
+     {
+      "t": "assets/pages/gray-museum/p05-t.webp",
+      "f": "assets/pages/gray-museum/p05.webp",
+      "c": ""
+     },
+     {
+      "t": "assets/pages/gray-museum/p06-t.webp",
+      "f": "assets/pages/gray-museum/p06.webp",
+      "c": ""
+     },
+     {
+      "t": "assets/pages/gray-museum/p07-t.webp",
+      "f": "assets/pages/gray-museum/p07.webp",
+      "c": ""
+     },
+     {
+      "t": "assets/pages/gray-museum/p08-t.webp",
+      "f": "assets/pages/gray-museum/p08.webp",
+      "c": ""
+     },
+     {
+      "t": "assets/pages/gray-museum/p09-t.webp",
+      "f": "assets/pages/gray-museum/p09.webp",
+      "c": ""
+     },
+     {
+      "t": "assets/pages/gray-museum/p10-t.webp",
+      "f": "assets/pages/gray-museum/p10.webp",
+      "c": ""
+     },
+     {
+      "t": "assets/pages/gray-museum/p11-t.webp",
+      "f": "assets/pages/gray-museum/p11.webp",
+      "c": ""
+     },
+     {
+      "t": "assets/pages/gray-museum/p12-t.webp",
+      "f": "assets/pages/gray-museum/p12.webp",
+      "c": ""
+     }
+    ],
+    "slug": "gray-museum"
+   },
+   {
+    "handle": "lamsaplast",
+    "name": "لمسة بلاست | Lamsa Plast",
+    "bio": "The Perfect Touch.\nStudio shoot, posts and reels by NM*",
+    "stats": [],
+    "rtl": true,
+    "avatar": "assets/pages/lamsa/avatar.webp",
+    "url": "",
+    "go": "#house",
+    "slug": "lamsa",
+    "posts": [
+     {
+      "t": "assets/pages/lamsa/p01-t.webp",
+      "f": "assets/pages/lamsa/p01.webp",
+      "c": "كل صباح يبدأ بلمسة. طقم حمام آرت، 3 قطع. Item No. 14219 #Lamsa_Plast #theperfecttouch"
+     },
+     {
+      "t": "assets/pages/lamsa/p02-t.webp",
+      "f": "assets/pages/lamsa/p02.webp",
+      "c": "كل تلاجة فيها لمسة: أكوا بولو 1.5 لتر، أزازة شفافة بمسكة على الجنب وغطا بلونين. Item No. 14214 #Lamsa_Plast #theperfecttouch"
+     },
+     {
+      "t": "assets/pages/lamsa-r/p02-t.webp",
+      "f": "assets/pages/lamsa-r/p02.webp",
+      "c": "Aqua Polo reel: studio shoot and edit by NM*.",
+      "v": "assets/mv-aqua.mp4"
+     },
+     {
+      "t": "assets/pages/lamsa/p04-t.webp",
+      "f": "assets/pages/lamsa/p04.webp",
+      "c": "حمّامك أشيك بلمسة واحدة: طقم حمام آرت، 3 قطع و5 ألوان. Item No. 14219 #Lamsa_Plast #theperfecttouch"
+     },
+     {
+      "t": "assets/pages/lamsa-r/p01-t.webp",
+      "f": "assets/pages/lamsa-r/p01.webp",
+      "c": "Art Bath Set reel: studio shoot and edit by NM*.",
+      "v": "assets/mv-bath.mp4"
+     },
+     {
+      "t": "assets/pages/lamsa/p06-t.webp",
+      "f": "assets/pages/lamsa/p06.webp",
+      "c": "طقم حمام آرت، أبيض ورمادي. صورة إعلانية من تصوير الاستوديو. #Lamsa_Plast #theperfecttouch"
+     }
+    ],
+    "reels": [
+     {
+      "t": "assets/pages/lamsa-r/p01-t.webp",
+      "f": "assets/pages/lamsa-r/p01.webp",
+      "c": "Art Bath Set reel: studio shoot and edit by NM*.",
+      "v": "assets/mv-bath.mp4"
+     },
+     {
+      "t": "assets/pages/lamsa-r/p02-t.webp",
+      "f": "assets/pages/lamsa-r/p02.webp",
+      "c": "Aqua Polo reel: studio shoot and edit by NM*.",
+      "v": "assets/mv-aqua.mp4"
+     }
+    ]
+   },
+   {
+    "handle": "asas.studio.eg",
+    "name": "أساس | ASAS Studio",
+    "bio": "براندك محتاج أساس.\nBranding, content and video. Co-founded by NM*",
+    "stats": [],
+    "rtl": true,
+    "avatar": "assets/pages/asas/avatar.webp",
+    "url": "https://www.instagram.com/asas.studio.eg/",
+    "go": "a:asas",
+    "slug": "asas",
+    "posts": [
+     {
+      "t": "assets/pages/asas/p01-t.webp",
+      "f": "assets/pages/asas/p01.webp",
+      "c": "براندك محتاج أساس، مش ديكور. بنبدأ من الفكرة قبل الشكل.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/asas/p02-t.webp",
+      "f": "assets/pages/asas/p02.webp",
+      "c": "سؤال صغير بس مهم: براندك بيقول إيه لما إنت مش موجود؟ قولّنا إجابتك في الكومنتات.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/asas/p03-t.webp",
+      "f": "assets/pages/asas/p03.webp",
+      "c": "كل اللي براندك محتاجه تحت سقف واحد. ابعت اسم الخدمة في الرسايل ونتكلم.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/asas/p04-t.webp",
+      "f": "assets/pages/asas/p04.webp",
+      "c": "خرافة منتشرة: اللوجو الحلو يعني براند. اللوجو توقيع، والبراند هو الإحساس اللي بيفضل.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/asas/p05-t.webp",
+      "f": "assets/pages/asas/p05.webp",
+      "c": "من شغلنا: هوية Chiky Pop من الاسم لحد العلبة، لوجو وتغليف ولبس فريق عربية الأكل. اسأل عن الهوية البصرية في الرسايل.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/asas/p06-t.webp",
+      "f": "assets/pages/asas/p06.webp",
+      "c": "قبل: كلام كتير محدش فاكره. بعد: جملة واحدة تتفتكر. الكلام هو أول تصميم.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/asas/p07-t.webp",
+      "f": "assets/pages/asas/p07.webp",
+      "c": "إزاي بنشتغل؟ نسمع، نخطّط، ننفّذ، ونطلق. ٤ خطوات من غير لفّ.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/asas/p08-t.webp",
+      "f": "assets/pages/asas/p08.webp",
+      "c": "البراند بيتبني طوبة طوبة، والأساس هو الاستراتيجية.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/asas/p09-t.webp",
+      "f": "assets/pages/asas/p09.webp",
+      "c": "عندك فكرة؟ ابعتلنا في الرسايل ونبدأ سوا.",
+      "k": "concept"
+     }
+    ]
+   },
+   {
+    "handle": "elpartyta",
+    "name": "البرتيتا | El Partyta",
+    "bio": "لعبة السهرة بالمصري\n+20 لعبة للشلة والعيلة في موبايل واحد",
+    "stats": [],
+    "avatar": "assets/ep-icon.png",
+    "url": "https://www.instagram.com/elpartyta/",
+    "go": "#play",
+    "rtl": true,
+    "posts": [
+     {
+      "t": "assets/pages/el-partyta/p01-t.webp",
+      "f": "assets/pages/el-partyta/p01.webp",
+      "c": "أوتوبيس كومبليت: كمّلها بحرف الباء."
+     },
+     {
+      "t": "assets/pages/el-partyta/p02-t.webp",
+      "f": "assets/pages/el-partyta/p02-t.webp",
+      "c": "Teaser 1: مين فيكم الـ…؟",
+      "v": "assets/pages/el-partyta/r1.mp4"
+     },
+     {
+      "t": "assets/pages/el-partyta/p03-t.webp",
+      "f": "assets/pages/el-partyta/p03.webp",
+      "c": "موبايل واحد بيلف على الكل. +20 لعبة بالمصري."
+     },
+     {
+      "t": "assets/pages/el-partyta/p04-t.webp",
+      "f": "assets/pages/el-partyta/p04-t.webp",
+      "c": "Teaser 2: جروب الشلة.",
+      "v": "assets/pages/el-partyta/r2.mp4"
+     },
+     {
+      "t": "assets/pages/el-partyta/p05-t.webp",
+      "f": "assets/pages/el-partyta/p05.webp",
+      "c": "أنا عمري ما نمت في السينما. عملتها ولا لأ؟"
+     },
+     {
+      "t": "assets/pages/el-partyta/p06-t.webp",
+      "f": "assets/pages/el-partyta/p06.webp",
+      "c": "واحد فيكم الجاسوس. الكل عارف المكان.. إلا هو."
+     },
+     {
+      "t": "assets/pages/el-partyta/p07-t.webp",
+      "f": "assets/pages/el-partyta/p07.webp",
+      "c": "قول أكلتين بحرف الميم في 5 ثواني. جرّبها على اللي جنبك."
+     },
+     {
+      "t": "assets/pages/el-partyta/p08-t.webp",
+      "f": "assets/pages/el-partyta/p08.webp",
+      "c": "مين في شلتك اللي بيحرق الإجابة؟ منشنه."
+     },
+     {
+      "t": "assets/pages/el-partyta/p09-t.webp",
+      "f": "assets/pages/el-partyta/p09.webp",
+      "c": "ممنوع تقول: نادي · جزيرة · أهلي. الكلمة إيه؟ اكتبها في الكومنتات."
+     },
+     {
+      "t": "assets/pages/el-partyta/p10-t.webp",
+      "f": "assets/pages/el-partyta/p10.webp",
+      "c": "كل واحد بموبايله: اعمل روم، ابعت الكود، والعبوا."
+     },
+     {
+      "t": "assets/pages/el-partyta/p11-t.webp",
+      "f": "assets/pages/el-partyta/p11.webp",
+      "c": "مين أكتر واحد هيتأخر على فرحه؟"
+     },
+     {
+      "t": "assets/pages/el-partyta/p12-t.webp",
+      "f": "assets/pages/el-partyta/p12.webp",
+      "c": "اتنين صح وواحدة أنا اللي ألّفتها. اكتب رقم الكدبة."
+     }
+    ],
+    "slug": "el-partyta",
+    "reels": [
+     {
+      "t": "assets/pages/el-partyta-r/p01-t.webp",
+      "f": "assets/pages/el-partyta-r/p01-t.webp",
+      "c": "Teaser 1: مين فيكم الـ…؟",
+      "v": "assets/pages/el-partyta/r1.mp4"
+     },
+     {
+      "t": "assets/pages/el-partyta-r/p02-t.webp",
+      "f": "assets/pages/el-partyta-r/p02-t.webp",
+      "c": "Teaser 2: جروب الشلة.",
+      "v": "assets/pages/el-partyta/r2.mp4"
+     },
+     {
+      "t": "assets/pages/el-partyta-r/p03-t.webp",
+      "f": "assets/pages/el-partyta-r/p03-t.webp",
+      "c": "Teaser 3: بيني وبينك.",
+      "v": "assets/pages/el-partyta/r3.mp4"
+     },
+     {
+      "t": "assets/pages/el-partyta-r/p04-t.webp",
+      "f": "assets/pages/el-partyta-r/p04-t.webp",
+      "c": "The launch ad: لعبة السهرة بالمصري.",
+      "v": "assets/pages/el-partyta/r4.mp4"
+     }
+    ]
+   },
+   {
+    "handle": "zahretelbon",
+    "name": "زهرة البن البرازيلي",
+    "bio": "Import · Roast · Distribute\nCompany deck and feed concept by NM*",
+    "stats": [],
+    "rtl": true,
+    "avatar": "assets/pages/zahret/avatar.webp",
+    "url": "",
+    "go": "a:deck-zahren-elbon-elbrazily",
+    "slug": "zahret",
+    "tag": "Feed concept",
+    "posts": [
+     {
+      "t": "assets/pages/zahret/p01-t.webp",
+      "f": "assets/pages/zahret/p01.webp",
+      "c": "لكل مزاج فنجانه: إسبريسو من خلطات أرابيكا فاخرة، قهوة بنكهة البندق والشوكولاتة والكراميل، وقهوة سريعة التحضير جولد وفريز دراي وسبراي دراي.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/zahret/p02-t.webp",
+      "f": "assets/pages/zahret/p02.webp",
+      "c": "فنجان كل مكان. من ظرف الـ١٠ جرام لعبوة الـ٥٠٠ جرام، قهوتك معاك في كل حتة.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/zahret/p03-t.webp",
+      "f": "assets/pages/zahret/p03.webp",
+      "c": "من ١٩٨٥ والقهوة صنعتنا. ٤٠ سنة من محمصة محلية لريادة في المنطقة.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/zahret/p04-t.webp",
+      "f": "assets/pages/zahret/p04.webp",
+      "c": "Hot air roasting across three precise temperature stages, for a consistent roast every time.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/zahret/p05-t.webp",
+      "f": "assets/pages/zahret/p05.webp",
+      "c": "The German Edge: a 3,000 sqm factory with fully automated lines, as PROBAT's exclusive partner in MENA.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/zahret/p06-t.webp",
+      "f": "assets/pages/zahret/p06.webp",
+      "c": "طحن رول ميل متبرّد بالمياه، عشان البن يحافظ على زيوته وريحته. إسبريسو، تركي، أو فلتر.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/zahret/p07-t.webp",
+      "f": "assets/pages/zahret/p07.webp",
+      "c": "بنختار البن الأخضر من أحسن مزارع العالم: البرازيل وكولومبيا، إندونيسيا وفيتنام والهند، إثيوبيا وكينيا وأوغندا.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/zahret/p08-t.webp",
+      "f": "assets/pages/zahret/p08.webp",
+      "c": "سادة ولا محوّج؟ بن تركي بطعم مصري أصيل، سادة أو محوّج بالحبهان الفاخر.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/zahret/p09-t.webp",
+      "f": "assets/pages/zahret/p09.webp",
+      "c": "زهرة البن البرازيلي. خبراء القهوة من ١٩٨٥.",
+      "k": "concept"
+     }
+    ]
+   },
+   {
+    "handle": "Haifaa Fashion",
+    "name": "Haifaa Fashion",
+    "bio": "Scrunchies, clips and turbans\nIdentity, packaging and campaign by NM*",
+    "stats": [],
+    "avatar": "assets/pages/haifaa/avatar.webp",
+    "url": "",
+    "go": "a:haifaa-fashion",
+    "slug": "haifaa",
+    "posts": [
+     {
+      "t": "assets/pages/haifaa/p01-t.webp",
+      "f": "assets/pages/haifaa/p01.webp",
+      "c": "Brand display with business card"
+     },
+     {
+      "t": "assets/pages/haifaa/p02-t.webp",
+      "f": "assets/pages/haifaa/p02.webp",
+      "c": "Logo on shopping bag"
+     },
+     {
+      "t": "assets/pages/haifaa/p03-t.webp",
+      "f": "assets/pages/haifaa/p03.webp",
+      "c": "Gift box packaging"
+     },
+     {
+      "t": "assets/pages/haifaa/p04-t.webp",
+      "f": "assets/pages/haifaa/p04.webp",
+      "c": "Scrunchie gift box on bed"
+     },
+     {
+      "t": "assets/pages/haifaa/p05-t.webp",
+      "f": "assets/pages/haifaa/p05.webp",
+      "c": "Vanity scene with branded box"
+     },
+     {
+      "t": "assets/pages/haifaa/p06-t.webp",
+      "f": "assets/pages/haifaa/p06.webp",
+      "c": "Claw clip and scrunchie product page"
+     },
+     {
+      "t": "assets/pages/haifaa/p07-t.webp",
+      "f": "assets/pages/haifaa/p07.webp",
+      "c": "Business card mockup"
+     },
+     {
+      "t": "assets/pages/haifaa/p08-t.webp",
+      "f": "assets/pages/haifaa/p08.webp",
+      "c": "Campaign: girl on stairs"
+     },
+     {
+      "t": "assets/pages/haifaa/p09-t.webp",
+      "f": "assets/pages/haifaa/p09.webp",
+      "c": "Back-to-school campaign grid"
+     },
+     {
+      "t": "assets/pages/haifaa/p10-t.webp",
+      "f": "assets/pages/haifaa/p10.webp",
+      "c": "Campaign: girl in car, white bow"
+     },
+     {
+      "t": "assets/pages/haifaa/p11-t.webp",
+      "f": "assets/pages/haifaa/p11.webp",
+      "c": "Round storefront sign"
+     },
+     {
+      "t": "assets/pages/haifaa/p12-t.webp",
+      "f": "assets/pages/haifaa/p12.webp",
+      "c": "Lifestyle shot: hair tied with scrunchie"
+     }
+    ]
+   },
+   {
+    "handle": "kshaf.store",
+    "name": "كشاف | Kshaf",
+    "bio": "متجر أونلاين، +180 منتج\nMy own store: branding, banners and AI scenes",
+    "stats": [],
+    "rtl": true,
+    "avatar": "assets/pages/kshaf/avatar.webp",
+    "url": "https://www.instagram.com/kshaf.store",
+    "go": "a:kshaf",
+    "slug": "kshaf",
+    "posts": [
+     {
+      "t": "assets/pages/kshaf/p01-t.webp",
+      "f": "assets/pages/kshaf/p01.webp",
+      "c": "Star projector banner"
+     },
+     {
+      "t": "assets/pages/kshaf/p02-t.webp",
+      "f": "assets/pages/kshaf/p02.webp",
+      "c": "Kshaf case-study cover"
+     },
+     {
+      "t": "assets/pages/kshaf/p03-t.webp",
+      "f": "assets/pages/kshaf/p03.webp",
+      "c": "Bubble blaster banner"
+     },
+     {
+      "t": "assets/pages/kshaf/p04-t.webp",
+      "f": "assets/pages/kshaf/p04.webp",
+      "c": "Store case-study page"
+     },
+     {
+      "t": "assets/pages/kshaf/p05-t.webp",
+      "f": "assets/pages/kshaf/p05.webp",
+      "c": "Store case-study page"
+     },
+     {
+      "t": "assets/pages/kshaf/p06-t.webp",
+      "f": "assets/pages/kshaf/p06.webp",
+      "c": "Billboard with the Kshaf product cloud"
+     },
+     {
+      "t": "assets/pages/kshaf/p07-t.webp",
+      "f": "assets/pages/kshaf/p07.webp",
+      "c": "AI storyboard: fitness scene"
+     },
+     {
+      "t": "assets/pages/kshaf/p08-t.webp",
+      "f": "assets/pages/kshaf/p08.webp",
+      "c": "Store case-study page"
+     },
+     {
+      "t": "assets/pages/kshaf/p09-t.webp",
+      "f": "assets/pages/kshaf/p09.webp",
+      "c": "AI storyboard: jewelry scene"
+     },
+     {
+      "t": "assets/pages/kshaf/p10-t.webp",
+      "f": "assets/pages/kshaf/p10.webp",
+      "c": "Banner for 180+ products"
+     },
+     {
+      "t": "assets/pages/kshaf/p11-t.webp",
+      "f": "assets/pages/kshaf/p11.webp",
+      "c": "Store case-study page"
+     },
+     {
+      "t": "assets/pages/kshaf/p12-t.webp",
+      "f": "assets/pages/kshaf/p12.webp",
+      "c": "AI storyboard: kitchen scene"
+     }
+    ]
+   },
+   {
+    "handle": "Shero Handmade",
+    "name": "Shero Handmade",
+    "bio": "Luxury handmade jewelry\nLogo, posts and an AI campaign by NM*",
+    "stats": [],
+    "avatar": "assets/pages/shero/avatar.webp",
+    "url": "",
+    "go": "a:shero-handmade",
+    "slug": "shero",
+    "posts": [
+     {
+      "t": "assets/pages/shero/p01-t.webp",
+      "f": "assets/pages/shero/p01.webp",
+      "c": "QR sign for Instagram, print ready"
+     },
+     {
+      "t": "assets/pages/shero/p02-t.webp",
+      "f": "assets/pages/shero/p02.webp",
+      "c": "Gold S-pendant logo on black"
+     },
+     {
+      "t": "assets/pages/shero/p03-t.webp",
+      "f": "assets/pages/shero/p03.webp",
+      "c": "Necklace gift box, AI editorial"
+     },
+     {
+      "t": "assets/pages/shero/p04-t.webp",
+      "f": "assets/pages/shero/p04.webp",
+      "c": "Black swan wearing the necklace, AI"
+     },
+     {
+      "t": "assets/pages/shero/p05-t.webp",
+      "f": "assets/pages/shero/p05.webp",
+      "c": "Necklace on an ice bust, AI"
+     },
+     {
+      "t": "assets/pages/shero/p06-t.webp",
+      "f": "assets/pages/shero/p06.webp",
+      "c": "Jewelry on a bronze hand, AI"
+     },
+     {
+      "t": "assets/pages/shero/p07-t.webp",
+      "f": "assets/pages/shero/p07.webp",
+      "c": "Round shop sign mockup with logo"
+     },
+     {
+      "t": "assets/pages/shero/p08-t.webp",
+      "f": "assets/pages/shero/p08.webp",
+      "c": "Moonlit branch draped in jewelry, AI"
+     },
+     {
+      "t": "assets/pages/shero/p09-t.webp",
+      "f": "assets/pages/shero/p09.webp",
+      "c": "Bazaar booth with the Shero Handmade sign"
+     },
+     {
+      "t": "assets/pages/shero/p10-t.webp",
+      "f": "assets/pages/shero/p10.webp",
+      "c": "Teaser post for the market launch"
+     },
+     {
+      "t": "assets/pages/shero/p11-t.webp",
+      "f": "assets/pages/shero/p11.webp",
+      "c": "Instagram contest post in dark brand style"
+     },
+     {
+      "t": "assets/pages/shero/p12-t.webp",
+      "f": "assets/pages/shero/p12.webp",
+      "c": "AI portrait: model, black swan, necklace"
+     }
+    ]
+   },
+   {
+    "handle": "dia.studio",
+    "name": "DIA · Design-itude Associates",
+    "bio": "Architecture & interior design studio\nHiring campaign and social by NM*",
+    "stats": [],
+    "avatar": "assets/pages/dia/avatar.webp",
+    "url": "",
+    "go": "a:dia-social-presentation-design",
+    "slug": "dia",
+    "posts": [
+     {
+      "t": "assets/pages/dia/p01-t.webp",
+      "f": "assets/pages/dia/p01.webp",
+      "c": "We are hiring: Visualizer. One system for every role."
+     },
+     {
+      "t": "assets/pages/dia/p02-t.webp",
+      "f": "assets/pages/dia/p02.webp",
+      "c": "We are hiring: Business Development. One system for every role."
+     },
+     {
+      "t": "assets/pages/dia/p03-t.webp",
+      "f": "assets/pages/dia/p03.webp",
+      "c": "We are hiring: Architect Engineer (Design). One system for every role."
+     },
+     {
+      "t": "assets/pages/dia/p04-t.webp",
+      "f": "assets/pages/dia/p04.webp",
+      "c": "We are hiring: Interior Designer. One system for every role."
+     },
+     {
+      "t": "assets/pages/dia/p05-t.webp",
+      "f": "assets/pages/dia/p05.webp",
+      "c": "We are hiring: Junior Commercial Kitchen Designer. One system for every role."
+     },
+     {
+      "t": "assets/pages/dia/p06-t.webp",
+      "f": "assets/pages/dia/p06.webp",
+      "c": "We are hiring: Visualiser. One system for every role."
+     },
+     {
+      "t": "assets/pages/dia/p07-t.webp",
+      "f": "assets/pages/dia/p07.webp",
+      "c": "We are hiring: Office Manager Assistant. One system for every role."
+     },
+     {
+      "t": "assets/pages/dia/p08-t.webp",
+      "f": "assets/pages/dia/p08.webp",
+      "c": "We are hiring: Visualiser. One system for every role."
+     },
+     {
+      "t": "assets/pages/dia/p09-t.webp",
+      "f": "assets/pages/dia/p09.webp",
+      "c": "We are hiring: Senior Business Development Executive. One system for every role."
+     }
+    ]
+   },
+   {
+    "handle": "Khan El Moez",
+    "name": "خان المعز | Khan El Moez",
+    "bio": "مطعم · فطار، غدا، سهرة\nPosts by NM*",
+    "stats": [],
+    "rtl": true,
+    "avatar": "assets/pages/khan-el-moez/avatar.webp",
+    "url": "",
+    "go": "a:khan-el-moez-social",
+    "slug": "khan-el-moez",
+    "posts": [
+     {
+      "t": "assets/pages/khan-el-moez-f/p01-t.webp",
+      "f": "assets/pages/khan-el-moez-f/p01.webp",
+      "c": "Cup final screening post"
+     },
+     {
+      "t": "assets/pages/khan-el-moez-f/p02-t.webp",
+      "f": "assets/pages/khan-el-moez-f/p02.webp",
+      "c": "Eid show night post: two performers, gold frame."
+     },
+     {
+      "t": "assets/pages/khan-el-moez-f/p03-t.webp",
+      "f": "assets/pages/khan-el-moez-f/p03-t.webp",
+      "c": "Engagement post: breakfast or kofta, answer in the comments.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/khan-el-moez-f/p04-t.webp",
+      "f": "assets/pages/khan-el-moez-f/p04.webp",
+      "c": "Lunch meal feature post"
+     },
+     {
+      "t": "assets/pages/khan-el-moez-f/p05-t.webp",
+      "f": "assets/pages/khan-el-moez-f/p05.webp",
+      "c": "Iftar meal feature post"
+     },
+     {
+      "t": "assets/pages/khan-el-moez-f/p06-t.webp",
+      "f": "assets/pages/khan-el-moez-f/p06.webp",
+      "c": "Big-screen match night post"
+     },
+     {
+      "t": "assets/pages/khan-el-moez-f/p07-t.webp",
+      "f": "assets/pages/khan-el-moez-f/p07.webp",
+      "c": "Grilled kofta feature post"
+     },
+     {
+      "t": "assets/pages/khan-el-moez-f/p08-t.webp",
+      "f": "assets/pages/khan-el-moez-f/p08-t.webp",
+      "c": "Brand post: the night terrace in the gold frame, breakfast to late night.",
+      "k": "concept"
+     },
+     {
+      "t": "assets/pages/khan-el-moez-f/p09-t.webp",
+      "f": "assets/pages/khan-el-moez-f/p09.webp",
+      "c": "Eid event post with performer"
+     }
+    ]
+   },
+   {
+    "handle": "chikypop.cp",
+    "name": "Chiky Pop",
+    "bio": "Fried chicken, built from the name to the food truck.\nIdentity and posts by NM*",
+    "stats": [],
+    "avatar": "assets/pages/chiky-pop/avatar.webp",
+    "url": "",
+    "go": "a:chiky-pop-social",
+    "posts": [
+     {
+      "t": "assets/pages/chiky-pop/p01-t.webp",
+      "f": "assets/pages/chiky-pop/p01.webp",
+      "c": "Working hours and delivery post"
+     },
+     {
+      "t": "assets/pages/chiky-pop/p02-t.webp",
+      "f": "assets/pages/chiky-pop/p02.webp",
+      "c": "Chicken box packaging"
+     },
+     {
+      "t": "assets/pages/chiky-pop/p03-t.webp",
+      "f": "assets/pages/chiky-pop/p03.webp",
+      "c": "Cheese fries post"
+     },
+     {
+      "t": "assets/pages/chiky-pop/p04-t.webp",
+      "f": "assets/pages/chiky-pop/p04.webp",
+      "c": "Meal pieces post"
+     },
+     {
+      "t": "assets/pages/chiky-pop/p05-t.webp",
+      "f": "assets/pages/chiky-pop/p05.webp",
+      "c": "Crew in red tees at the food trailer"
+     },
+     {
+      "t": "assets/pages/chiky-pop/p06-t.webp",
+      "f": "assets/pages/chiky-pop/p06.webp",
+      "c": "Sandwich and fries post"
+     },
+     {
+      "t": "assets/pages/chiky-pop/p07-t.webp",
+      "f": "assets/pages/chiky-pop/p07.webp",
+      "c": "Chicken lollipop menu post"
+     },
+     {
+      "t": "assets/pages/chiky-pop/p08-t.webp",
+      "f": "assets/pages/chiky-pop/p08.webp",
+      "c": "Wrap and fries post"
+     },
+     {
+      "t": "assets/pages/chiky-pop/p09-t.webp",
+      "f": "assets/pages/chiky-pop/p09.webp",
+      "c": "Double sandwich promo, flame shape"
+     },
+     {
+      "t": "assets/pages/chiky-pop/p10-t.webp",
+      "f": "assets/pages/chiky-pop/p10.webp",
+      "c": "Red takeaway boxes with pattern"
+     },
+     {
+      "t": "assets/pages/chiky-pop/p11-t.webp",
+      "f": "assets/pages/chiky-pop/p11.webp",
+      "c": "Sauce picker post"
+     },
+     {
+      "t": "assets/pages/chiky-pop/p12-t.webp",
+      "f": "assets/pages/chiky-pop/p12.webp",
+      "c": "Cheese wrap post"
+     }
+    ],
+    "slug": "chiky-pop"
+   }
+  ],
+  "enabled": true
  }
 }
