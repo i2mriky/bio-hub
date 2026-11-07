@@ -1,12 +1,12 @@
 {
- "version": 11,
+ "version": 27,
  "profile": {
   "name": "Nour Mohamed",
   "monogram": "NM*",
   "role": "Creative Director & AI Specialist",
   "location": "New Cairo",
   "avatar": "assets/avatar.jpg",
-  "bio": "I build brand worlds end to end — identity, AI-directed campaigns and 3D visualization — and I grow the audiences around them without paid reach.",
+  "bio": "I build brand worlds end to end — identity, AI-directed campaigns and 3D visualization — grow the audiences around them without paid reach, and run the launch on the ground.",
   "status": {
    "show": true,
    "live": true,
@@ -254,33 +254,53 @@
     "enabled": true
    },
    {
-    "id": "x11",
-    "tag": "Every day",
+    "id": "x13",
+    "tag": "One day",
     "client": "",
     "sector": "",
-    "value": "4+",
-    "label": "pages run daily, plus the client brands",
-    "extra": "several projects at once, from the idea to the post",
-    "enabled": true
-   },
-   {
-    "id": "x12",
-    "tag": "The archive",
-    "client": "",
-    "sector": "",
-    "value": "95+",
-    "label": "projects you can open on this site",
-    "extra": "identity, social, AI, 3D, video, print",
+    "value": "1 day",
+    "label": "a full month of content for 3 brands",
+    "extra": "posts and reels for @i2mriky, M3anyi and El Partyta, specialised, production-grade work",
     "enabled": true
    },
    {
     "id": "x6",
     "tag": "One post",
     "client": "M3anyi",
-    "sector": "Organic",
-    "value": "286K",
-    "label": "views on one carousel in 6 days",
-    "extra": "12K likes, 2K reposts and 1.1K new followers from that one post",
+    "sector": "",
+    "value": "1.28M",
+    "label": "Instagram views on one post",
+    "extra": "past 1M in about 4 days, plus 327K on TikTok · 56.6K likes, 16.4K shares",
+    "enabled": true
+   },
+   {
+    "id": "x7",
+    "tag": "Organic reach",
+    "client": "M3anyi",
+    "sector": "",
+    "value": "9.7M",
+    "label": "views in 30 days, no ads",
+    "extra": "Instagram, TikTok and Pinterest, all organic",
+    "enabled": true
+   },
+   {
+    "id": "x14",
+    "tag": "One month",
+    "client": "M3anyi",
+    "sector": "",
+    "value": "+12.8K",
+    "label": "Instagram followers in October",
+    "extra": "5.9M views that month, +2,362% on September",
+    "enabled": true
+   },
+   {
+    "id": "x15",
+    "tag": "My own app",
+    "client": "",
+    "sector": "",
+    "value": "177",
+    "label": "countries can download my game",
+    "extra": "El Partyta: designed, written and built in-house, live on Google Play since Oct 27",
     "enabled": true
    },
    {
@@ -304,33 +324,53 @@
     "enabled": true
    },
    {
-    "id": "x7",
-    "tag": "Organic reach",
-    "client": "",
+    "id": "x16",
+    "tag": "Hit rate",
+    "client": "M3anyi",
     "sector": "",
-    "value": "7.2M",
-    "label": "views in 90 days, no ads",
-    "extra": "Four channels across M3anyi and Gray Museum",
+    "value": "13",
+    "label": "posts past 100K views on Instagram",
+    "extra": "980K for one carousel in 6 days",
     "enabled": true
    },
    {
     "id": "x8",
     "tag": "New audience",
-    "client": "M3anyi · Instagram",
+    "client": "M3anyi",
     "sector": "",
-    "value": "81%",
-    "label": "of views come from non-followers",
-    "extra": "last 30 days, 530K views",
+    "value": "90%",
+    "label": "of October's views came from non-followers",
+    "extra": "Instagram, 5.9M views",
     "enabled": true
    },
    {
     "id": "x9",
-    "tag": "TikTok, one week",
+    "tag": "TikTok, 28 days",
     "client": "M3anyi",
     "sector": "",
-    "value": "+112%",
-    "label": "post views week over week",
-    "extra": "167K views, Oct 3 to 9",
+    "value": "2.8M",
+    "label": "post views, +472%",
+    "extra": "Oct 4 to 31, versus the 28 days before",
+    "enabled": true
+   },
+   {
+    "id": "x11",
+    "tag": "Every day",
+    "client": "",
+    "sector": "",
+    "value": "4+",
+    "label": "pages run daily, plus the client brands",
+    "extra": "several projects at once, from the idea to the post",
+    "enabled": true
+   },
+   {
+    "id": "x12",
+    "tag": "Delivered",
+    "client": "",
+    "sector": "",
+    "value": "150+",
+    "label": "projects across six countries",
+    "extra": "identity, social, AI, 3D, video, print",
     "enabled": true
    },
    {
@@ -515,59 +555,87 @@
  "numbers": {
   "enabled": true,
   "title": "Numbers",
-  "period": "Last 90 days · Jun 25 – Sep 23, 2026",
-  "note": "Organic reach on the pages I founded and run. No paid ads.",
-  "headline": "views and impressions across four channels, organic",
+  "period": "Last 30 days · Oct 4 – Nov 2, 2026",
+  "note": "Organic reach on M3anyi, the page I founded and run. No paid ads.",
+  "headline": "views and impressions in the last 30 days, organic",
   "rows": [
    {
-    "id": "r1",
+    "id": "r4",
     "brand": "m3anyi",
-    "platform": "pinterest",
-    "value": "2.2M",
-    "raw": 2200000,
-    "label": "impressions",
-    "span": "90 days",
-    "growth": "",
+    "platform": "instagram",
+    "value": "6.1M",
+    "raw": 6100000,
+    "label": "views",
+    "span": "30 days",
+    "growth": "+2,362% in October vs September",
     "details": [
      [
-      "Engagements",
-      "96.6K"
+      "October",
+      "5.9M views"
      ],
      [
-      "Saves",
-      "11.5K"
+      "New followers, October",
+      "+12,809"
      ],
      [
-      "Audience",
-      "680.4K"
+      "Followers",
+      "51,177"
      ]
     ],
-    "enabled": true
+    "enabled": true,
+    "since": "2026-11-02"
    },
    {
     "id": "r2",
     "brand": "m3anyi",
     "platform": "tiktok",
-    "value": "2.1M",
-    "raw": 2100000,
+    "value": "2.8M",
+    "raw": 2800000,
     "label": "post views",
-    "span": "60 days",
-    "growth": "+111.7% this week",
+    "span": "28 days",
+    "growth": "+471.9%",
     "details": [
      [
-      "Views, Oct 3 to 9",
-      "167K"
+      "Profile views",
+      "36.8K"
      ],
      [
-      "Likes, same week",
-      "5K"
+      "Likes",
+      "158.2K"
      ],
      [
-      "Shares, same week",
-      "552"
+      "Shares",
+      "32.4K"
      ]
     ],
-    "enabled": true
+    "enabled": true,
+    "since": "2026-10-31"
+   },
+   {
+    "id": "r1",
+    "brand": "m3anyi",
+    "platform": "pinterest",
+    "value": "775.7K",
+    "raw": 775700,
+    "label": "impressions",
+    "span": "30 days",
+    "growth": "",
+    "details": [
+     [
+      "Engagements",
+      "30.4K"
+     ],
+     [
+      "Saves",
+      "3.7K"
+     ],
+     [
+      "Audience",
+      "299.5K"
+     ]
+    ],
+    "enabled": true,
+    "since": "2026-10-20"
    },
    {
     "id": "r3",
@@ -592,58 +660,32 @@
       "998.3K"
      ]
     ],
-    "enabled": true
-   },
-   {
-    "id": "r4",
-    "brand": "m3anyi",
-    "platform": "instagram",
-    "value": "1.23M",
-    "raw": 1231464,
-    "label": "views",
-    "span": "90 days",
-    "growth": "",
-    "details": [
-     [
-      "Last 30 days",
-      "530.9K views"
-     ],
-     [
-      "New followers, 30 days",
-      "+1,441"
-     ],
-     [
-      "From non-followers",
-      "81.1%"
-     ]
-    ],
-    "enabled": true,
-    "since": "2026-10-11"
+    "enabled": false
    }
   ],
   "proofs": [
    {
     "id": "p1",
-    "value": "1.68M",
-    "label": "people reached on Pinterest across both pages",
+    "value": "90.7K",
+    "label": "followers on M3anyi's Instagram and TikTok",
     "enabled": true
    },
    {
     "id": "p2",
-    "value": "325K",
-    "label": "likes, saves, shares and comments",
+    "value": "1.28M",
+    "label": "views on one Instagram post, plus 327K on TikTok",
     "enabled": true
    },
    {
     "id": "p3",
-    "value": "+1.4K",
-    "label": "new Instagram followers in the last 30 days",
+    "value": "+12.8K",
+    "label": "new Instagram followers in October",
     "enabled": true
    },
    {
     "id": "p4",
-    "value": "81.1%",
-    "label": "of M3anyi's Instagram views in the last 30 days come from non-followers",
+    "value": "90%",
+    "label": "of October's Instagram views came from non-followers",
     "enabled": true
    }
   ],
@@ -763,7 +805,30 @@
       63469,
       77353,
       71402,
-      87272
+      87272,
+      82128,
+      87603,
+      98553,
+      109504,
+      114979,
+      120454,
+      125929,
+      114979,
+      131404,
+      110000,
+      180000,
+      647000,
+      300000,
+      290000,
+      280000,
+      385002,
+      450000,
+      455000,
+      460000,
+      465000,
+      470000,
+      475000,
+      480000
      ],
      "window": 90,
      "base": 3
@@ -849,18 +914,42 @@
       30139,
       20257,
       21246,
-      11858
+      11858,
+      13940,
+      13940,
+      15102,
+      16264,
+      16264,
+      17425,
+      18587,
+      55761,
+      200000,
+      190000,
+      170000,
+      260000,
+      330000,
+      250000,
+      200000,
+      160000,
+      140000,
+      130000,
+      120000,
+      115000,
+      105000,
+      105400
      ],
-     "base": 7
+     "base": 7,
+     "window": 90
     }
    ]
   },
   "live": {
    "enabled": true,
-   "since": "2026-10-11",
+   "since": "2026-11-02",
    "growth": 6,
+   "days": 30,
    "autoPeriod": true,
-   "note": "Between monthly updates, the total and the line after the last real day run on a projection of recent growth. Instagram is real daily data through Oct 10, 2026; TikTok is real for Oct 3 to 9."
+   "note": "Between monthly updates, the total and the line after the last real day grow from the last 30 days' level at +6% a month. Real data through Nov 2, 2026."
   }
  },
  "map": {
@@ -929,7 +1018,7 @@
     "name": "M3anyi",
     "arabic": "معاني",
     "role": "Founder · since 2017",
-    "tagline": "Arabic quotes turned into illustration. Two lines, one twist, seen millions of times a quarter.",
+    "tagline": "Arabic quotes turned into illustration. Two lines, one twist, seen millions of times a month.",
     "logo": "assets/logo-m3anyi.png",
     "url": "https://www.instagram.com/m3anyi_egy",
     "socials": [
@@ -976,30 +1065,30 @@
      },
      {
       "id": "f2",
-      "value": "2.2M",
-      "title": "Pinterest impressions",
-      "meta": "Last 90 days",
+      "value": "6.1M",
+      "title": "Instagram views",
+      "meta": "Last 30 days",
       "enabled": true
      },
      {
       "id": "f3",
-      "value": "2.1M",
-      "title": "TikTok views",
-      "meta": "Last 60 days",
+      "value": "1.28M",
+      "title": "views on one post",
+      "meta": "Past 1M in about 4 days",
       "enabled": true
      },
      {
       "id": "f4",
-      "value": "934.6K",
-      "title": "Instagram views",
-      "meta": "Last 90 days",
+      "value": "2.8M",
+      "title": "TikTok views",
+      "meta": "28 days, Oct 4–31",
       "enabled": true
      },
      {
       "id": "f5",
-      "value": "85%",
-      "title": "shares to likes",
-      "meta": "On the top post. 5–15% is normal.",
+      "value": "+12.8K",
+      "title": "new followers",
+      "meta": "Instagram, October",
       "enabled": true
      }
     ],
@@ -1219,7 +1308,7 @@
   "external": {
    "label": "El Partyta",
    "tagline": "Interactive party game",
-   "url": "https://i2mriky.github.io/El-Partyta-Copy-Semi-Final/",
+   "url": "https://play.google.com/store/apps/details?id=com.nmra.elpartyta",
    "enabled": false
   }
  },
@@ -1237,13 +1326,13 @@
    "The studio (rooms on the site): 3D room = exterior, landscape, interior visualization and 3D films. Photo studio = product photography in every colourway, then ad images built around the real product. AI lab = AI campaigns and AI product images and videos with the product kept accurate. Identity & print = naming, logo, colour, type, brand books, print-ready packaging and cartons, uniforms and merch (designed and produced). Content room = social content planning, post design, carousels, reels with motion, captions, and Arabic voice-over recorded in-house. Garden = landscape and outdoor spaces.",
    "Full house = one product launch built in seven stages: idea, brand kit, art direction, studio shoot, ads and posts, reels, packaging. The case on the site is Lamsa Plast, a long-established housewares factory that already had its logo; Nour did the shoot, art direction, ad images, posts, reels and carton, not their logo.",
    "Lamsa Plast (housewares manufacturer): bath set and water bottle orders: studio photos in five colourways, ad images, social posts, two product reels, and a print-ready carton.",
-   "Golden Home (real estate brokerage, New Cairo): motion reels on Nour's own reel engine, with his script and his voice-over.",
-   "Design-itude Associates (UK market): 125+ exterior, landscape and interior projects in under 3 years; AI in the render pipeline made the concept stage 60%+ faster.",
+   "Golden Home (real estate brokerage, New Cairo): his gold house logo, two seasonal feed campaigns planned as 3×3 grids (a furnished Sodic Estawon apartment, a North Coast summer 2026 drop), motion reels on his own reel engine with his script and voice-over (Brands wanted, Chalet teaser), shoot days, and a WhatsApp + Messenger lead bot he built for them, launching now: it knows which ad a client came from, logs every lead to a sheet and alerts the team. All of it is in the Golden Home card.",
+   "Design-itude Associates (DIA, a Cairo architecture and interior studio working for UK clients): Creative Lead & Spatial Visualizer, full-time on site, Mar 2024 – Jul 2026. He modelled and rendered UK houses and gardens (SketchUp + Lumion) and made their 3D films, took on-site measurements with the engineers, directed, shot and edited behind-the-scenes reels, ran their feed, carousels and decks, and built 360° virtual tours. 125+ exterior, landscape and interior projects in under 3 years; AI in the render pipeline made the concept stage 60%+ faster.",
    "Chiky Pop (F&B): naming, identity, packaging and UI, launched in 7 days, 100+ daily orders at peak; its staff uniform is still produced.",
    "Kshaf: Nour's own e-commerce store, from the name to a live store in 5 days, still running a year later.",
-   "M3anyi: Nour's own Arabic quotes and illustration page since 2017, grown with no ads; one carousel reached 286K views in 6 days; 81% of its Instagram views in the last 30 days came from non-followers.",
+   "M3anyi: Nour's own Arabic quotes and illustration page since 2017, grown with no ads. October 2026: 5.9M Instagram views (+2,362% on September) and +12,809 followers. Followers on Nov 2: 51.2K Instagram, 39.5K TikTok. Its top post passed 1M views in about 4 days (1.28M on Instagram + 327K on TikTok); 13 posts are past 100K on Instagram; 90% of October's views came from non-followers.",
    "Gray Museum: Nour's own surreal AI art brand; +170% Pinterest saves in 90 days.",
-   "El Partyta: a party game Nour designed, wrote and built, published by NMRA: 20+ games, 3,000+ cards written in-house, one phone or online rooms; in closed testing on Google Play, with a web version.",
+   "El Partyta: a party game Nour designed, wrote and built, published by NMRA: 20+ games, 3,000+ cards written in-house, one phone or online rooms. Live on Google Play since 27 Oct 2026 in 177 countries (the download button is in the Games section), plus a web version.",
    "@i2mriky: Nour's own page of design and AI explainers; its reels are built on his own reel engine (for example 'Why prices end in 99').",
    "NIVEA MEN on the Before/After slider is a self-initiated concept campaign, not a commission.",
    "Oakmere school uniform programme: concept work for a pitch.",
@@ -1263,29 +1352,48 @@
    "How he works: from the first idea to launch: naming, identity, design, content, 3D, video and marketing. He deals directly with owners, companies and agencies.",
    "Capacity: he runs the content of 4+ pages every day, plus the pages of the client brands he works with, across several projects at once.",
    "ASAS is a branding project on the site (identity and posts). Present it as a project, not as Nour's company.",
-   "Archive section: 95+ real projects anyone can open on the site, filtered by Identity, Social, AI, 3D & architecture, Video, Print & packaging, Apparel, Decks, Web & UI.",
+   "Work by sector: 75 selected projects in 10 sectors (real estate & architecture and food & drink are the biggest). Health & clinics has two self-initiated concepts: Tooth Taj (a dental clinic, Cairo) and Masam (a skin clinic, Riyadh). Hospitality & tourism has two self-initiated concepts: Al Bunt (a boutique hotel, Jeddah) and Daffa (family boat trips, Hurghada). Fintech has Shaqa Omry (a self-initiated jameya savings app, Egypt) and Sahalat (a real content pitch for a Saudi finance-comparison platform that did not close). Sports & education has Wba3dein? (a self-initiated Arabic reading app for Gulf kids, UAE + Saudi), next to Hossam Bakr Boxing and the Oakmere school-uniform programme (both pitches).",
    "Tomouh (factory): true-scale 3D models of a magnet and a bath sponge built in Blender for the product pages, with 360° view and AR.",
    "Zahret Elbon Elbrazily (coffee roaster): he designed the company presentation deck in about 4 hours; the feed on the site is a concept built from that deck.",
    "Burger Tower: a feed concept he pitched (the tall burger column runs across the grid); it is a pitch, not a live page.",
    "DIA (Design-itude Associates): besides 3D renders and films, he designed their Instagram hiring campaign.",
    "Lamsa Plast on Instagram: studio shoot, posts, ad images and reels he delivered for the Art Bath Set and Aqua Polo.",
    "Lamsa Plast is an established housewares factory with its own logo. Never say Nour designed the Lamsa logo or identity.",
-   "George Street (Stage 03): Nour designed the presentation only; the interior design and renders are by the design team."
+   "George Street (Stage 03): Nour designed the presentation only; the interior design and renders are by the design team.",
+   "Speed: in one day Nour made a full month of content for three pages (@i2mriky, M3anyi and El Partyta): posts and reels, specialised, production-grade work.",
+   "Services & skills section (after High scores): everything he does in five groups: Brand (naming, logo, packaging, uniforms, decks), Content (page management, posts, reels, Arabic copy, voice-over, reports), Photo & AI (product shoots, AI campaigns, AI product images, AI video, key art), 3D & spaces (exterior, interiors, product models, space planning, 3D films), Build (websites, assistants and bots, tools, games and apps, launch plans).",
+   "Chiky Pop (Sep 2022 – Mar 2023, Creative Director & Operations Lead): 7 days from the first sketch to opening day (name, logo, boxes, menu, uniforms); 100+ orders a day at peak; the staff uniform is still produced. Hossam Bakr Boxing and the Oakmere school-uniform programme are pitches that did not close.",
+   "Operations, not only design: he was the on-site manager of the Galala University food court for Food Trucks International (its representative there). When Chiky Pop lost its manager he launched the restaurant himself and ran it for about two months alongside the area, holding every truck, Chiky Pop included, to the same site rules. Card: Work by sector → Food & drink.",
+   "Mostafa (مُصطفى): key art and Arabic title lettering for a short film by Hesham Marcelo, AI visuals with his art direction.",
+   "DIA projects on the site, each its own card: Dalmeny Avenue, Pleasant Drive, Robyns Way, Selcroft Road, 69 The Avenue, Hazel Street, 19 Castle Denes, Butcher's Lane, Eldred Drive, Tanzematt, Hillman, UK garden designs, and the studio's social & content (feed, carousels, BTS reels, hiring campaign). George Street: presentation design only. Sakan Misr (Egypt): he took the site survey and the measurements himself, then designed the space-planning deck. Restaurants (in Food & drink): Umami, a well-known UK restaurant chain (bar concept); Manohar: to meet the delivery date he made the whole walkthrough film himself in record time, an imagined film of the interior before the build, in the early days of AI video.",
+   "Career (from his LinkedIn): Founder & Operations Director of MOBBIT (Mobbit.store, an e-commerce brand with B2B wholesale and B2C, since 2018); Founder & Art Director of M3anyi and Gray Museum (since 2017); Branch Manager & Branding Specialist at Food Trucks International UAE | Egypt (2021 – 2026: branch operations, sales, team, digital marketing, design); Creative Director & Operations Lead at Chiky Pop (2022 – 23); Creative Lead & Spatial Visualizer at DIA (2024 – 26).",
+   "@i2mriky reels card (Media): ten design and marketing explainers he scripted, voiced and animated on his own reel engine (Lens and face, Why prices end in 99, The face steals the ad and more). DII Photography reels: a photographer's lighting lessons as reels, built on the same engine.",
+   "Tooth Taj (توث تاج): a self-initiated concept for a dental clinic in New Cairo, tagged Concept on the site (not a real client: never invent a doctor, clinic, address or result). The real problem: people put off the dentist because they can't guess the bill, and patients flying in from the Gulf fear a quote that changes once they sit down (Egypt treated about 35,000 foreign patients from 124 countries in 2025, per GAHAR). The promise: the full price, written and signed before the chair. Nour made the name, the logo (a crown wrapped around the tooth), the ink & ivory colours, 6 posts, 3 motion clips and the WhatsApp bot Taji.",
+   "Taji (تاجي) is Tooth Taj's WhatsApp bot, written as the clinic's brief inside the concept: a clear bot that filters serious patients and turns chats into bookings. Flow: a price range in the first reply and what moves it → a photo or x-ray → a written plan with a binding total → booking (from abroad: visits and days before the flight) → after the visit \"Did you pay the same number?\", and the manager calls within an hour if not. The price itself is the filter. It measures chat → photo, photo → booking, booking → show-up. For a clinic, doctor or medical visitor: show Tooth Taj (Health & clinics), and mention the WhatsApp lead bot he built for Golden Home as bot work for a real client.",
+   "Masam (مسام): a self-initiated concept for a skin / aesthetic clinic in Riyadh, Saudi Arabia, tagged Concept on the site (not a real client: never invent a doctor, clinic, address, price or result). Nour's first Saudi brand (Saudi dialect, SAR). The real problem: social media decides aesthetic treatments in Riyadh (in a study of 1,449 women, 68% said it influenced them, and 42% decided on facial changes after using Snapchat filters), yet the Saudi Ministry of Health bans procedure photos and videos in clinic ads (fines SAR 10,000–100,000). The idea: «النتيجة تبان. هي ما تبان.» (the result shows, she doesn't): real before and after in the same light and angle, the face hidden under mosaic in the brand's tones. Nour made the name, the Arabic calligraphic logo, the Najdi clay colours, 6 posts, the clinic interior as his own interior design (facade on Olaya, reception with a mosaic wall that reads as a face from the door and as squares up close, lounge, corridor, same-light photo room, treatment mirror, consultation room, aftercare kit) and 2 reels. For a skin, beauty, aesthetic or medical visitor, or anyone asking about Saudi / Gulf work or interior design for a clinic: show Masam (Health & clinics).",
+   "Al Bunt (البنط): a self-initiated concept for a boutique hotel in Jeddah Al-Balad (the historic district), Saudi Arabia, tagged Concept on the site (not a real client: never invent an owner, hotel, address, price, occupancy or result). An old Hijazi coral-stone house with 7 rooms, named after Bab Al-Bunt, the sea gate where every traveller arrived in Jeddah. The real problem: Middle East hotels take about 48% of bookings through OTAs and only ~18% direct (eRevMax survey), an OTA booking can cost 15–28% in commission and discounts, and Saudi hotel rates fell 12% in Q4 2025 while licensed facilities hit a record 5,900 (GASTAT): on an OTA a house of one-of-a-kind rooms is sold as «Deluxe Double, SAR 389». The idea: «احجز الغرفة، مو نوع الغرفة» / Book the room, not the room type. Every room has a name and a window (البحر، القمرية، الفلّ…), and you can choose a room by its name only direct, on WhatsApp with the host; same price as the OTAs, the reason to book direct is the house. Nour made the name, the logo (البنط under the gate arch), the colours (faded roshan blue on lime and coral stone), the hotel interior as his own interior design (facade, dahliz, maq'ad, a room with its roshan, bathroom, roof at sunset), the room touchpoints carrying the room's name (door hanger cut in the gate arch, key card, pillow card, water-jar tag, breakfast tent card, room plaque), 10 posts and a reel. For a hotel, hospitality, tourism, travel, Saudi / Gulf or Jeddah visitor, or anyone asking about direct bookings or hotel interiors: show Al Bunt (Hospitality). Al Bunt also has a live direct-booking page Nour built: https://i2mriky.github.io/al-bunt/ (one page, phone first, Arabic: 7 rooms by name grouped by floor on a drawn house section, each room opens WhatsApp with the room's name already written in the message, optional arrival date / nights / guests added to the message; it is a demo, the messages reach Nour). Use it when someone asks for a live website, a booking page, a landing page, web design or a WhatsApp booking flow.",
+   "Packaging on the site (Work by sector): Chiky Pop (fried-chicken boxes and bag, Food & drink), Lamsa Plast (the Art Bath Set carton, print-ready, plus the flat Aqua Polo 1.5 L bottle label, Industry & trade), Mazad Line (the Alpha Tape box: front, product selection, how to use, technical data label, Industry & trade). The Lamsa carton is also live in 3D: open Lamsa Plast, drag to turn the real V9 carton (183 × 80 × 150 mm), and one button unfolds it into the flat die-line with its cut and fold lines. For anyone asking about packaging, a box, carton, label, die-cut or dieline: show these three, Lamsa first.",
+   "Daffa (دفّة, «the helm»): a self-initiated concept brand for private family boat trips in Hurghada, Egypt (Giftun island, Red Sea), for Gulf families first (Saudi), tagged Concept on the site (not a real client: never invent an operator, boat, captain, price, licence or result; the captain «محمود رجب» and the family in the posts are invented for the concept). The real problem: sea trips in Hurghada are sold by brokers and unlicensed operators, not brands, so families do not know the boat, the captain or the jackets and share the deck with strangers; the fear is recent (a yacht capsized near Marsa Alam in Nov 2024, the Sindbad tourist submarine sank off Hurghada in Mar 2025), and Saudi visitors to Egypt passed 1.2 million in 2025. The idea: the boat is your family's only, and the safety is in front of your eyes before you sail: a life jacket fitted for each child on the dock, the captain's name, licence and boat photo on WhatsApp the night before, live location during the trip. Result line: «Safety you can see before you sail». Nour made the name, the logo (the letter ة drawn as the boat seen from above, the icon is the same boat cut from the word), the colours (sea navy, sand white, Giftun water, life-jacket orange only on safety moments), 9 posts, the applications (kids' life-jacket wall, check board on the dock, the night-before WhatsApp, helm plate, little-captain card, stern flag, marina kiosk, resort desk stand, welcome kit), an exhibition stand in 3D for Arabian Travel Market in Dubai (where Gulf family trips are sold): Blender renders, photo versions of the same 6 views (shown as a before/after slider, 3D model ↔ photo, same camera) and a walk-through, and a reel «the jump». For a tourism, travel, boat, sea trip, Red Sea, Hurghada, family or Gulf visitor, and for anyone asking about an exhibition stand, booth, trade show or event design: show Daffa (Hospitality & tourism).",
+   "Shaqa Omry (شقا عمري, \"my life's savings\"): a self-initiated concept app for the jameya (جمعية, the rotating savings circle), Egypt, Egyptian Arabic, tagged Concept on the site (not a real company or a licensed service: a real launch would need a CBE/FRA licence or a bank partner; never invent users, downloads or results). The real problem: 43% of Egyptians with savings are in a jameya (AUC study) while financial inclusion is 77.6% (CBE, end 2025); it runs on one organiser with a notebook and WhatsApp, she chases late payers and it is embarrassing, and when it breaks it ends friendships or goes to court (UAE cases); MoneyFellows, ElGameya and Hakbah match strangers, none is built for the jameya you already have with your people. The idea and result line: «Everyone sees who paid. So everyone pays.» Every payment shows as paid or late to the whole group, reminders go out by themselves, the turn order is drawn on screen, payout day is a moment, and the record is the proof; the gentle embarrassment of being seen makes people pay on time or early, so nobody chases. Nour made the name (his own idea), the logo (a handkerchief bundle tied in a knot, the way mothers kept savings: each paid instalment is a tied knot in the app), the indigo handkerchief colours with saffron only for payout day, 6 app screens (one story: Mona in her office jameya), 9 posts with AI photos and glass app UI, and 2 reels. For fintech, banking, payments, savings or app-design questions: show Shaqa Omry first, then Sahalat.",
+   "Sahalat (سهالات): a real Saudi platform that compares home and personal finance offers (sahalat_finance on Instagram). Nour pitched its content through a partner agency: 3 posts and a reel cover where each post answers one question a home buyer has (same instalment, not the same cost · want to buy a house? · what the bank reads in your file · remember the name), 3D coins and a key built on their mark, an AI photo, Saudi dialect and a new Arabic typeface; tagged Pitch on the site because it did not close. Never quote rates, percentages, approval times or prices for Sahalat, and never name the people involved.",
+   "Wba3dein? (وبعدين؟, \"and then what?\"): a self-initiated concept app that makes Gulf kids want to read Arabic, UAE + Saudi, Arab families (nationals and expats) whose kids, 6 to 10, go to English-medium international schools; buyer = the mother, user = the kid; Gulf dialect in the brand, simple vowelled فصحى in the stories; tagged Concept on the site (not a real company; never invent users, downloads, schools or results). The real problem: 68% of young Gulf Arabs use English daily more than Arabic (Arab Youth Survey 2017), 54% say Arabic matters less to them than to their parents (2023); the Abu Dhabi Arabic Language Summit (2022) said schools never built an Arabic reading habit; only 3 of 17 Outstanding Dubai schools were Good in Arabic (KHDA 2018–19); Lamsa, I Read Arabic, Abjadiyat and Iqrali teach letters or curriculum, not wanting. The idea «اللي يقرا، يقرّر»: at 9 the share of kids who love reading drops from 40% to 28% and 89% love the books they chose (Scholastic 2019), so a short story from his world stops at a fork, the choice opens only when he reads it aloud, and the goal is his own book: 10 stories with his choices printed as a real book «بقلم حمد، ٩ سنين» delivered home. Result line: «Arabic they want to read.» Nour made the name, the logo (the Arabic ؟ as a page corner turning), the «bedtime» palette (night plum, paper, lamp apricot, fork lilac; Marhey headlines, Noto Naskh vowelled stories), a paper-cut world style with real kids as white-edged stickers, 8 applications (the fork screen on a tablet, his printed book, the parent's phone, the delivery box, a Dubai bus shelter, a bookmark, his book on his shelf, a bedtime hero), 9 posts and 2 reels built on his own reel engine. For education, kids, reading, Arabic-language, edtech or Gulf-family questions: show Wba3dein? first."
   ],
   "site": [
    "Hero (top): who Nour is, the CV button and the line 'Tell me what you're building'.",
    "Before/After: a drag slider. NIVEA MEN, a raw can on white turned into a campaign image (self-initiated concept).",
    "High scores: his best numbers as cards, plus 'Built in-house', a rail of the 15 tools he built.",
+   "Experience (after High scores): his roles as a timeline: DIA 2024–26, Food Trucks International 2021–26, Chiky Pop 2022–23, MOBBIT since 2018, M3anyi & Gray Museum since 2017.",
+   "Services & skills (after High scores): five tabs (Brand, Content, Photo & AI, 3D & spaces, Build), an icon and one line per service, and one button per tab.",
    "The studio, 3D room: exterior concept for the UK, drafting-table plans, material library, a whole-street site model.",
    "The studio, Photo studio: the Lamsa Art Bath Set on the table, two cameras on two colourways, the retouched ad image, clear plastic under a softbox.",
    "The studio, AI lab: a campaign on four screens, the robot where every AI model is tested, a frame from an @i2mriky reel.",
-   "The studio, Identity & print: M3anyi and Gray Museum on the board, the El Partyta brand book, the Lamsa carton, the Oakmere uniform concept.",
+   "The studio, Identity & print: M3anyi and Gray Museum on the board, the El Partyta brand book, the Lamsa carton (its caption opens the carton in live 3D), the Oakmere uniform concept.",
    "The studio, Content room: the M3anyi feed, an @i2mriky reel on the timeline, a client post on the calendar wall, the voice booth (his voice on the Golden Home reel), insights.",
    "The studio, Garden: landscape and outdoor designs.",
-   "In motion: 18 clips. Tall: Art Bath Set and Aqua Polo (Lamsa), Brands wanted and Chalet teaser (Golden Home), Why prices end in 99, Everything on a line and Lens and face (@i2mriky), AI films (espresso machine, Shero black-swan necklace, skincare serum, calligraphy tee), living-room lighting reel. Wide: El Partyta store trailer, Plaza at dusk, Restaurant walkthrough and Garden clay-to-render (Design-itude Associates), food trailers promo, 3D type tracked on a canal.",
-   "Archive (after Full house): one tile per brand or project (about 65), images only; tap one to open its best images and what Nour did. Filters: Identity, Social, AI, 3D & architecture, Print & packaging, Apparel, Decks, Web & UI. Includes live 3D models (Tomouh).",
+   "In motion: 19 clips. Tall: Art Bath Set and Aqua Polo (Lamsa), Brands wanted and Chalet teaser (Golden Home), Why prices end in 99, Everything on a line and Lens and face (@i2mriky), Wba3dein? «the fork» (his concept Arabic reading app, built on his reel engine), AI films (espresso machine, Shero black-swan necklace, skincare serum, calligraphy tee), living-room lighting reel. Wide: El Partyta store trailer, Plaza at dusk, Restaurant walkthrough (Manohar, an AI walkthrough film he made in record time) and Garden clay-to-render (Design-itude Associates), food trailers promo, 3D type tracked on a canal.",
+   "Work by sector (after High scores): picks by industry in tabs (Food & drink, Real estate & architecture, Fashion & beauty, Health & clinics, Hospitality & tourism, Tech & delivery, Fintech, Industry & trade, Sports & education, Media), shuffled on every visit; not the full list. Each card cross-fades through 3 images with a one-line result; opening it shows a result card, then the images and videos. \"Concept\" = Nour's own idea, \"Pitch\" = a proposal that did not close. Includes live 3D models (Tomouh) and 41 short video clips inside the projects (cards with ▶): Golden Home reels, Lamsa reels, M3anyi animated tales, the El Partyta trailer, DIA 3D films and on-site reels, and a card of ten @i2mriky reels built on his own engine. Each card shows the brand's logo (concept AI campaigns show an AI badge, Kids Stories the NM* mark, the short film its title lettering). Design-itude Associates work is split by project and every card says 'UK · with Design-itude Associates' (Sakan Misr says Egypt). Some projects show a wide card under the result card: Tooth Taj (Health & clinics, Concept) shows its WhatsApp bot Taji as a chat that plays message by message. Masam (Health & clinics, Concept, skin clinic in Riyadh) opens with Interior first (9 spaces of the clinic he designed, one walk-through), then the 6 posts and a reel mixed. Al Bunt (Hospitality & tourism, Concept, boutique hotel in Jeddah) opens with its reel, then «The room by its name» (6 room touchpoints carrying the room's name), «The house» (6 spaces he designed), then the 10 posts; its result card has a «Live booking page ↗» button that opens https://i2mriky.github.io/al-bunt/. Lamsa Plast (Industry & trade) opens with the Art Bath Set carton in live 3D: drag to turn it, the button unfolds it into the flat die-line (red = cut, green = fold) and folds it back; the gallery adds the flat die-line and the Aqua Polo label. Mazad Line opens on its Alpha Tape box. Daffa (Hospitality & tourism, Concept, family boat trips in Hurghada) opens with its reel «the jump», then «Safety on the dock» (9 applications), «The stand · Arabian Travel Market, Dubai» (a before/after slider: drag between the 3D model and the photo, 6 views on small thumbs, then the walk-through clip and a close-up), then the 9 posts. Fintech: Shaqa Omry (Concept, the jameya savings app) opens with its reel, then «The app» (6 screens, one story) and the 9 posts with a second reel; Sahalat (Pitch) shows 3 posts, a reel cover and the client's old feed as the before. Sports & education: Wba3dein? (Concept, the Arabic reading app for Gulf kids) opens with its reel «the fork», then «Applications» (8: the fork screen, his printed book, the parent's phone, the box, a bus shelter, a bookmark, his shelf, bedtime) and «Posts & reels» (9 posts, both reels, the logo); its reel is also in In motion.",
    "Full house: a 3D house built in 7 stages, each with the real Lamsa work: idea, brand kit (their existing logo), art direction, studio shoot, ads and posts, reels, packaging. Ends with 'Book a brand consult'.",
-   "Work: his portfolio decks. Numbers: live organic reach. Map: six countries. Worlds: M3anyi and Gray Museum.",
+   "Portfolios (right after Work by sector): his three decks. Numbers: live organic reach. Map: six countries. Worlds: M3anyi and Gray Museum.",
    "Games (end of the page): El Partyta with three playable mini-games and a web version, plus small arcade games.",
    "Reviews: real screenshots of messages and comments (clients, Gray Museum readers).",
    "Pages & feeds (right after Numbers): 15 3D phones, each one an Instagram page he runs or designed: i2mriky, Golden Home, M3anyi, Burger Tower (feed concept), Gray Museum, Lamsa Plast, ASAS, El Partyta, Zahret Elbon Elbrazily (feed concept), Haifaa Fashion, Kshaf, Shero Handmade, DIA hiring campaign, Khan El Moez, Chiky Pop. Tap any post to open it inside the phone; reels play inside too."
@@ -1321,10 +1429,10 @@
    },
    {
     "id": "lamsa-carton",
-    "title": "Carton · Lamsa Plast",
-    "line": "Print-ready packaging",
-    "img": "assets/fh-carton.jpg",
-    "go": "do"
+    "title": "Carton in 3D · Lamsa Plast",
+    "line": "The real print file: turn it, unfold the die-line",
+    "img": "assets/archive/lamsa/dl-t.webp",
+    "go": "a:lamsa"
    },
    {
     "id": "identity-kit",
@@ -1378,7 +1486,7 @@
    {
     "id": "m3anyi",
     "title": "M3anyi · content",
-    "line": "286K views on one carousel, no ads",
+    "line": "1.28M views on one post, no ads",
     "img": "assets/st-feed.jpg",
     "go": "m3anyi"
    },
@@ -1416,6 +1524,111 @@
     "line": "15 Instagram pages, open any post",
     "img": "assets/pages/burger-tower/p01-t.webp",
     "go": "pages"
+   },
+   {
+    "id": "services",
+    "title": "Services & skills",
+    "line": "Everything Nour makes, in five groups",
+    "img": "assets/cover-creative-director.jpg",
+    "go": "svc"
+   },
+   {
+    "id": "archive",
+    "title": "Work by sector",
+    "line": "Picks by industry, from food to real estate",
+    "img": "assets/archive/chiky-pop/03-t.webp",
+    "go": "archive"
+   },
+   {
+    "id": "galala",
+    "title": "Galala University food court",
+    "line": "Food Trucks International, run on site",
+    "img": "assets/archive/ft-galala/01-t.webp",
+    "go": "archive"
+   },
+   {
+    "id": "dia-homes",
+    "title": "UK homes & gardens",
+    "line": "Split by project, with Design-itude Associates",
+    "img": "assets/archive/dia-69-the-avenue/03-t.webp",
+    "go": "a:dia-69-the-avenue"
+   },
+   {
+    "id": "manohar",
+    "title": "Manohar walkthrough",
+    "line": "A restaurant film made in record time",
+    "img": "assets/archive/dia-manohar/v1-t.webp",
+    "go": "a:dia-manohar"
+   },
+   {
+    "id": "gh-card",
+    "title": "Golden Home",
+    "line": "Campaigns, reels and a lead bot",
+    "img": "assets/archive/golden-home/01-t.webp",
+    "go": "a:golden-home"
+   },
+   {
+    "id": "experience",
+    "title": "Experience",
+    "line": "DIA, Food Trucks, Chiky Pop, MOBBIT",
+    "img": "assets/archive/ft-galala/01-t.webp",
+    "go": "exp"
+   },
+   {
+    "id": "i2-reels",
+    "title": "@i2mriky reels",
+    "line": "Ten reels on his own engine",
+    "img": "assets/archive/i2mriky-reels/r02-t.webp",
+    "go": "a:i2mriky-reels"
+   },
+   {
+    "id": "toothtaj",
+    "title": "Tooth Taj · dental clinic (concept)",
+    "line": "The full price before the chair, and its WhatsApp bot",
+    "img": "assets/archive/toothtaj/v1-t.webp",
+    "go": "a:toothtaj"
+   },
+   {
+    "id": "masam",
+    "title": "Masam · skin clinic, Riyadh (concept)",
+    "line": "The result shows, she doesn’t: posts, clinic interior and reels",
+    "img": "assets/archive/masam/i2-t.webp",
+    "go": "a:masam"
+   },
+   {
+    "id": "albunt",
+    "title": "Al Bunt · boutique hotel, Jeddah (concept)",
+    "line": "Book the room, not the room type: the house, room touchpoints, posts, a reel and a live booking page",
+    "img": "assets/archive/albunt/a1-t.webp",
+    "go": "a:albunt"
+   },
+   {
+    "id": "daffa",
+    "title": "Daffa · family boat trips, Hurghada (concept)",
+    "line": "Safety you can see before you sail: applications, an exhibition stand (3D model ↔ photo), 9 posts and a reel",
+    "img": "assets/archive/daffa/b1-t.webp",
+    "go": "a:daffa"
+   },
+   {
+    "id": "shaqa-omry",
+    "title": "Shaqa Omry · jameya app (concept)",
+    "line": "The jameya where everyone sees who paid: app screens, posts and reels",
+    "img": "assets/archive/shaqa-omry/p1-t.webp",
+    "go": "a:shaqa-omry"
+   },
+   {
+    "id": "sahalat",
+    "title": "Sahalat · finance comparison, Saudi (pitch)",
+    "line": "Every post answers one question a home buyer has",
+    "img": "assets/archive/sahalat/p2-t.webp",
+    "go": "a:sahalat"
+   },
+   {
+    "id": "wbadein",
+    "title": "Wba3dein? · Arabic reading app, UAE + KSA (concept)",
+    "line": "The story stops until he reads the choice aloud: applications, his printed book, posts and reels",
+    "img": "assets/archive/wbadein/p1-t.webp",
+    "go": "a:wbadein"
    }
   ]
  },
@@ -1632,11 +1845,11 @@
     "bio": "حين يلتقي التصميم بالإقتباس\nالكلمات بقلم @i2mriky",
     "stats": [
      [
-      "2,384",
+      "2.4K",
       "posts"
      ],
      [
-      "40.1K",
+      "51.2K",
       "followers"
      ]
     ],
@@ -2555,5 +2768,234 @@
    }
   ],
   "enabled": true
+ },
+ "skills": {
+  "enabled": true,
+  "title": "Services & skills",
+  "note": "Everything I make, in five groups. Pick one.",
+  "groups": [
+   {
+    "id": "brand",
+    "name": "Brand",
+    "line": "From the name to the box.",
+    "btn": {
+     "label": "Book a brand consult",
+     "ask": "I need a brand for my business: name, logo and packaging."
+    },
+    "items": [
+     [
+      "tag",
+      "Naming",
+      "Names that say the business"
+     ],
+     [
+      "pen",
+      "Logo & identity",
+      "Logo, colour, type, brand book"
+     ],
+     [
+      "box",
+      "Packaging & print",
+      "Print-ready cartons, labels, menus"
+     ],
+     [
+      "shirt",
+      "Uniforms & merch",
+      "Designed, then produced"
+     ],
+     [
+      "deck",
+      "Pitch decks",
+      "The deck and the work inside it"
+     ]
+    ]
+   },
+   {
+    "id": "content",
+    "name": "Content",
+    "line": "Pages that grow without ads.",
+    "btn": {
+     "label": "See the pages I run",
+     "go": "pages"
+    },
+    "items": [
+     [
+      "cal",
+      "Page management",
+      "Plans, calendars, daily posting"
+     ],
+     [
+      "grid",
+      "Posts & carousels",
+      "Designed to be shared"
+     ],
+     [
+      "play",
+      "Reels & motion",
+      "Script, edit, motion, captions"
+     ],
+     [
+      "quote",
+      "Arabic copy & scripts",
+      "Egyptian Arabic and English"
+     ],
+     [
+      "mic",
+      "Voice-over",
+      "Recorded in-house"
+     ],
+     [
+      "chart",
+      "Insights & reports",
+      "What worked, and what's next"
+     ]
+    ]
+   },
+   {
+    "id": "ai",
+    "name": "Photo & AI",
+    "line": "The real product, in any world.",
+    "btn": {
+     "label": "Drag the before/after",
+     "go": "reveal"
+    },
+    "items": [
+     [
+      "cam",
+      "Product shoots",
+      "Every colourway, one family"
+     ],
+     [
+      "aperture",
+      "AI campaigns",
+      "One idea, one world, one line"
+     ],
+     [
+      "image",
+      "AI product images",
+      "The product kept accurate"
+     ],
+     [
+      "film",
+      "AI video",
+      "Scenes generated, then edited"
+     ],
+     [
+      "frame",
+      "Key art & posters",
+      "Films, launches, events"
+     ]
+    ]
+   },
+   {
+    "id": "3d",
+    "name": "3D & spaces",
+    "line": "Built before it's built.",
+    "btn": {
+     "label": "Walk the full house",
+     "go": "house"
+    },
+    "items": [
+     [
+      "house",
+      "Exterior & landscape",
+      "125+ projects, UK and Egypt"
+     ],
+     [
+      "sofa",
+      "Interiors",
+      "From plan to final render"
+     ],
+     [
+      "cube",
+      "3D product models",
+      "Spin, zoom, view in AR"
+     ],
+     [
+      "layout",
+      "Space planning",
+      "Layouts with options"
+     ],
+     [
+      "video",
+      "3D films",
+      "Walkthroughs and reveals"
+     ]
+    ]
+   },
+   {
+    "id": "build",
+    "name": "Build",
+    "line": "Tools, sites and apps.",
+    "btn": {
+     "label": "Plan it with Ask NM*",
+     "ask": "I want to build a website, a bot or an app."
+    },
+    "items": [
+     [
+      "web",
+      "Websites",
+      "Like this one, with its dashboard"
+     ],
+     [
+      "chat",
+      "Assistants & bots",
+      "Like Ask NM* on this page"
+     ],
+     [
+      "wrench",
+      "Tools & extensions",
+      "15 built for my own work"
+     ],
+     [
+      "pad",
+      "Games & apps",
+      "El Partyta, live on Google Play"
+     ],
+     [
+      "rocket",
+      "Launch plans",
+      "Strategy, ads and the first 90 days"
+     ]
+    ]
+   }
+  ]
+ },
+ "experience": {
+  "enabled": true,
+  "title": "Experience",
+  "note": "Where the work comes from: a UK-facing design studio, food brands on the ground, and companies of my own.",
+  "items": [
+   {
+    "years": "2024 – 2026",
+    "role": "Creative Lead & Spatial Visualizer",
+    "org": "Design-itude Associates (DIA) · Cairo, for UK clients",
+    "line": "3D houses, gardens and restaurant interiors, their films and 360° tours; on-site measurements; the studio’s feed, decks and behind-the-scenes reels."
+   },
+   {
+    "years": "2021 – 2026",
+    "role": "Branch Manager & Branding Specialist",
+    "org": "Food Trucks International · UAE | Egypt",
+    "line": "Ran branch operations, sales and the team on the ground, plus the digital marketing and design; managed the Galala University food court."
+   },
+   {
+    "years": "2022 – 2023",
+    "role": "Creative Director & Operations Lead",
+    "org": "Chiky Pop",
+    "line": "Name, identity and packaging, then the launch itself: 7 days to opening, 100+ orders a day at peak."
+   },
+   {
+    "years": "2018 – now",
+    "role": "Founder & Operations Director",
+    "org": "MOBBIT · e-commerce",
+    "line": "An independent store selling wholesale (B2B) and direct (B2C)."
+   },
+   {
+    "years": "2017 – now",
+    "role": "Founder & Art Director",
+    "org": "M3anyi (معاني) & Gray Museum",
+    "line": "Two pages grown with no paid ads: Arabic quotes turned into illustration, and a surreal AI art world."
+   }
+  ]
  }
 }
