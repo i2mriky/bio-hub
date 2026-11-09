@@ -1,5 +1,5 @@
 {
- "version": 29,
+ "version": 30,
  "profile": {
   "name": "Nour Mohamed",
   "monogram": "NM*",
@@ -1223,7 +1223,31 @@
        "enabled": true
       }
      ]
-    }
+    },
+    "gallery": [
+     "assets/pages/m3anyi/p01.webp",
+     "assets/pages/m3anyi/p02.webp",
+     "assets/pages/m3anyi/p03.webp",
+     "assets/pages/m3anyi/p04.webp",
+     "assets/pages/m3anyi/p05.webp",
+     "assets/pages/m3anyi/p06.webp",
+     "assets/pages/m3anyi/p07.webp",
+     "assets/pages/m3anyi/p08.webp",
+     "assets/pages/m3anyi/p09.webp",
+     "assets/pages/m3anyi/p10.webp",
+     "assets/pages/m3anyi/p11.webp",
+     "assets/pages/m3anyi/p12.webp",
+     "assets/w-m3anyi-2.jpg",
+     "assets/w-m3anyi-3.jpg",
+     "assets/w-m3anyi-4.jpg",
+     "assets/w-m3anyi-5.jpg",
+     "assets/w-m3anyi-6.jpg",
+     "assets/w-m3anyi-7.jpg",
+     "assets/w-m3anyi-9.jpg",
+     "assets/w-m3anyi-11.jpg",
+     "assets/w-m3anyi-12.jpg",
+     "assets/w-m3anyi-13.jpg"
+    ]
    },
    {
     "id": "gray",
@@ -1283,7 +1307,45 @@
      "handle": "@gray.museum",
      "cta": "Enter the museum",
      "url": "https://www.instagram.com/gray.museum"
-    }
+    },
+    "gallery": [
+     "assets/pages/gray-museum/p01.webp",
+     "assets/pages/gray-museum/p02.webp",
+     "assets/pages/gray-museum/p03.webp",
+     "assets/pages/gray-museum/p04.webp",
+     "assets/pages/gray-museum/p05.webp",
+     "assets/pages/gray-museum/p06.webp",
+     "assets/pages/gray-museum/p07.webp",
+     "assets/pages/gray-museum/p08.webp",
+     "assets/pages/gray-museum/p09.webp",
+     "assets/pages/gray-museum/p10.webp",
+     "assets/pages/gray-museum/p11.webp",
+     "assets/pages/gray-museum/p12.webp",
+     "assets/w-gray-1.jpg",
+     "assets/w-gray-2.jpg",
+     "assets/w-gray-3.jpg",
+     "assets/w-gray-4.jpg",
+     "assets/w-gray-5.jpg",
+     "assets/w-gray-6.jpg",
+     "assets/w-gray-7.jpg",
+     "assets/w-gray-8.jpg",
+     "assets/w-gray-9.jpg",
+     "assets/w-gray-10.jpg",
+     "assets/w-gray-11.jpg",
+     "assets/w-gray-12.jpg",
+     "assets/w-gray-13.jpg",
+     "assets/w-gray-14.jpg",
+     "assets/w-gray-15.jpg",
+     "assets/w-gray-16.jpg",
+     "assets/w-gray-17.jpg",
+     "assets/w-gray-18.jpg",
+     "assets/w-gray-19.jpg",
+     "assets/w-gray-20.jpg",
+     "assets/w-gray-21.jpg",
+     "assets/w-gray-22.jpg",
+     "assets/w-gray-23.jpg",
+     "assets/w-gray-24.jpg"
+    ]
    }
   ],
   "factEvery": 3
@@ -1479,20 +1541,20 @@
    "First phone screen (v14.16): a moving wall of his real work (Chiky Pop, TAGG, Lamsa Plast, DROP, 69 The Avenue UK, M3anyi, El Partyta, Gray Museum, Golden Home, Shero Handmade, Kshaf, Milk Cup); tap any tile and that project opens. Under it: his photo, «Creative Director», 12+ years · 150+ projects · 6 countries, the line «You bring the idea. I turn it into a brand people remember, then I stay with you until it launches on the ground.» and «Restaurants, developers, factories and app founders come to me when they have something new to launch.». Under that, the box «Tell me what you're building» opens Ask NM* (this chat). Buttons: WhatsApp, Email, CV. Right after it comes Work by sector (first tab in the menu) so a visitor finds work from his own industry on the second screen.",
    "Before/After: a drag slider. NIVEA MEN, a raw can on white turned into a campaign image (self-initiated concept).",
    "High scores: his best numbers as cards, plus 'Built in-house', a rail of the 15 tools he built.",
-   "Experience (after High scores): his roles as a timeline: DIA 2024–26, Food Trucks International 2021–26, Chiky Pop 2022–23, MOBBIT since 2018, M3anyi & Gray Museum since 2017.",
-   "Services & skills (after High scores): five tabs (Brand, Content, Photo & AI, 3D & spaces, Build), an icon and one line per service, and one button per tab.",
-   "The studio, 3D room: exterior concept for the UK, drafting-table plans, material library, a whole-street site model.",
-   "The studio, Photo studio: the Lamsa Art Bath Set on the table, two cameras on two colourways, the retouched ad image, clear plastic under a softbox.",
-   "The studio, AI lab: a campaign on four screens, the robot where every AI model is tested, a frame from an @i2mriky reel.",
-   "The studio, Identity & print: M3anyi and Gray Museum on the board, the El Partyta brand book, the Lamsa carton (its caption opens the carton in live 3D), the Oakmere uniform concept.",
-   "The studio, Content room: the M3anyi feed, an @i2mriky reel on the timeline, a client post on the calendar wall, the voice booth (his voice on the Golden Home reel), insights.",
-   "The studio, Garden: landscape and outdoor designs.",
-   "In motion: 19 clips. Tall: Art Bath Set and Aqua Polo (Lamsa), Brands wanted and Chalet teaser (Golden Home), Why prices end in 99, Everything on a line and Lens and face (@i2mriky), Wba3dein? «the fork» (his concept Arabic reading app, built on his reel engine), AI films (espresso machine, Shero black-swan necklace, skincare serum, calligraphy tee), living-room lighting reel. Wide: El Partyta store trailer, Plaza at dusk, Restaurant walkthrough (Manohar, an AI walkthrough film he made in record time) and Garden clay-to-render (Design-itude Associates), food trailers promo, 3D type tracked on a canal.",
+   "Experience (after High scores): a small spinning globe with his clients' six countries (Egypt home, UK, USA, Lebanon, Kuwait, Saudi Arabia), then his two newest roles, DIA 2024–26 and Food Trucks International 2021–26; «Show all 5 roles» opens Chiky Pop 2022–23, MOBBIT since 2018 and M3anyi & Gray Museum since 2017.",
+   "Services & skills (after Before/After): the 3D studio model sits on top (six rooms: 3D room, Photo studio, AI lab, Identity & print, Content room, Garden). Tap a room on the model and its tab opens; tap a tab and the camera flies to its room. Five tabs (Brand, Content, Photo & AI, 3D & spaces, Build), an icon and one line per service, one button per tab. Inside a room the orange dots open the real piece of work.",
+   "The studio (top of Services & skills), 3D room: exterior concept for the UK, drafting-table plans, material library, a whole-street site model.",
+   "The studio (top of Services & skills), Photo studio: the Lamsa Art Bath Set on the table, two cameras on two colourways, the retouched ad image, clear plastic under a softbox.",
+   "The studio (top of Services & skills), AI lab: a campaign on four screens, the robot where every AI model is tested, a frame from an @i2mriky reel.",
+   "The studio (top of Services & skills), Identity & print: M3anyi and Gray Museum on the board, the El Partyta brand book, the Lamsa carton (its caption opens the carton in live 3D), the Oakmere uniform concept.",
+   "The studio (top of Services & skills), Content room: the M3anyi feed, an @i2mriky reel on the timeline, a client post on the calendar wall, the voice booth (his voice on the Golden Home reel), insights.",
+   "The studio (top of Services & skills), Garden: landscape and outdoor designs.",
+   "In motion: every film on the site in one wall, 64 films (reels, 3D films, AI product films, concept films, El Partyta trailers), each in its own shape (tall ones tall, wide ones wide); swipe sideways, the first one plays by itself and is different every visit; tap any film and it opens big with sound and its title, Prev/Next, and «Open the project» when it belongs to one; close and it goes back to its spot.",
    "Work by sector (after High scores): picks by industry in tabs (Food & drink, Real estate & architecture, Fashion & beauty, Health & clinics, Hospitality & tourism, Tech & delivery, Fintech, Industry & trade, Sports & education, Media), shuffled on every visit; not the full list. Each card cross-fades through 3 images with a one-line result; opening it shows a result card, then the images and videos. \"Concept\" = Nour's own idea, \"Pitch\" = a proposal that did not close. Includes live 3D models (Tomouh) and 41 short video clips inside the projects (cards with ▶): Golden Home reels, Lamsa reels, M3anyi animated tales, the El Partyta trailer, DIA 3D films and on-site reels, and a card of ten @i2mriky reels built on his own engine. Each card shows the brand's logo (concept AI campaigns show an AI badge, Kids Stories the NM* mark, the short film its title lettering). Design-itude Associates work is split by project and every card says 'UK · with Design-itude Associates' (Sakan Misr says Egypt). Some projects show a wide card under the result card: Tooth Taj (Health & clinics, Concept) shows its WhatsApp bot Taji as a chat that plays message by message. Masam (Health & clinics, Concept, skin clinic in Riyadh) opens with Interior first (9 spaces of the clinic he designed, one walk-through), then the 6 posts and a reel mixed. Al Bunt (Hospitality & tourism, Concept, boutique hotel in Jeddah) opens with its reel, then «The room by its name» (6 room touchpoints carrying the room's name), «The house» (6 spaces he designed), then the 10 posts; its result card has a «Live booking page ↗» button that opens https://i2mriky.github.io/al-bunt/. Lamsa Plast (Industry & trade) opens with the Art Bath Set carton in live 3D: drag to turn it, the button unfolds it into the flat die-line (red = cut, green = fold) and folds it back; the gallery adds the flat die-line and the Aqua Polo label. Mazad Line opens on its Alpha Tape box. Daffa (Hospitality & tourism, Concept, family boat trips in Hurghada) opens with its reel «the jump», then «Safety on the dock» (9 applications), «The stand · Arabian Travel Market, Dubai» (a before/after slider: drag between the 3D model and the photo, 6 views on small thumbs, then the walk-through clip and a close-up), then the 9 posts. Fintech: Shaqa Omry (Concept, the jameya savings app) opens with its reel, then «The app» (6 screens, one story) and the 9 posts with a second reel; Sahalat (Pitch) shows 3 posts, a reel cover and the client's old feed as the before. Sports & education: Wba3dein? (Concept, the Arabic reading app for Gulf kids) opens with its reel «the fork», then «Applications» (8: the fork screen, his printed book, the parent's phone, the box, a bus shelter, a bookmark, his shelf, bedtime) and «Posts & reels» (9 posts, both reels, the logo); its reel is also in In motion.",
    "Full house: a 3D house built in 7 stages, each with the real Lamsa work: idea, brand kit (their existing logo), art direction, studio shoot, ads and posts, reels, packaging. Ends with 'Book a brand consult'.",
-   "Portfolios (right after Work by sector): his three decks. Numbers: live organic reach. Map: six countries. Worlds: M3anyi and Gray Museum.",
-   "Games (end of the page): El Partyta with three playable mini-games and a web version, plus small arcade games.",
-   "Pages & feeds (right after Numbers): 15 3D phones, each one an Instagram page he runs or designed: i2mriky, Golden Home, M3anyi, Burger Tower (feed concept), Gray Museum, Lamsa Plast, ASAS, El Partyta, Zahret Elbon Elbrazily (feed concept), Haifaa Fashion, Kshaf, Shero Handmade, DIA hiring campaign, Khan El Moez, Chiky Pop. Tap any post to open it inside the phone; reels play inside too."
+   "Portfolios (after Experience): his three decks as three rows with an icon each: Creative Direction, AI Creative Direction, Content & Copywriting.",
+   "Games (end of the page): El Partyta (20+ games, 3,000+ cards, live in 177 countries) with Google Play and the web version, then Brief Catcher and Rally that open full screen and play right here, then «Also running»: Mobbit, What if World, Ghost Labs, Kshaf, Kalam w Khalas.",
+   "My pages (after In motion): the M3anyi card first: 9.85M+ organic views in 30 days, Instagram / TikTok / Pinterest on one line, a live 30-day chart with today's views ticking, and five of its posts; «Open» shows M3anyi in its own colours: the full numbers (90 days, Instagram or TikTok), 90.7K followers, the 1.28M post, its links and all its posts in one big slider. Then Gray Museum (opens the same way, its AI art in a slider) and @i2mriky, then 12 client feeds as circles (Golden Home, Burger Tower, Lamsa, ASAS, El Partyta, Zahret, Haifaa, Kshaf, Shero, DIA, Khan El Moez, Chiky Pop): tap one and its feed opens with tabs to switch between them; tap any post to open it."
   ],
   "works": [
    {
@@ -1507,7 +1569,7 @@
     "title": "Studio shoot · Lamsa Plast",
     "line": "Five colourways, shot as one family",
     "img": "assets/fh-4-studio.jpg",
-    "go": "do"
+    "go": "svc"
    },
    {
     "id": "lamsa-reel",
@@ -1563,7 +1625,7 @@
     "title": "Exterior concept · UK",
     "line": "Architecture and landscape render",
     "img": "assets/st-d64.jpg",
-    "go": "do"
+    "go": "svc"
    },
    {
     "id": "dia-film",
@@ -1584,14 +1646,14 @@
     "title": "M3anyi · content",
     "line": "1.28M views on one post, no ads",
     "img": "assets/st-feed.jpg",
-    "go": "m3anyi"
+    "go": "m:m3"
    },
    {
     "id": "gray",
     "title": "Gray Museum · AI art",
     "line": "Surreal AI art brand",
     "img": "assets/st-gray.jpg",
-    "go": "gray"
+    "go": "m:gray"
    },
    {
     "id": "ep-book",
@@ -1603,7 +1665,7 @@
    {
     "id": "ep-game",
     "title": "El Partyta · the game",
-    "line": "20+ games, playable on the site",
+    "line": "20+ games, on Google Play and the web",
     "img": "assets/mv-ep.jpg",
     "go": "play"
    },
@@ -1612,14 +1674,14 @@
     "title": "Oakmere · school uniform",
     "line": "Uniform programme (concept)",
     "img": "assets/st-oak1.jpg",
-    "go": "do"
+    "go": "svc"
    },
    {
     "id": "pages",
-    "title": "Pages & feeds",
-    "line": "15 Instagram pages, open any post",
+    "title": "My pages · client feeds",
+    "line": "Open any client's feed and any post",
     "img": "assets/pages/burger-tower/p01-t.webp",
-    "go": "pages"
+    "go": "m:feeds:goldenhome.egy"
    },
    {
     "id": "services",
@@ -2868,7 +2930,7 @@
  "skills": {
   "enabled": true,
   "title": "Services & skills",
-  "note": "Everything I make, in five groups. Pick one.",
+  "note": "Six rooms, one studio. Tap a room or a tab.",
   "groups": [
    {
     "id": "brand",
@@ -2912,7 +2974,7 @@
     "line": "Pages that grow without ads.",
     "btn": {
      "label": "See the pages I run",
-     "go": "pages"
+     "go": "mypages"
     },
     "items": [
      [
@@ -3093,5 +3155,655 @@
     "line": "Two pages grown with no paid ads: Arabic quotes turned into illustration, and a surreal AI art world."
    }
   ]
+ },
+ "motion17": {
+  "title": "In motion",
+  "note": "Every film, reel and clip on this site, each in its own shape.",
+  "items": [
+   {
+    "v": "assets/archive/_v/gh-apartment-tour-reel.mp4",
+    "p": "assets/mvp/_v-gh-apartment-tour-reel.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 10.0,
+    "t": "Golden Home",
+    "s": "Apartment tour reel with room labels",
+    "go": "a:golden-home"
+   },
+   {
+    "v": "assets/archive/_v/gh-rooftop-property-reel.mp4",
+    "p": "assets/mvp/_v-gh-rooftop-property-reel.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 10.0,
+    "t": "Golden Home",
+    "s": "Presenter video on a rooftop",
+    "go": "a:golden-home"
+   },
+   {
+    "v": "assets/archive/albunt/v1.mp4",
+    "p": "assets/mvp/albunt-v1.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 26.3,
+    "t": "Al Bunt",
+    "s": "The house in one take, cut on the music: the gate, the map, the section, the rooms, the roof",
+    "go": "a:albunt"
+   },
+   {
+    "v": "assets/archive/daffa/bw.mp4",
+    "p": "assets/mvp/daffa-bw.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 12.0,
+    "t": "Daffa",
+    "s": "Walk-through: from the aisle, over the deck, past the captain's table, to the jacket wall, then up to the boat overhead",
+    "go": "a:daffa"
+   },
+   {
+    "v": "assets/archive/daffa/v1.mp4",
+    "p": "assets/mvp/daffa-v1.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 9.4,
+    "t": "Daffa",
+    "s": "The jump: every child in their jacket size, then the boat and the name drawn on the water",
+    "go": "a:daffa"
+   },
+   {
+    "v": "assets/archive/dia-adams-more/c1.mp4",
+    "p": "assets/mvp/dia-adams-more-c1.jpg",
+    "w": 768,
+    "h": 432,
+    "d": 8.0,
+    "t": "Adams & More",
+    "s": "Drone-style film around the building",
+    "go": "a:dia-adams-more"
+   },
+   {
+    "v": "assets/archive/dia-dalmeny-avenue/c1.mp4",
+    "p": "assets/mvp/dia-dalmeny-avenue-c1.jpg",
+    "w": 768,
+    "h": 432,
+    "d": 8.0,
+    "t": "Dalmeny Avenue",
+    "s": "Aerial video render over the plot",
+    "go": "a:dia-dalmeny-avenue"
+   },
+   {
+    "v": "assets/archive/dia-gardens/fr.mp4",
+    "p": "assets/mvp/dia-gardens-fr.jpg",
+    "w": 768,
+    "h": 432,
+    "d": 8.0,
+    "t": "More UK homes & gardens",
+    "s": "Street view of a terraced house",
+    "go": "a:dia-gardens"
+   },
+   {
+    "v": "assets/archive/dia-gardens/hh.mp4",
+    "p": "assets/mvp/dia-gardens-hh.jpg",
+    "w": 768,
+    "h": 432,
+    "d": 8.0,
+    "t": "More UK homes & gardens",
+    "s": "Hand-held camera move on a house front",
+    "go": "a:dia-gardens"
+   },
+   {
+    "v": "assets/archive/dia-gardens/sk.mp4",
+    "p": "assets/mvp/dia-gardens-sk.jpg",
+    "w": 768,
+    "h": 432,
+    "d": 8.0,
+    "t": "More UK homes & gardens",
+    "s": "From sketch to render, one garden",
+    "go": "a:dia-gardens"
+   },
+   {
+    "v": "assets/archive/dia-gardens/wk.mp4",
+    "p": "assets/mvp/dia-gardens-wk.jpg",
+    "w": 768,
+    "h": 432,
+    "d": 8.0,
+    "t": "More UK homes & gardens",
+    "s": "Walkthrough along a side garden",
+    "go": "a:dia-gardens"
+   },
+   {
+    "v": "assets/archive/dia-pleasant-drive/c1.mp4",
+    "p": "assets/mvp/dia-pleasant-drive-c1.jpg",
+    "w": 768,
+    "h": 432,
+    "d": 8.0,
+    "t": "Pleasant Drive",
+    "s": "Slow push-in on the garden room",
+    "go": "a:dia-pleasant-drive"
+   },
+   {
+    "v": "assets/archive/dia-pleasant-drive/c3.mp4",
+    "p": "assets/mvp/dia-pleasant-drive-c3.jpg",
+    "w": 768,
+    "h": 432,
+    "d": 8.0,
+    "t": "Pleasant Drive",
+    "s": "Dolly shot through the garden room",
+    "go": "a:dia-pleasant-drive"
+   },
+   {
+    "v": "assets/archive/dia-princess-road/c1.mp4",
+    "p": "assets/mvp/dia-princess-road-c1.jpg",
+    "w": 768,
+    "h": 432,
+    "d": 8.0,
+    "t": "Princess Road",
+    "s": "Walking in from the gate",
+    "go": "a:dia-princess-road"
+   },
+   {
+    "v": "assets/archive/dia-robyns-way/c1.mp4",
+    "p": "assets/mvp/dia-robyns-way-c1.jpg",
+    "w": 768,
+    "h": 432,
+    "d": 8.0,
+    "t": "Robyns Way",
+    "s": "Moving through the pergola kitchen",
+    "go": "a:dia-robyns-way"
+   },
+   {
+    "v": "assets/archive/dia-robyns-way/c2.mp4",
+    "p": "assets/mvp/dia-robyns-way-c2.jpg",
+    "w": 768,
+    "h": 432,
+    "d": 8.0,
+    "t": "Robyns Way",
+    "s": "The egg chair, pulling back",
+    "go": "a:dia-robyns-way"
+   },
+   {
+    "v": "assets/archive/dia-selcroft-road/c1.mp4",
+    "p": "assets/mvp/dia-selcroft-road-c1.jpg",
+    "w": 768,
+    "h": 432,
+    "d": 8.0,
+    "t": "Selcroft Road",
+    "s": "Orbit around the pergola lounge",
+    "go": "a:dia-selcroft-road"
+   },
+   {
+    "v": "assets/archive/dia-selcroft-road/c2.mp4",
+    "p": "assets/mvp/dia-selcroft-road-c2.jpg",
+    "w": 768,
+    "h": 432,
+    "d": 8.0,
+    "t": "Selcroft Road",
+    "s": "Orbit around the fire-pit deck",
+    "go": "a:dia-selcroft-road"
+   },
+   {
+    "v": "assets/archive/dia-social/r1.mp4",
+    "p": "assets/mvp/dia-social-r1.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 8.0,
+    "t": "DIA · Social & content",
+    "s": "On-site reel he filmed: a fit-out in progress",
+    "go": "a:dia-social"
+   },
+   {
+    "v": "assets/archive/dia-social/r2.mp4",
+    "p": "assets/mvp/dia-social-r2.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 8.0,
+    "t": "DIA · Social & content",
+    "s": "On-site reel he filmed: the finished office",
+    "go": "a:dia-social"
+   },
+   {
+    "v": "assets/archive/dia-umami/c1.mp4",
+    "p": "assets/mvp/dia-umami-c1.jpg",
+    "w": 768,
+    "h": 432,
+    "d": 8.0,
+    "t": "Umami",
+    "s": "Orbit around the bar",
+    "go": "a:dia-umami"
+   },
+   {
+    "v": "assets/archive/dii-reels/c1.mp4",
+    "p": "assets/mvp/dii-reels-c1.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 8.0,
+    "t": "DII Photography · reels",
+    "s": "Ten lighting types reel",
+    "go": "a:dii-reels"
+   },
+   {
+    "v": "assets/archive/golden-home/v3.mp4",
+    "p": "assets/mvp/golden-home-v3.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 4.7,
+    "t": "Golden Home",
+    "s": "Building 72: the location on an animated map",
+    "go": "a:golden-home"
+   },
+   {
+    "v": "assets/archive/i2mriky-reels/r01.mp4",
+    "p": "assets/mvp/i2mriky-reels-r01.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 8.0,
+    "t": "@i2mriky reels",
+    "s": "Lens and face",
+    "go": "a:i2mriky-reels"
+   },
+   {
+    "v": "assets/archive/i2mriky-reels/r02.mp4",
+    "p": "assets/mvp/i2mriky-reels-r02.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 8.0,
+    "t": "@i2mriky reels",
+    "s": "Why prices end in 99",
+    "go": "a:i2mriky-reels"
+   },
+   {
+    "v": "assets/archive/i2mriky-reels/r03.mp4",
+    "p": "assets/mvp/i2mriky-reels-r03.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 8.0,
+    "t": "@i2mriky reels",
+    "s": "Make the logo bigger",
+    "go": "a:i2mriky-reels"
+   },
+   {
+    "v": "assets/archive/i2mriky-reels/r04.mp4",
+    "p": "assets/mvp/i2mriky-reels-r04.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 8.0,
+    "t": "@i2mriky reels",
+    "s": "Same colour, different look",
+    "go": "a:i2mriky-reels"
+   },
+   {
+    "v": "assets/archive/i2mriky-reels/r05.mp4",
+    "p": "assets/mvp/i2mriky-reels-r05.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 8.0,
+    "t": "@i2mriky reels",
+    "s": "Same character every time",
+    "go": "a:i2mriky-reels"
+   },
+   {
+    "v": "assets/archive/i2mriky-reels/r06.mp4",
+    "p": "assets/mvp/i2mriky-reels-r06.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 8.0,
+    "t": "@i2mriky reels",
+    "s": "Alignment",
+    "go": "a:i2mriky-reels"
+   },
+   {
+    "v": "assets/archive/i2mriky-reels/r07.mp4",
+    "p": "assets/mvp/i2mriky-reels-r07.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 8.0,
+    "t": "@i2mriky reels",
+    "s": "The face steals the ad",
+    "go": "a:i2mriky-reels"
+   },
+   {
+    "v": "assets/archive/i2mriky-reels/r08.mp4",
+    "p": "assets/mvp/i2mriky-reels-r08.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 8.0,
+    "t": "@i2mriky reels",
+    "s": "Half a second",
+    "go": "a:i2mriky-reels"
+   },
+   {
+    "v": "assets/archive/i2mriky-reels/r09.mp4",
+    "p": "assets/mvp/i2mriky-reels-r09.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 8.0,
+    "t": "@i2mriky reels",
+    "s": "Why people hate a new logo",
+    "go": "a:i2mriky-reels"
+   },
+   {
+    "v": "assets/archive/i2mriky-reels/r10.mp4",
+    "p": "assets/mvp/i2mriky-reels-r10.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 8.0,
+    "t": "@i2mriky reels",
+    "s": "The small logo",
+    "go": "a:i2mriky-reels"
+   },
+   {
+    "v": "assets/archive/lamsa/r1.mp4",
+    "p": "assets/mvp/lamsa-r1.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 8.0,
+    "t": "Lamsa Plast",
+    "s": "Art Bath Set reel",
+    "go": "a:lamsa"
+   },
+   {
+    "v": "assets/archive/lamsa/r2.mp4",
+    "p": "assets/mvp/lamsa-r2.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 8.0,
+    "t": "Lamsa Plast",
+    "s": "Aqua Polo bottle reel",
+    "go": "a:lamsa"
+   },
+   {
+    "v": "assets/archive/lamsa/r3.mp4",
+    "p": "assets/mvp/lamsa-r3.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 8.0,
+    "t": "Lamsa Plast",
+    "s": "Art Bath Set, three models reel",
+    "go": "a:lamsa"
+   },
+   {
+    "v": "assets/archive/m3anyi/t1.mp4",
+    "p": "assets/mvp/m3anyi-t1.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 8.0,
+    "t": "M3anyi (معاني)",
+    "s": "Animal tale 01: the three bulls, written, voiced and animated",
+    "go": "a:m3anyi"
+   },
+   {
+    "v": "assets/archive/m3anyi/t2.mp4",
+    "p": "assets/mvp/m3anyi-t2.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 8.0,
+    "t": "M3anyi (معاني)",
+    "s": "Animal tale 02: the camel and the tent",
+    "go": "a:m3anyi"
+   },
+   {
+    "v": "assets/archive/masam/v1.mp4",
+    "p": "assets/mvp/masam-v1.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 9.0,
+    "t": "Masam",
+    "s": "From the door, a face. Up close, only squares",
+    "go": "a:masam"
+   },
+   {
+    "v": "assets/archive/masam/v2.mp4",
+    "p": "assets/mvp/masam-v2.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 9.0,
+    "t": "Masam",
+    "s": "Scan line: same light, same angle, visit 4 after 3 months",
+    "go": "a:masam"
+   },
+   {
+    "v": "assets/archive/shaqa-omry/v1.mp4",
+    "p": "assets/mvp/shaqa-omry-v1.jpg",
+    "w": 540,
+    "h": 960,
+    "d": 9.0,
+    "t": "Shaqa Omry",
+    "s": "The bundle completes: every paid instalment ties a knot, the tenth is your turn",
+    "go": "a:shaqa-omry"
+   },
+   {
+    "v": "assets/archive/shaqa-omry/v2.mp4",
+    "p": "assets/mvp/shaqa-omry-v2.jpg",
+    "w": 540,
+    "h": 960,
+    "d": 9.0,
+    "t": "Shaqa Omry",
+    "s": "She types “guys, whoever hasn’t paid…”, then deletes it: the app already said it",
+    "go": "a:shaqa-omry"
+   },
+   {
+    "v": "assets/archive/toothtaj/v1.mp4",
+    "p": "assets/mvp/toothtaj-v1.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 5.5,
+    "t": "Tooth Taj",
+    "s": "The number is born in the chat, before the chair",
+    "go": "a:toothtaj"
+   },
+   {
+    "v": "assets/archive/toothtaj/v2.mp4",
+    "p": "assets/mvp/toothtaj-v2.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 6.5,
+    "t": "Tooth Taj",
+    "s": "Send a photo of your teeth, book the nearest slot",
+    "go": "a:toothtaj"
+   },
+   {
+    "v": "assets/archive/toothtaj/v3.mp4",
+    "p": "assets/mvp/toothtaj-v3.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 6.5,
+    "t": "Tooth Taj",
+    "s": "Riyadh to Cairo: 6 days, 3 visits, planned before the flight",
+    "go": "a:toothtaj"
+   },
+   {
+    "v": "assets/archive/wbadein/v1.mp4",
+    "p": "assets/mvp/wbadein-v1.jpg",
+    "w": 540,
+    "h": 960,
+    "d": 17.0,
+    "t": "Wba3dein?",
+    "s": "The fork: the tent flies, he reads the choice aloud, the story goes on, and ten stories become his book",
+    "go": "a:wbadein"
+   },
+   {
+    "v": "assets/archive/wbadein/v2.mp4",
+    "p": "assets/mvp/wbadein-v2.jpg",
+    "w": 540,
+    "h": 960,
+    "d": 13.3,
+    "t": "Wba3dein?",
+    "s": "The sentence changed: «Go read!» turns into «and then what?!»",
+    "go": "a:wbadein"
+   },
+   {
+    "v": "assets/mv-canal.mp4",
+    "p": "assets/mv-canal.jpg",
+    "w": 768,
+    "h": 432,
+    "d": 10.0,
+    "t": "Type on the canal",
+    "s": "Motion · 3D text tracked onto real footage",
+    "go": ""
+   },
+   {
+    "v": "assets/mv-chalet.mp4",
+    "p": "assets/mv-chalet.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 10.0,
+    "t": "Chalet teaser",
+    "s": "Golden Home · Chalet teaser: motion reel",
+    "go": "a:golden-home"
+   },
+   {
+    "v": "assets/mv-cine.mp4",
+    "p": "assets/mv-cine.jpg",
+    "w": 768,
+    "h": 432,
+    "d": 10.0,
+    "t": "Plaza at dusk",
+    "s": "3D film · exterior and landscape · Design-itude Associates",
+    "go": ""
+   },
+   {
+    "v": "assets/mv-clay.mp4",
+    "p": "assets/mv-clay.jpg",
+    "w": 768,
+    "h": 432,
+    "d": 10.0,
+    "t": "Garden: clay to render",
+    "s": "3D film · landscape · Design-itude Associates",
+    "go": ""
+   },
+   {
+    "v": "assets/mv-ep.mp4",
+    "p": "assets/mv-ep.jpg",
+    "w": 768,
+    "h": 432,
+    "d": 10.0,
+    "t": "El Partyta, store trailer",
+    "s": "El Partyta · Store trailer, built on his reel engine",
+    "go": "a:el-partyta"
+   },
+   {
+    "v": "assets/mv-espresso.mp4",
+    "p": "assets/mv-espresso.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 10.0,
+    "t": "Espresso machine",
+    "s": "AI product film · scenes and edit",
+    "go": ""
+   },
+   {
+    "v": "assets/mv-gh.mp4",
+    "p": "assets/mv-gh.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 10.0,
+    "t": "Brands wanted",
+    "s": "Golden Home · Brands wanted: motion reel, one continuous shot",
+    "go": "a:golden-home"
+   },
+   {
+    "v": "assets/mv-light.mp4",
+    "p": "assets/mv-light.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 10.0,
+    "t": "Living room, light by light",
+    "s": "3D interior · lighting reel",
+    "go": ""
+   },
+   {
+    "v": "assets/mv-mall.mp4",
+    "p": "assets/mv-mall.jpg",
+    "w": 768,
+    "h": 432,
+    "d": 10.0,
+    "t": "Restaurant walkthrough",
+    "s": "Manohar · Restaurant walkthrough film",
+    "go": "a:dia-manohar"
+   },
+   {
+    "v": "assets/mv-serum.mp4",
+    "p": "assets/mv-serum.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 10.0,
+    "t": "Skincare serum",
+    "s": "AI product film · scenes and edit",
+    "go": ""
+   },
+   {
+    "v": "assets/mv-swan.mp4",
+    "p": "assets/mv-swan.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 6.1,
+    "t": "Black swan necklace",
+    "s": "Shero Handmade · Black swan necklace: AI jewelry film",
+    "go": "a:shero-handmade"
+   },
+   {
+    "v": "assets/mv-tee.mp4",
+    "p": "assets/mv-tee.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 10.0,
+    "t": "Arabic calligraphy tee",
+    "s": "AI apparel film · scenes and edit",
+    "go": ""
+   },
+   {
+    "v": "assets/mv-trucks.mp4",
+    "p": "assets/mv-trucks.jpg",
+    "w": 768,
+    "h": 432,
+    "d": 10.0,
+    "t": "Food trailers promo",
+    "s": "Galala University food court · Food trailers promo film",
+    "go": "a:ft-galala"
+   },
+   {
+    "v": "assets/pages/el-partyta/r1.mp4",
+    "p": "assets/mvp/pages-el-partyta-r1.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 14.0,
+    "t": "البرتيتا | El Partyta",
+    "s": "Teaser 1: مين فيكم الـ…؟",
+    "go": "#play"
+   },
+   {
+    "v": "assets/pages/el-partyta/r2.mp4",
+    "p": "assets/mvp/pages-el-partyta-r2.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 14.0,
+    "t": "البرتيتا | El Partyta",
+    "s": "Teaser 2: جروب الشلة.",
+    "go": "#play"
+   },
+   {
+    "v": "assets/pages/el-partyta/r3.mp4",
+    "p": "assets/mvp/pages-el-partyta-r3.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 14.0,
+    "t": "Film",
+    "s": "",
+    "go": ""
+   },
+   {
+    "v": "assets/pages/el-partyta/r4.mp4",
+    "p": "assets/mvp/pages-el-partyta-r4.jpg",
+    "w": 432,
+    "h": 768,
+    "d": 14.0,
+    "t": "Film",
+    "s": "",
+    "go": ""
+   }
+  ]
+ },
+ "mypages": {
+  "title": "My pages",
+  "note": "Two pages I founded and grew with no paid ads, and the feeds I run for clients."
  }
 }
