@@ -1,5 +1,5 @@
 {
- "version": 27,
+ "version": 28,
  "profile": {
   "name": "Nour Mohamed",
   "monogram": "NM*",
@@ -1193,7 +1193,7 @@
   "factEvery": 3
  },
  "wall": {
-  "enabled": true,
+  "enabled": false,
   "nav": "Reviews",
   "title": "Real reviews & comments",
   "note": "Screenshots, unedited. Tap any square to read it.",
@@ -1395,7 +1395,6 @@
    "Full house: a 3D house built in 7 stages, each with the real Lamsa work: idea, brand kit (their existing logo), art direction, studio shoot, ads and posts, reels, packaging. Ends with 'Book a brand consult'.",
    "Portfolios (right after Work by sector): his three decks. Numbers: live organic reach. Map: six countries. Worlds: M3anyi and Gray Museum.",
    "Games (end of the page): El Partyta with three playable mini-games and a web version, plus small arcade games.",
-   "Reviews: real screenshots of messages and comments (clients, Gray Museum readers).",
    "Pages & feeds (right after Numbers): 15 3D phones, each one an Instagram page he runs or designed: i2mriky, Golden Home, M3anyi, Burger Tower (feed concept), Gray Museum, Lamsa Plast, ASAS, El Partyta, Zahret Elbon Elbrazily (feed concept), Haifaa Fashion, Kshaf, Shero Handmade, DIA hiring campaign, Khan El Moez, Chiky Pop. Tap any post to open it inside the phone; reels play inside too."
   ],
   "works": [
