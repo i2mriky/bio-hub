@@ -1,23 +1,18 @@
 {
- "version": 28,
+ "version": 29,
  "profile": {
   "name": "Nour Mohamed",
   "monogram": "NM*",
-  "role": "Creative Director & AI Specialist",
+  "role": "Creative Director",
   "location": "New Cairo",
   "avatar": "assets/avatar.jpg",
-  "bio": "I build brand worlds end to end — identity, AI-directed campaigns and 3D visualization — grow the audiences around them without paid reach, and run the launch on the ground.",
+  "bio": "You bring the idea. I turn it into a brand people remember, then I stay with you until it launches on the ground.",
   "status": {
    "show": true,
    "live": true,
    "label": "Open for projects"
   },
-  "capabilities": [
-   "Brand identity",
-   "Generative AI direction",
-   "3D visualization",
-   "Arabic content"
-  ],
+  "capabilities": [],
   "photo": "assets/avatar.jpg",
   "socials": [
    {
@@ -53,6 +48,107 @@
    "12+ years",
    "150+ projects",
    "6 countries"
+  ],
+  "who": "Restaurants, developers, factories and app founders come to me when they have something new to launch.",
+  "wall": [
+   [
+    "chiky-pop",
+    "03",
+    "Chiky Pop"
+   ],
+   [
+    "tagg",
+    "05",
+    "TAGG"
+   ],
+   [
+    "lamsa",
+    "p01",
+    "Lamsa Plast"
+   ],
+   [
+    "drop",
+    "05",
+    "DROP"
+   ],
+   [
+    "dia-69-the-avenue",
+    "03",
+    "69 The Avenue · UK"
+   ],
+   [
+    "m3anyi",
+    "02",
+    "M3anyi"
+   ],
+   [
+    "el-partyta",
+    "p03",
+    "El Partyta"
+   ],
+   [
+    "gray-museum",
+    "02",
+    "Gray Museum"
+   ],
+   [
+    "golden-home",
+    "01",
+    "Golden Home"
+   ],
+   [
+    "shero-handmade",
+    "01",
+    "Shero Handmade"
+   ],
+   [
+    "kshaf",
+    "09",
+    "Kshaf"
+   ],
+   [
+    "milk-cup",
+    "02",
+    "Milk Cup"
+   ]
+  ],
+  "cover": [
+   [
+    "chiky-pop",
+    "03",
+    "Chiky Pop",
+    "Food & drink · 7 days to launch"
+   ],
+   [
+    "tagg",
+    "05",
+    "TAGG",
+    "Fashion · the price tag became the logo"
+   ],
+   [
+    "lamsa",
+    "p01",
+    "Lamsa Plast",
+    "Housewares factory · from shoot to shelf"
+   ],
+   [
+    "drop",
+    "05",
+    "DROP",
+    "Ride-hailing app · map pin to car livery"
+   ],
+   [
+    "dia-69-the-avenue",
+    "03",
+    "69 The Avenue",
+    "UK · 3D with Design-itude Associates"
+   ],
+   [
+    "m3anyi",
+    "02",
+    "M3anyi",
+    "His quotes page · 1.1M views on one post"
+   ]
   ]
  },
  "theme": {
@@ -80,9 +176,9 @@
  "actions": [
   {
    "id": "a1",
-   "label": "Download CV",
+   "label": "CV",
    "url": "https://nour2mriky.my.canva.site/nour-mohamed-cv",
-   "primary": true,
+   "primary": false,
    "enabled": true
   },
   {
@@ -1323,6 +1419,7 @@
   "profile": [
    "Nour Mohamed is a Creative Director and AI specialist in New Cairo, Egypt, working with teams anywhere. He works in Arabic (Egyptian) and English.",
    "12+ years in brand and graphic design, 3+ years in architectural visualization, 150+ projects, clients in Egypt, the UK, the USA, Lebanon, Kuwait and Saudi Arabia.",
+   "Who comes to him: restaurants, real-estate developers, factories and app founders with something new to launch (the site says it in one line under his name). Clients so far are in Egypt, the UK, the USA, Lebanon, Kuwait and Saudi Arabia.",
    "The studio (rooms on the site): 3D room = exterior, landscape, interior visualization and 3D films. Photo studio = product photography in every colourway, then ad images built around the real product. AI lab = AI campaigns and AI product images and videos with the product kept accurate. Identity & print = naming, logo, colour, type, brand books, print-ready packaging and cartons, uniforms and merch (designed and produced). Content room = social content planning, post design, carousels, reels with motion, captions, and Arabic voice-over recorded in-house. Garden = landscape and outdoor spaces.",
    "Full house = one product launch built in seven stages: idea, brand kit, art direction, studio shoot, ads and posts, reels, packaging. The case on the site is Lamsa Plast, a long-established housewares factory that already had its logo; Nour did the shoot, art direction, ad images, posts, reels and carton, not their logo.",
    "Lamsa Plast (housewares manufacturer): bath set and water bottle orders: studio photos in five colourways, ad images, social posts, two product reels, and a print-ready carton.",
@@ -1379,7 +1476,7 @@
    "Wba3dein? (وبعدين؟, \"and then what?\"): a self-initiated concept app that makes Gulf kids want to read Arabic, UAE + Saudi, Arab families (nationals and expats) whose kids, 6 to 10, go to English-medium international schools; buyer = the mother, user = the kid; Gulf dialect in the brand, simple vowelled فصحى in the stories; tagged Concept on the site (not a real company; never invent users, downloads, schools or results). The real problem: 68% of young Gulf Arabs use English daily more than Arabic (Arab Youth Survey 2017), 54% say Arabic matters less to them than to their parents (2023); the Abu Dhabi Arabic Language Summit (2022) said schools never built an Arabic reading habit; only 3 of 17 Outstanding Dubai schools were Good in Arabic (KHDA 2018–19); Lamsa, I Read Arabic, Abjadiyat and Iqrali teach letters or curriculum, not wanting. The idea «اللي يقرا، يقرّر»: at 9 the share of kids who love reading drops from 40% to 28% and 89% love the books they chose (Scholastic 2019), so a short story from his world stops at a fork, the choice opens only when he reads it aloud, and the goal is his own book: 10 stories with his choices printed as a real book «بقلم حمد، ٩ سنين» delivered home. Result line: «Arabic they want to read.» Nour made the name, the logo (the Arabic ؟ as a page corner turning), the «bedtime» palette (night plum, paper, lamp apricot, fork lilac; Marhey headlines, Noto Naskh vowelled stories), a paper-cut world style with real kids as white-edged stickers, 8 applications (the fork screen on a tablet, his printed book, the parent's phone, the delivery box, a Dubai bus shelter, a bookmark, his book on his shelf, a bedtime hero), 9 posts and 2 reels built on his own reel engine. For education, kids, reading, Arabic-language, edtech or Gulf-family questions: show Wba3dein? first."
   ],
   "site": [
-   "Hero (top): who Nour is, the CV button and the line 'Tell me what you're building'.",
+   "First phone screen (v14.16): a moving wall of his real work (Chiky Pop, TAGG, Lamsa Plast, DROP, 69 The Avenue UK, M3anyi, El Partyta, Gray Museum, Golden Home, Shero Handmade, Kshaf, Milk Cup); tap any tile and that project opens. Under it: his photo, «Creative Director», 12+ years · 150+ projects · 6 countries, the line «You bring the idea. I turn it into a brand people remember, then I stay with you until it launches on the ground.» and «Restaurants, developers, factories and app founders come to me when they have something new to launch.». Under that, the box «Tell me what you're building» opens Ask NM* (this chat). Buttons: WhatsApp, Email, CV. Right after it comes Work by sector (first tab in the menu) so a visitor finds work from his own industry on the second screen.",
    "Before/After: a drag slider. NIVEA MEN, a raw can on white turned into a campaign image (self-initiated concept).",
    "High scores: his best numbers as cards, plus 'Built in-house', a rail of the 15 tools he built.",
    "Experience (after High scores): his roles as a timeline: DIA 2024–26, Food Trucks International 2021–26, Chiky Pop 2022–23, MOBBIT since 2018, M3anyi & Gray Museum since 2017.",
