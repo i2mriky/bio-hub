@@ -1,5 +1,5 @@
 {
- "version": 32,
+ "version": 33,
  "profile": {
   "name": "Nour Mohamed",
   "monogram": "NM*",
@@ -2319,8 +2319,8 @@
       "k": "concept"
      },
      {
-      "t": "assets/pages/asas/p05-t.webp",
-      "f": "assets/pages/asas/p05.webp",
+      "t": "assets/pages/asas/p05b-t.webp",
+      "f": "assets/pages/asas/p05b.webp",
       "c": "من شغلنا: هوية Chiky Pop من الاسم لحد العلبة، لوجو وتغليف ولبس فريق عربية الأكل. اسأل عن الهوية البصرية في الرسايل.",
       "k": "concept"
      },
@@ -2868,9 +2868,9 @@
       "c": "Working hours and delivery post"
      },
      {
-      "t": "assets/pages/chiky-pop/p02-t.webp",
-      "f": "assets/pages/chiky-pop/p02.webp",
-      "c": "Chicken box packaging"
+      "t": "assets/pages/chiky-pop/p02b-t.webp",
+      "f": "assets/pages/chiky-pop/p02b.webp",
+      "c": "Boxes at the food trailer window"
      },
      {
       "t": "assets/pages/chiky-pop/p03-t.webp",
@@ -2908,9 +2908,9 @@
       "c": "Double sandwich promo, flame shape"
      },
      {
-      "t": "assets/pages/chiky-pop/p10-t.webp",
-      "f": "assets/pages/chiky-pop/p10.webp",
-      "c": "Red takeaway boxes with pattern"
+      "t": "assets/pages/chiky-pop/p10b-t.webp",
+      "f": "assets/pages/chiky-pop/p10b.webp",
+      "c": "Flavour stickers sealing orders"
      },
      {
       "t": "assets/pages/chiky-pop/p11-t.webp",
