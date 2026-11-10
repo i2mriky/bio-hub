@@ -3874,10 +3874,12 @@ fetch("data.json?v=" + Date.now()).then(r => r.ok ? r.json() : null).then(j => j
 
 /* ===== v14.19: NMJ — this visit, in a few words (for Nour's lead card and personal links). No cookies, no
    localStorage: one sessionStorage entry for this tab. Sent to the Ask NM* Worker only when the visitor reaches the
-   «Ready for Nour» card, or when the page was opened from a personal link (?to=name). See privacy.html. ===== */
+   «Ready for Nour» card, or when the page was opened from a personal link (?to=name) or a platform/ad link (?s=li, ?s=ad-a). See privacy.html. ===== */
 window.NMJ = (() => {
   const K = "nm_j", rnd = () => Array.from(crypto.getRandomValues(new Uint8Array(12)), b => "abcdefghijklmnopqrstuvwxyz0123456789"[b % 36]).join("");
-  let J = null, W = "", on = false, last = 0, seenT = 0;
+  let J = null, W = "", on = false, last = 0, seenT = 0, kind = "";
+  /* v14.22: platform links (?to=li or ?s=li) and ads (?s=ad-a) also ping the Worker: «🔗 حد فتح الموقع من LinkedIn»; ads = a silent day counter */
+  const PL = ["li", "ig", "m3anyi", "tt", "fb", "wa", "behance", "email", "qr", "cv"], okS = s => PL.includes(s) || /^ad-[a-z0-9-]{1,20}$/.test(s || "");
   const load = () => { try { J = JSON.parse(sessionStorage.getItem(K) || "null"); } catch { J = null; } };
   const save = () => { try { sessionStorage.setItem(K, JSON.stringify(J)); } catch {} };
   const add = (k, v) => { if (!J || !v) return; J[k] = J[k] || []; if (!J[k].includes(v) && J[k].length < 12) { J[k].push(v); save(); } };
@@ -3890,12 +3892,13 @@ window.NMJ = (() => {
       const to = (q.get("to") || "").toLowerCase().replace(/[^a-z0-9-]/g, "").slice(0, 30);
       J = { sid: rnd(), src: (q.get("s") || q.get("utm_source") || ref || "").toLowerCase().slice(0, 40), to, t: 0, secs: [], arc: [] }; save();
     }
-    if (/[?&]to=/.test(location.search)) { try { const u = new URL(location.href); u.searchParams.delete("to"); history.replaceState(history.state, "", u.pathname + (u.search || "") + u.hash); } catch {} }
+    kind = J.to ? (PL.includes(J.to) ? "plat" : "to") : okS(J.src) ? (J.src.startsWith("ad-") ? "ad" : "plat") : "";
+    if (/[?&]to=/.test(location.search) || okS(new URLSearchParams(location.search).get("s"))) { try { const u = new URL(location.href); u.searchParams.delete("to"); if (okS(u.searchParams.get("s"))) u.searchParams.delete("s"); history.replaceState(history.state, "", u.pathname + (u.search || "") + u.hash); } catch {} }
     /* time on site: only while the tab is visible */
     let tick = Date.now(); setInterval(() => { if (!document.hidden) { J.t = (J.t || 0) + Math.round((Date.now() - tick) / 1000); save(); } tick = Date.now(); }, 5000);
     /* sections reached, by their heading */
     if ("IntersectionObserver" in window) {
-      const io = new IntersectionObserver(es => es.forEach(e => { if (!e.isIntersecting) return; const h = e.target.querySelector("h2, h1"); add("secs", h ? h.textContent.replace(/\s+/g, " ").trim().slice(0, 30) : e.target.id); io.unobserve(e.target); }), { threshold: .35 });
+      const io = new IntersectionObserver(es => es.forEach(e => { if (!e.isIntersecting) return; const h = e.target.querySelector("h2, h1"), nv = !h && document.querySelector(`nav a[href="#${e.target.id}"], a[href="#${e.target.id}"]`); add("secs", (h || nv) ? (h || nv).textContent.replace(/\s+/g, " ").trim().replace(/(\D)\d+$/, "$1").slice(0, 30) : e.target.id); io.unobserve(e.target); }), { threshold: .35 });
       setTimeout(() => document.querySelectorAll("main section[id], section[id]").forEach(x => io.observe(x)), 1200);
     }
     /* projects opened + CV */
@@ -3903,11 +3906,12 @@ window.NMJ = (() => {
     document.addEventListener("click", e => { const a = e.target.closest && e.target.closest("a[href]"); if (!a) return; const h = a.getAttribute("href") || "";
       if (/cv|\.pdf/i.test(h + " " + a.className) && /\bcv\b|\.pdf/i.test(h + " " + (a.textContent || ""))) { J.cv = 1; save(); seen(true); } }, true);
     /* personal link: tell Nour it was opened, then what was seen when the tab is hidden or closed */
-    if (J.to) { setTimeout(() => seen(true), 1500); document.addEventListener("visibilitychange", () => { if (document.hidden) seen(true); });
-      addEventListener("pagehide", () => seen(true)); setInterval(() => seen(false), 60000); }
+    if (kind === "ad") { if (!J.adSent) setTimeout(() => { J.adSent = 1; save(); seen(true); }, 1500); }
+    else if (kind) { setTimeout(() => seen(true), 1500); document.addEventListener("visibilitychange", () => { if (document.hidden) seen(true); });
+      addEventListener("pagehide", () => seen(true)); if (kind === "to") setInterval(() => seen(false), 60000); }
   }
-  function seen(force) { if (!J || !J.to || !W) return; const now = Date.now(); if (!force && now - last < 55000) return; if (now - last < 4000) return; last = now;
-    post("/seen", { sid: J.sid, to: J.to, j: seenT++ ? snap() : null }); }
+  function seen(force) { if (!J || !kind || !W || (kind === "ad" && seenT)) return; const now = Date.now(); if (!force && now - last < 55000) return; if (now - last < 4000) return; last = now;
+    post("/seen", { sid: J.sid, to: J.to, src: J.to ? "" : J.src, j: seenT++ ? snap() : null }); }
   function snap() { if (!J) return null; return { src: J.src || "", to: J.to || "", t: J.t || 0, secs: (J.secs || []).slice(0, 12), arc: (J.arc || []).slice(0, 8), cv: J.cv ? 1 : 0 }; }
   async function post(path, body, wantReply) {
     if (!W) return null;
