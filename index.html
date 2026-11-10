@@ -1776,7 +1776,8 @@ return { patch, init, open, close, load, get, thumb };
    If the Worker is missing, down or rate-limited, the WhatsApp button still works. */
 window.ASK = (() => {
 const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const isAr = s => /[؀-ۿ]/.test(s || "") || /\b(3ayez|3awz|3ayza|ana|mesh|ezay|keda|7aga|ba3d|lessa|3ndy|3andy|ya3ni)\b/i.test(s || "");
+/* v14.18: Franco counts as Arabic (a Latin word with 2/3/5/7/8/9 inside, or a common Franco word), same rule as the Worker */
+const isAr = s => /[؀-ۿ]/.test(s || "") || /[a-z][235789]|[235789][a-z]/i.test(s || "") || /\b(3ayez|3awz|3ayza|ana|mesh|msh|ezay|keda|7aga|ba3d|lessa|3ndy|3andy|ya3ni|momken|mumkin|akalem|bkam|hdoom|malabes|mat3am|sho8l|enta|howa)\b/i.test(s || "");
 const WA_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.4.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.2Z"/></svg>';
 let D = {}, el = {}, msgs = [], busy = false, opener = null, ctx = "", built = false, ro = 0;
 const SS = "ak_msgs_v1";
@@ -1838,7 +1839,14 @@ function build() {
 }
 
 function chipsFor() {
-  const ar = lastUserAr(), n = msgs.length;
+  const ar = lastUserAr(), n = msgs.length, last = msgs[n - 1];
+  /* v14.18: the Worker writes 2-3 tap-replies for its own question, in the visitor's language; none after the WhatsApp card */
+  if (last && last.role === "assistant" && last.meta && !last.meta.fallback) {
+    if (last.meta.kind === "handoff") { el.chips.innerHTML = ""; return; }
+    const own = (last.meta.chips || []).filter(Boolean).slice(0, 3);
+    if (own.length) { el.chips.dir = /[؀-ۿ]/.test(own.join("")) ? "rtl" : "ltr"; el.chips.innerHTML = own.map(t => `<button type="button" data-say="${esc(t)}">${esc(t)}</button>`).join(""); return; }
+  }
+  el.chips.dir = "ltr";
   const C = ar ? [["اعملي خطة", "اعملي خطة صغيرة للمشروع"], ["شغل شبه ده", "وريني شغل شبه اللي محتاجه"], ["بتوظّف؟", "أنا من شركة وبدوّر على حد بخبرته"], ["السعر بيتحدد إزاي؟", "السعر بيتحدد على إيه؟"]]
     : [["Build my plan", "Build my plan"], ["Show me similar work", "Show me work close to what I need"], ["I'm hiring", "I'm hiring for a role"], ["What affects the price?", "What does the price depend on?"]];
   if (n > 6) C.unshift(ar ? ["ابعت لنور", "عايز أكلم نور"] : ["Talk to Nour", "I want to talk to Nour"]);
@@ -1910,7 +1918,7 @@ async function send(text) {
       if (r.ok && j && j.reply) out = j; else if (j && j.reason) why = j.reason;
     } catch {}
   }
-  if (out) msgs.push({ role: "assistant", content: out.reply, meta: { kind: out.kind, sources: out.sources, plan: out.plan, brief: out.brief, works: out.works } });
+  if (out) msgs.push({ role: "assistant", content: out.reply, meta: { kind: out.kind, sources: out.sources, plan: out.plan, brief: out.brief, works: out.works, chips: out.chips } });
   else if (why === "long" || why === "rate") msgs.push({ role: "assistant", content: ar ? "كده الصورة واضحة. كمّل مع نور على واتساب، الرسالة جاهزة:" : "That's a clear picture. Carry on with Nour on WhatsApp, the message is ready:", meta: { fallback: true } });
   else msgs.push({ role: "assistant", content: ar ? "المساعد مش متاح دلوقتي، بس نور بيرد بنفسه على واتساب. الرسالة دي جاهزة:" : "The assistant can't answer right now, but Nour replies himself on WhatsApp. Here's a ready message:", meta: { fallback: true } });
   ctx = ""; save(); busy = false; el.send.disabled = false; draw(); el.ta.focus();
